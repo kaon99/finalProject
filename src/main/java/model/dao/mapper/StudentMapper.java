@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.Map;
 
-public class StudentMappen implements ObjectMapper<Student> {
+public class StudentMapper implements ObjectMapper<Student> {
     @Override
     public Student extractFromResultSet(ResultSet rs) throws SQLException {
         Student student = new Student();
@@ -26,6 +26,8 @@ public class StudentMappen implements ObjectMapper<Student> {
 
     @Override
     public Student makeUnique(Map<Integer, Student> cache, Student student) {
-        return null;
+
+        cache.putIfAbsent(student.getId(),student);
+        return cache.get(student.getId());
     }
 }
