@@ -1,8 +1,13 @@
 package controller.command;
 
-import model.exception.NotFoundOperationException;
+import controller.command.admins.AdminCommand;
+import controller.command.admins.SendNotificatioinCommand;
+import controller.command.admins.SetMarksCommand;
+import controller.command.students.DepartamentCommand;
+import controller.command.students.MainCommand;
+import controller.command.students.StudentPageCommand;
+import controller.command.students.StudentRatingCommand;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,14 +25,15 @@ public class CommandFactory {
 
 
     static {
-        commandMap.put("view/admin", new AdminCommand());
-        commandMap.put("view/login", new LoginCommand());
-        commandMap.put("view/departament", new DepartamentCommand());
+        commandMap.put("admin", new AdminCommand());
+        commandMap.put("login", new LoginCommand());
+        commandMap.put("departament", new DepartamentCommand());
         commandMap.put("registration", new RegistrationCommand());
-        commandMap.put("view/sendnotification", new SendNotificatioinCommand());
-        commandMap.put("view/setmarks", new SetMarksCommand());
-        commandMap.put("view/studentpage", new StudentPageCommand());
-        commandMap.put("view/studentrating", new StudentRatingCommand());
+        commandMap.put("sendnotification", new SendNotificatioinCommand());
+        commandMap.put("setmarks", new SetMarksCommand());
+        commandMap.put("studentpage", new StudentPageCommand());
+        commandMap.put("studentrating", new StudentRatingCommand());
+        commandMap.put("main",new MainCommand());
     }
 
     public static Command getCommand(String url){

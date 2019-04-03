@@ -40,7 +40,7 @@ public class Servlet extends HttpServlet {
         Command command = CommandFactory.getCommand(path);
         String page = command.execute(request,response);
         if (page.contains("redirect")) {
-            response.sendRedirect(page.replace("redirect:", "/api"));
+            response.sendRedirect(page.replace("redirect:", "/view"));
         }else {
             request.getRequestDispatcher(page).forward(request, response);
         }

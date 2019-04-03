@@ -1,4 +1,6 @@
-package controller.command;
+package controller.command.students;
+
+import controller.command.Command;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -8,6 +10,6 @@ public class DepartamentCommand implements Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        return null;
+        return "/WEB-INF/view/departament.jsp";
     }
 }
