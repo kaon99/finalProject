@@ -23,19 +23,17 @@ public class CommandFactory {
         commandMap.put("view/admin", new AdminCommand());
         commandMap.put("view/login", new LoginCommand());
         commandMap.put("view/departament", new DepartamentCommand());
-        commandMap.put("/registration", new RegistrationCommand());
+        commandMap.put("registration", new RegistrationCommand());
         commandMap.put("view/sendnotification", new SendNotificatioinCommand());
         commandMap.put("view/setmarks", new SetMarksCommand());
         commandMap.put("view/studentpage", new StudentPageCommand());
         commandMap.put("view/studentrating", new StudentRatingCommand());
     }
 
-    public static Command getCommand(String url) throws NotFoundOperationException {
+    public static Command getCommand(String url){
         Command command = commandMap.get(url);
 
-        if (command == null) {
-            throw new NotFoundOperationException();
-        }
+
 
         return command;
     }

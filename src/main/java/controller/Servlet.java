@@ -18,29 +18,32 @@ public class Servlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doPost(req, resp);
+       processRequest(req,resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html; charset=UTF-8");
         req.setCharacterEncoding("UTF-8");
-        try {
+
             processRequest(req,resp);
-        } catch (NotFoundOperationException e) {
-            e.printStackTrace();
-        }
 
     }
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException, NotFoundOperationException {
+            throws ServletException, IOException {
+
         String path = request.getRequestURI();
-        path = path.replaceAll(".*/view/", "");
+        System.out.println(path);
+        path = path.replaceAll(".*/" , "");
+        System.out.println(path);
         Command command = CommandFactory.getCommand(path);
-        System.out.println(command.getClass().getName());
-        String page = command.execute(request, response);
-        request.getRequestDispatcher(page).forward(request, response);
+        String page = command.execute(request,response);
+        if (page.contains("redirect")) {
+            response.sendRedirect(page.replace("redirect:", "/api"));
+        }else {
+            request.getRequestDispatcher(page).forward(request, response);
+        }
     }
 
 }

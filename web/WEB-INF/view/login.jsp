@@ -15,7 +15,7 @@
 
 <div class="menu-bar">
     <form role="form" class="btn btn-success btn-sm" method="post"
-          action="${pageContext.request.contextPath}redirect:registration">
+          action="${pageContext.request.contextPath}/bot/registration">
         <input type="hidden" name="conference_id" value="${conference.id}">
         <button type="submit" class="btn btn-success btn-sm">Регистрация</button>
     </form>
