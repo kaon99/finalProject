@@ -8,6 +8,6 @@ public class LoginCommand implements Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-          return "/WEB-INF/view/login.jsp";
+          return "/view/login.jsp";
     }
 }

@@ -2,6 +2,7 @@ package controller.command;
 
 import model.exception.NotFoundOperationException;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,7 +23,7 @@ public class CommandFactory {
         commandMap.put("view/admin", new AdminCommand());
         commandMap.put("view/login", new LoginCommand());
         commandMap.put("view/departament", new DepartamentCommand());
-        commandMap.put("view/registration", new RegistrationCommand());
+        commandMap.put("/registration", new RegistrationCommand());
         commandMap.put("view/sendnotification", new SendNotificatioinCommand());
         commandMap.put("view/setmarks", new SetMarksCommand());
         commandMap.put("view/studentpage", new StudentPageCommand());
@@ -31,9 +32,11 @@ public class CommandFactory {
 
     public static Command getCommand(String url) throws NotFoundOperationException {
         Command command = commandMap.get(url);
+
         if (command == null) {
             throw new NotFoundOperationException();
         }
+
         return command;
     }
 

@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>регистрация</title>
 </head>
 <body>
-
+<h1>Регистрация </h1>
 </body>
 </html>
