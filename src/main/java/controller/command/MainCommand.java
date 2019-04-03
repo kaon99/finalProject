@@ -1,4 +1,4 @@
-package controller.command.students;
+package controller.command;
 
 import controller.command.Command;
 

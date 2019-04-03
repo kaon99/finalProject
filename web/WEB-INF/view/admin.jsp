@@ -12,5 +12,22 @@
 </head>
 <body>
 
+<form role="form" method="post"
+      action="${pageContext.request.contextPath}/view/setmarks">
+    <input type="hidden" name="conference_id" value="${conference.id}">
+    <button type="submit" >Регистрация</button>
+</form>
+
+<form role="form"  method="post"
+      action="${pageContext.request.contextPath}/view/sendnotification">
+    <input type="hidden" name="conference_id" value="${conference.id}">
+    <button type="submit" >Регистрация</button>
+</form>
+<form role="form"  method="post"
+      action="${pageContext.request.contextPath}/view/sendnotification">
+    <input type="hidden" name="conference_id" value="${conference.id}">
+    <button type="submit" >Регистрация</button>
+</form>
+
 </body>
 </html>
