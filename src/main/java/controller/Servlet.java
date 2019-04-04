@@ -23,8 +23,6 @@ public class Servlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html; charset=UTF-8");
-        req.setCharacterEncoding("UTF-8");
 
             processRequest(req,resp);
 
@@ -40,7 +38,7 @@ public class Servlet extends HttpServlet {
         Command command = CommandFactory.getCommand(path);
         String page = command.execute(request,response);
         if (page.contains("redirect")) {
-            response.sendRedirect(page.replace("redirect:", "/view"));
+            response.sendRedirect(page.replace("redirect:", "/api"));
         }else {
             request.getRequestDispatcher(page).forward(request, response);
         }

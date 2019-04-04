@@ -11,12 +11,12 @@
     <title>Main</title>
 </head>
 <body>
-<h1>Главная страница</h1>
+<h1>Вы вышли</h1>
 
-<form role="form" class="btn btn-success btn-sm" method="post"
+<form  method="post"
 action="${pageContext.request.contextPath}/view/login">
-<input type="hidden" name="conference_id" value="${conference.id}">
-<button type="submit" class="btn btn-success btn-sm">Войти</button>
+<input type="hidden">
+<button type="submit" ></button>
 </form>
 </body>
 </html>

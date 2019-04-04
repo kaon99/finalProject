@@ -33,6 +33,7 @@ public class CommandFactory {
         commandMap.put("studentpage", new StudentPageCommand());
         commandMap.put("studentrating", new StudentRatingCommand());
         commandMap.put("main",new MainCommand());
+        commandMap.put("logout",new LogoutCommand());
     }
 
     public static Command getCommand(String url){
