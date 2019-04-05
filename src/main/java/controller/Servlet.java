@@ -18,13 +18,13 @@ public class Servlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-       processRequest(req,resp);
+        processRequest(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-            processRequest(req,resp);
+        processRequest(req, resp);
 
     }
 
@@ -33,13 +33,13 @@ public class Servlet extends HttpServlet {
 
         String path = request.getRequestURI();
         System.out.println(path);
-        path = path.replaceAll(".*/" , "");
+        path = path.replaceAll(".*/", "");
         System.out.println(path);
         Command command = CommandFactory.getCommand(path);
-        String page = command.execute(request,response);
-        if (page.contains("redirect")) {
-            response.sendRedirect(page.replace("redirect:", "/api"));
-        }else {
+        String page = command.execute(request, response);
+        if (page.contains("redirect:")) {
+            response.sendRedirect(page.replaceAll("redirect:","/university"));
+        } else {
             request.getRequestDispatcher(page).forward(request, response);
         }
     }

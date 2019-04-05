@@ -12,7 +12,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Servlet</servlet-name>
-        <url-pattern>/view/*</url-pattern>
+        <url-pattern>/university/*</url-pattern>
     </servlet-mapping>
 
     <filter>

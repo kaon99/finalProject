@@ -14,7 +14,7 @@
 <h1>Вы вышли</h1>
 
 <form  method="post"
-action="${pageContext.request.contextPath}/view/login">
+action="${pageContext.request.contextPath}/university/login">
 <input type="hidden">
 <button type="submit" ></button>
 </form>
