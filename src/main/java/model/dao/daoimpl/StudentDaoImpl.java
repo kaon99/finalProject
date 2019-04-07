@@ -12,18 +12,19 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class StudentDaoImpl implements StudentDao {
+
     @Override
     public void create(Student entity) {
 
 
     }
-
     @Override
     public Student getByLoginAndPass(String login, String password) {
 
-        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
+        try (Connection connection =  ConnectionPool.getInstance().getConnection()) {
             PreparedStatement statement = connection.prepareStatement
                     (QueriesResourseManager.getProperty("select.by.login.password"));
             statement.setString(1, login);

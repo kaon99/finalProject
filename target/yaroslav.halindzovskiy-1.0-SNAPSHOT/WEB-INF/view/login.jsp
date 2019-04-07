@@ -13,24 +13,32 @@
 <body>
 <h1> Работает</h1>
 
-<div class="menu-bar">
 
     <form method="post"
-          action="${pageContext.request.contextPath}/view/registration">
+          action="${pageContext.request.contextPath}/university/registration">
         <input type="hidden">
         <button type="submit">Регистрация</button>
     </form>
 
     <form method="post"
-          action="${pageContext.request.contextPath}/view/admin">
+          action="${pageContext.request.contextPath}/university/admin">
         <input type="hidden">
         <button type="submit">Войти как админ</button>
     </form>
+
+    <div>
+        <h2>Enter login and password:</h2>
+        <form action="${pageContext.request.contextPath}/university/login" method="post">
+            Login: <input type="text" name="login" required="required"/>
+            Password: <input type="text" name="password" required="required"/>
+            <input type="submit" value="Log in"/>
+        </form>
+    </div>
     <form method="post"
-          action="${pageContext.request.contextPath}/view/studentpage">
+          action="${pageContext.request.contextPath}/university/studentpage">
         <input type="hidden">
         <button type="submit">Войти как студент</button>
     </form>
-</div>
+
 </body>
 </html>

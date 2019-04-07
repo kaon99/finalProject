@@ -117,4 +117,18 @@ public class Student {
         result = 31 * result + (role != null ? role.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", NameUa='" + NameUa + '\'' +
+                ", SurnameUa='" + SurnameUa + '\'' +
+                ", NameEn='" + NameEn + '\'' +
+                ", SurnameEn='" + SurnameEn + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", role=" + role +
+                '}';
+    }
 }

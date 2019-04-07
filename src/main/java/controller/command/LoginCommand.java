@@ -1,23 +1,36 @@
 package controller.command;
 
+import controller.command.util.CommandUtil;
 import model.entity.Student;
+import model.service.StudentService;
+import model.service.impl.StudentServiceImpl;
 import utils.AttributesResourseManager;
 import utils.PageResourseManager;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.Objects;
 
 public class LoginCommand implements Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        HttpSession session = request.getSession(false);
-        String login = request.getParameter(AttributesResourseManager.getProperty("parameter.login"));
-        String passwrod = request.getParameter(AttributesResourseManager.getProperty("parameter.password"));
+        HttpSession session = request.getSession();
 
-        Student student = (Student) session.getAttribute(AttributesResourseManager.getProperty("parameter.user"));
-          return PageResourseManager.getProperty("login");
+        String login = request.getParameter(AttributesResourseManager.getProperty("parameter.login"));
+        String password = request.getParameter(AttributesResourseManager.getProperty("parameter.password"));
+
+        if (Objects.nonNull(login) && Objects.nonNull(password)) {
+            StudentService studentService = new StudentServiceImpl();
+
+            Student student = studentService.loginUser(login, password);
+            String page = CommandUtil.getUserPageByRole(student.getRole());
+
+
+return page;
+        }
+return PageResourseManager.getProperty("login");
     }
+
 }

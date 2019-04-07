@@ -13,13 +13,13 @@
 <body>
 
 <form role="form" method="post"
-      action="${pageContext.request.contextPath}/view/admin/setmarks">
+      action="${pageContext.request.contextPath}/university/admin/setmarks">
     <input type="hidden" name="conference_id" value="${conference.id}">
     <button type="submit" >Выставить оценки</button>
 </form>
 
 <form role="form"  method="post"
-      action="${pageContext.request.contextPath}/view/admin/sendnotification">
+      action="${pageContext.request.contextPath}/university/admin/sendnotification">
     <input type="hidden" name="conference_id" value="${conference.id}">
     <button type="submit" >Отправить уведомление</button>
 </form>

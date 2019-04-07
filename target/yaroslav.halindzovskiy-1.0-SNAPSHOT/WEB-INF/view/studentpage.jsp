@@ -13,18 +13,18 @@
 <body>
 <h1>Student Page</h1>
 <form method="post"
-      action="${pageContext.request.contextPath}/view/departament">
+      action="${pageContext.request.contextPath}/university/departament">
     <input type="hidden">
     <button type="submit">Кафедры</button>
 </form>
 
 <form method="post"
-      action="${pageContext.request.contextPath}/view/studentrating">
+      action="${pageContext.request.contextPath}/university/studentrating">
     <input type="hidden">
     <button type="submit">Показать рейтинг</button>
 </form>
 <form method="post"
-      action="${pageContext.request.contextPath}/logout.jsp">
+      action="${pageContext.request.contextPath}/university/logout">
     <input type="hidden">
     <button type="submit">Выйти</button>
 </form>
