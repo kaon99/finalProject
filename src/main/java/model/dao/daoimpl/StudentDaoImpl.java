@@ -1,50 +1,41 @@
 package model.dao.daoimpl;
 
-
+import com.mysql.jdbc.Connection;
+import model.dao.ConnectionPoolHolder;
 import model.dao.StudentDao;
-import model.dao.connectionpool.ConnectionPool;
-import model.dao.mapper.StudentMapper;
 import model.entity.Student;
-import utils.QueriesResourseManager;
+import org.apache.tomcat.jdbc.pool.ConnectionPool;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.List;
 
 public class StudentDaoImpl implements StudentDao {
     @Override
     public void create(Student entity) {
+String INSERT = "INSET INTO user (user_name_ua, user_surname_ua, user_name_en, user_surname_en, user_email, user_password, user_role) VALUES (?,?,?,?,?,?,?)";
 
 
     }
 
-    @Override
-    public Student getByLoginAndPass(String login, String password) {
+    /*public boolean add(User user) throws DataBaseException {
+        String INSERT = "INSERT INTO user (firstName, secondName, email, password, level) VALUES (?, ?, ?, ?, ?)";
+        logger.info(String.format("Add user name = %s", user.getfName()));
 
-        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-            PreparedStatement statement = connection.prepareStatement
-                    (QueriesResourseManager.getProperty("select.by.login.password"));
-            statement.setString(1, login);
-            statement.setString(2, password);
-            ResultSet resultSet = statement.executeQuery();
-            Student student = null;
-            if (resultSet.next()) {
-                StudentMapper studentMapper = new StudentMapper();
-                student = studentMapper.extractFromResultSet(resultSet);
-            }
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(INSERT)) {
+            statement.setString(1, user.getfName());
+            statement.setString(2, user.getsName());
+            statement.setString(3, user.getEmail());
+            statement.setString(4, user.getPassword());
+            statement.setInt(5, user.getAccessLevel());
 
+            statement.execute();
 
-            return student;
+            return true;
         } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException("Cannot get user", e);
+            logger.error(String.format("Cannot add user name = %s", user.getfName()), e);
+            throw new DataBaseException("Cannot add user", e);
         }
-
-
-    }
-
+    }*/
 
     @Override
     public Student findById(int id) {
@@ -71,5 +62,3 @@ public class StudentDaoImpl implements StudentDao {
 
     }
 }
-
-
