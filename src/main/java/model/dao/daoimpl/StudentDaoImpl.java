@@ -17,9 +17,20 @@ import java.util.logging.Logger;
 public class StudentDaoImpl implements StudentDao {
 
     @Override
-    public void create(Student entity) {
-
-
+    public void create(Student student) {
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
+            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("insert.user"));
+            statement.setString(1,student.getNameUa());
+            statement.setString(2,student.getSurnameUa());
+            statement.setString(3,student.getNameEn());
+            statement.setString(4,student.getSurnameEn());
+            statement.setString(5,student.getEmail());
+            statement.setString(6,student.getPassword());
+            statement.setInt(7,student.getRole());
+            statement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
     @Override
     public Student getByLoginAndPass(String login, String password) {
