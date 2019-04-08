@@ -20,7 +20,6 @@
 
 <form role="form"  method="post"
       action="${pageContext.request.contextPath}/university/admin/sendnotification">
-    <input type="hidden" name="conference_id" value="${conference.id}">
     <button type="submit" >Отправить уведомление</button>
 </form>
 
