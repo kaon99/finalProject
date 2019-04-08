@@ -25,12 +25,13 @@ public class LoginCommand implements Command {
             StudentService studentService = new StudentServiceImpl();
 
             Student student = studentService.loginUser(login, password);
-            String page = CommandUtil.getUserPageByRole(student.getRole());
+            if (Objects.nonNull(student)) {
+                String page = CommandUtil.getUserPageByRole(student.getRole());
 
+                return page;
+            }
 
-return page;
         }
 return PageResourseManager.getProperty("login");
     }
-
 }

@@ -11,6 +11,16 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <form method="post"
+        action="${pageContext.request.contextPath}/university/registration">
+    <input type="hidden">
+    <button type="submit">Регистрация</button>
+  </form>
+  <form method="post"
+        action="${pageContext.request.contextPath}/university/login">
+    <input type="hidden">
+    <button type="submit">Войти</button>
+  </form>
+
   </body>
 </html>

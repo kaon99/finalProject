@@ -1,6 +1,7 @@
 package controller.command;
 
 import controller.command.Command;
+import utils.PageResourseManager;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -11,6 +12,6 @@ public class RegistrationCommand implements Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        return "/WEB-INF/view/registration.jsp";
+        return PageResourseManager.getProperty("registration");
     }
 }

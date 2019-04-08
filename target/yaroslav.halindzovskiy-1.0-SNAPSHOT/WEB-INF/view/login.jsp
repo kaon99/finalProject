@@ -14,17 +14,9 @@
 <h1> Работает</h1>
 
 
-    <form method="post"
-          action="${pageContext.request.contextPath}/university/registration">
-        <input type="hidden">
-        <button type="submit">Регистрация</button>
-    </form>
 
-    <form method="post"
-          action="${pageContext.request.contextPath}/university/admin">
-        <input type="hidden">
-        <button type="submit">Войти как админ</button>
-    </form>
+
+
 
     <div>
         <h2>Enter login and password:</h2>
@@ -34,11 +26,7 @@
             <input type="submit" value="Log in"/>
         </form>
     </div>
-    <form method="post"
-          action="${pageContext.request.contextPath}/university/studentpage">
-        <input type="hidden">
-        <button type="submit">Войти как студент</button>
-    </form>
+
 
 </body>
 </html>
