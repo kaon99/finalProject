@@ -2,10 +2,7 @@ package controller;
 
 import controller.command.Command;
 import controller.command.CommandFactory;
-import model.exception.NotFoundOperationException;
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -32,16 +29,22 @@ public class Servlet extends HttpServlet {
             throws ServletException, IOException {
 
         String path = request.getRequestURI();
-        System.out.println(path);
-        path = path.replaceAll(".*/", "");
-        System.out.println(path);
+        path = cleanPath(path);
         Command command = CommandFactory.getCommand(path);
         String page = command.execute(request, response);
         if (page.contains("redirect:")) {
-            response.sendRedirect(page.replaceAll("redirect:","university"));
+
+            response.sendRedirect(cleanPath(page));
         } else {
             request.getRequestDispatcher(page).forward(request, response);
+
+
         }
+
+    }
+
+    private String cleanPath(String path) {
+        return path = path.replaceAll(".*/", "");
     }
 
 }

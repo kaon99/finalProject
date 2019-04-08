@@ -20,10 +20,10 @@ public class AuthenticationFilter implements Filter  {
         final HttpServletRequest request = (HttpServletRequest) servletRequest;
         final HttpServletResponse response = (HttpServletResponse) servletResponse;
         final HttpSession session = request.getSession();
-        String loginURI = request.getServletPath() + "/university/login";
+        String loginURI = request.getContextPath() + "/university/login";
         String registrationURI = request.getContextPath() + "/university/registration";
 
-        boolean loggedIn = session != null && session.getAttribute(AttributesResourseManager.getProperty("parameter.user")) != null;
+        boolean loggedIn = session != null && session.getAttribute("user") != null;
         boolean loginRequest = request.getRequestURI().equals(loginURI);
         boolean signUpRequest = request.getRequestURI().equals(registrationURI);
         if (loggedIn || loginRequest || signUpRequest) {
@@ -36,7 +36,7 @@ public class AuthenticationFilter implements Filter  {
             request.getRequestDispatcher(PageResourseManager.getProperty("login")).forward(request, response);
         }
         else {
-response.sendRedirect("/");
+response.sendRedirect("redirect:");
         }
 
     }

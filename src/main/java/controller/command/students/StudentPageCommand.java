@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 public class StudentPageCommand implements Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
+
+
         return "/WEB-INF/view/studentpage.jsp";
     }
 }
