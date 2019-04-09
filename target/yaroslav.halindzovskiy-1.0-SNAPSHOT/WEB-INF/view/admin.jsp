@@ -24,7 +24,7 @@
 </form>
 
 <form method="post"
-      action="${pageContext.request.contextPath}/logout.jsp">
+      action="${pageContext.request.contextPath}/university/logout">
     <input type="hidden">
     <button type="submit">Выйти</button>
 </form>

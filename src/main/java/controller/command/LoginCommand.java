@@ -9,15 +9,13 @@ import utils.PageResourseManager;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.util.Objects;
 
 public class LoginCommand implements Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        HttpSession session = request.getSession();
-
+        request.getSession().invalidate();
         String login = request.getParameter(AttributesResourseManager.getProperty("parameter.login"));
         String password = request.getParameter(AttributesResourseManager.getProperty("parameter.password"));
 
@@ -25,12 +23,13 @@ public class LoginCommand implements Command {
             StudentService studentService = new StudentServiceImpl();
 
             Student student = studentService.loginUser(login, password);
-            String page = CommandUtil.getUserPageByRole(student.getRole());
+            request.getSession().setAttribute("user", student);
+            if (Objects.nonNull(student)) {
+                String page = CommandUtil.getUserPageByRole(student.getRole());
+                return page;
+            }
 
-
-return page;
         }
-return PageResourseManager.getProperty("login");
+        return PageResourseManager.getProperty("login");
     }
-
 }

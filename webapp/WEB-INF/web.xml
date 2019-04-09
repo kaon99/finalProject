@@ -23,6 +23,23 @@
         <filter-name>EncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+    <filter>
+        <filter-name>AuthorizationFilter</filter-name>
+        <filter-class>controller.command.filter.AuthenticationFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>AuthorizationFilter</filter-name>
+        <url-pattern>/university/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>RoleFilter</filter-name>
+        <filter-class>controller.command.filter.RoleFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>RoleFilter</filter-name>
+        <url-pattern>/university/admin/*</url-pattern>
+    </filter-mapping>
 
     <filter>
         <filter-name>RoleFilter</filter-name>

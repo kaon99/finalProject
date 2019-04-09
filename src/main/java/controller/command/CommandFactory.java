@@ -6,19 +6,13 @@ import controller.command.admins.SetMarksCommand;
 import controller.command.students.DepartamentCommand;
 import controller.command.students.StudentPageCommand;
 import controller.command.students.StudentRatingCommand;
+import utils.PageResourseManager;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class CommandFactory {
 
-    private static CommandFactory instance() {
-        return new CommandFactory();
-    }
-
-    public static CommandFactory getInstance() {
-        return instance();
-    }
 
     static private Map<String, Command> commandMap = new HashMap<>();
 
@@ -32,15 +26,19 @@ public class CommandFactory {
         commandMap.put("setmarks", new SetMarksCommand());
         commandMap.put("studentpage", new StudentPageCommand());
         commandMap.put("studentrating", new StudentRatingCommand());
-        commandMap.put("main",new MainCommand());
-        commandMap.put("logout",new LogoutCommand());
+        commandMap.put("main", new MainCommand());
+        commandMap.put("logout", new LogoutCommand());
+
+
     }
 
-    public static Command getCommand(String url){
+    public static Command getCommand(String url) {
         Command command = commandMap.get(url);
 
 
-
+if (command == null){
+    return new PageErrorCommand() ;
+}
         return command;
     }
 

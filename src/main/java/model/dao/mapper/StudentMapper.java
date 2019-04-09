@@ -1,11 +1,9 @@
 package model.dao.mapper;
 
 import model.entity.Student;
-import model.entity.types.Role;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Arrays;
 import java.util.Map;
 
 public class StudentMapper implements ObjectMapper<Student> {

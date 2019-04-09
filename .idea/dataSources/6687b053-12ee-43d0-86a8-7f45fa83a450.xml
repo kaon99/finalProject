@@ -1212,23 +1212,23 @@
       <ColNames>rating_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="304" parent="283" name="fk_raiting_subject1">
+    <foreign-key id="304" parent="283" name="rating_user_user_id_fk">
+      <ColNames>rating_id</ColNames>
+      <RefSchemaName>final_project</RefSchemaName>
+      <RefTableName>user</RefTableName>
+      <RefColNames>user_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="305" parent="283" name="fk_raiting_subject1">
       <ColNames>subject_id</ColNames>
       <RefSchemaName>final_project</RefSchemaName>
       <RefTableName>subject</RefTableName>
       <RefColNames>subject_id</RefColNames>
     </foreign-key>
-    <foreign-key id="305" parent="283" name="fk_raiting_specialty1">
+    <foreign-key id="306" parent="283" name="fk_raiting_specialty1">
       <ColNames>specialty_id</ColNames>
       <RefSchemaName>final_project</RefSchemaName>
       <RefTableName>specialty</RefTableName>
       <RefColNames>specialty_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="306" parent="283" name="fk_raiting_user1">
-      <ColNames>user_id</ColNames>
-      <RefSchemaName>final_project</RefSchemaName>
-      <RefTableName>user</RefTableName>
-      <RefColNames>user_id</RefColNames>
     </foreign-key>
     <column id="307" parent="284" name="specialty_id">
       <Position>1</Position>
@@ -1266,6 +1266,7 @@
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="314" parent="286" name="user_name_ua">
