@@ -19,22 +19,19 @@ public class RoleFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-
-        final HttpServletRequest req = (HttpServletRequest) servletRequest;
-        final HttpServletResponse resp = (HttpServletResponse) servletResponse;
-        final HttpSession session = req.getSession(false);
-
-        Student student = (Student) session.getAttribute(AttributesResourseManager.getProperty("parameter.user"));
+        HttpServletRequest req = (HttpServletRequest)servletRequest;
+        HttpServletResponse resp = (HttpServletResponse)servletResponse;
+        HttpSession session = req.getSession(false);
+        Student student = (Student)session.getAttribute(AttributesResourseManager.getProperty("parameter.user"));
         if (Objects.nonNull(student)) {
             int accessLevel = student.getRole();
             if (accessLevel == Role.ADMIN.getRole()) {
                 filterChain.doFilter(req, resp);
+            } else {
+                resp.sendRedirect("/university/main");
             }
-
-        } else {
-            req.getRequestDispatcher("/main").forward(req, resp);
-
         }
+
     }
 
 

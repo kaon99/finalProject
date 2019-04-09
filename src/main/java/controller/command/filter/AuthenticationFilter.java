@@ -36,7 +36,7 @@ public class AuthenticationFilter implements Filter  {
             request.getRequestDispatcher(PageResourseManager.getProperty("login")).forward(request, response);
         }
         else {
-response.sendRedirect("redirect:");
+response.sendRedirect("/university/login");
         }
 
     }
