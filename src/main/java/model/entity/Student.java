@@ -1,13 +1,11 @@
 package model.entity;
 
-import model.entity.types.Role;
-
 public class Student {
     private Integer id;
-    private String NameUa;
-    private String SurnameUa;
-    private String NameEn;
-    private String SurnameEn;
+    private String nameUa;
+    private String surnameUa;
+    private String nameEn;
+    private String surnameEn;
     private String email;
     private String password;
     private Integer role;
@@ -15,12 +13,22 @@ public class Student {
     public Student() {
     }
 
+    public Student(String nameUa, String surnameUa, String nameEn, String surnameEn, String email, String password, Integer role) {
+        this.nameUa = nameUa;
+        this.surnameUa = surnameUa;
+        this.nameEn = nameEn;
+        this.surnameEn = surnameEn;
+        this.email = email;
+        this.password = password;
+        this.role = role;
+    }
+
     public Student(Integer id, String nameUa, String surnameUa, String nameEn, String surnameEn, String email, String password, Integer role) {
         this.id = id;
-        NameUa = nameUa;
-        SurnameUa = surnameUa;
-        NameEn = nameEn;
-        SurnameEn = surnameEn;
+        this.nameUa = nameUa;
+        this.surnameUa = surnameUa;
+        this.nameEn = nameEn;
+        this.surnameEn = surnameEn;
         this.email = email;
         this.password = password;
         this.role = role;
@@ -35,35 +43,35 @@ public class Student {
     }
 
     public String getNameUa() {
-        return NameUa;
+        return nameUa;
     }
 
     public void setNameUa(String nameUa) {
-        NameUa = nameUa;
+        this.nameUa = nameUa;
     }
 
     public String getSurnameUa() {
-        return SurnameUa;
+        return surnameUa;
     }
 
     public void setSurnameUa(String surnameUa) {
-        SurnameUa = surnameUa;
+        this.surnameUa = surnameUa;
     }
 
     public String getNameEn() {
-        return NameEn;
+        return nameEn;
     }
 
     public void setNameEn(String nameEn) {
-        NameEn = nameEn;
+        this.nameEn = nameEn;
     }
 
     public String getSurnameEn() {
-        return SurnameEn;
+        return surnameEn;
     }
 
     public void setSurnameEn(String surnameEn) {
-        SurnameEn = surnameEn;
+        this.surnameEn = surnameEn;
     }
 
     public String getEmail() {
@@ -97,10 +105,10 @@ public class Student {
 
         Student student = (Student) o;
 
-        if (NameUa != null ? !NameUa.equals(student.NameUa) : student.NameUa != null) return false;
-        if (SurnameUa != null ? !SurnameUa.equals(student.SurnameUa) : student.SurnameUa != null) return false;
-        if (NameEn != null ? !NameEn.equals(student.NameEn) : student.NameEn != null) return false;
-        if (SurnameEn != null ? !SurnameEn.equals(student.SurnameEn) : student.SurnameEn != null) return false;
+        if (nameUa != null ? !nameUa.equals(student.nameUa) : student.nameUa != null) return false;
+        if (surnameUa != null ? !surnameUa.equals(student.surnameUa) : student.surnameUa != null) return false;
+        if (nameEn != null ? !nameEn.equals(student.nameEn) : student.nameEn != null) return false;
+        if (surnameEn != null ? !surnameEn.equals(student.surnameEn) : student.surnameEn != null) return false;
         if (email != null ? !email.equals(student.email) : student.email != null) return false;
         if (password != null ? !password.equals(student.password) : student.password != null) return false;
         return role != null ? role.equals(student.role) : student.role == null;
@@ -108,10 +116,10 @@ public class Student {
 
     @Override
     public int hashCode() {
-        int result = NameUa != null ? NameUa.hashCode() : 0;
-        result = 31 * result + (SurnameUa != null ? SurnameUa.hashCode() : 0);
-        result = 31 * result + (NameEn != null ? NameEn.hashCode() : 0);
-        result = 31 * result + (SurnameEn != null ? SurnameEn.hashCode() : 0);
+        int result = nameUa != null ? nameUa.hashCode() : 0;
+        result = 31 * result + (surnameUa != null ? surnameUa.hashCode() : 0);
+        result = 31 * result + (nameEn != null ? nameEn.hashCode() : 0);
+        result = 31 * result + (surnameEn != null ? surnameEn.hashCode() : 0);
         result = 31 * result + (email != null ? email.hashCode() : 0);
         result = 31 * result + (password != null ? password.hashCode() : 0);
         result = 31 * result + (role != null ? role.hashCode() : 0);
@@ -122,10 +130,10 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "id=" + id +
-                ", NameUa='" + NameUa + '\'' +
-                ", SurnameUa='" + SurnameUa + '\'' +
-                ", NameEn='" + NameEn + '\'' +
-                ", SurnameEn='" + SurnameEn + '\'' +
+                ", nameUa='" + nameUa + '\'' +
+                ", surnameUa='" + surnameUa + '\'' +
+                ", nameEn='" + nameEn + '\'' +
+                ", surnameEn='" + surnameEn + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", role=" + role +
