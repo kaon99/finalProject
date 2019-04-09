@@ -15,7 +15,7 @@ public class LoginCommand implements Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-
+        request.getSession().invalidate();
         String login = request.getParameter(AttributesResourseManager.getProperty("parameter.login"));
         String password = request.getParameter(AttributesResourseManager.getProperty("parameter.password"));
 
@@ -26,7 +26,6 @@ public class LoginCommand implements Command {
             request.getSession().setAttribute("user", student);
             if (Objects.nonNull(student)) {
                 String page = CommandUtil.getUserPageByRole(student.getRole());
-                System.out.println(" Путь ===========" +page);
                 return page;
             }
 
