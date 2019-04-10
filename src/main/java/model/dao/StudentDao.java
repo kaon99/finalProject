@@ -7,4 +7,5 @@ import java.sql.SQLException;
 
 public interface StudentDao extends GenericDao<Student> {
     Student getByLoginAndPass(String login, String password) ;
+    void setSumMarks (Student student);
 }

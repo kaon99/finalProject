@@ -1,3 +1,5 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Yaroslav
@@ -27,6 +29,12 @@
       action="${pageContext.request.contextPath}/university/logout">
     <input type="hidden">
     <button type="submit">Выйти</button>
+    <div>
+        <c:out value="${requestScope.nameUa}" default="name" />
+
+
+    </div>
+
 </form>
 </body>
 </html>

@@ -1,6 +1,7 @@
 package model.entity;
 
 public class Student {
+
     private Integer id;
     private String nameUa;
     private String surnameUa;
@@ -8,6 +9,8 @@ public class Student {
     private String surnameEn;
     private String email;
     private String password;
+    private Integer sumOfaccessment;
+    private Integer specialty_id;
     private Integer role;
 
     public Student() {
@@ -23,7 +26,7 @@ public class Student {
         this.role = role;
     }
 
-    public Student(Integer id, String nameUa, String surnameUa, String nameEn, String surnameEn, String email, String password, Integer role) {
+    public Student(Integer id, String nameUa, String surnameUa, String nameEn, String surnameEn, String email, String password, Integer sumOfaccessment, Integer specialty_id, Integer role) {
         this.id = id;
         this.nameUa = nameUa;
         this.surnameUa = surnameUa;
@@ -31,7 +34,25 @@ public class Student {
         this.surnameEn = surnameEn;
         this.email = email;
         this.password = password;
+        this.sumOfaccessment = sumOfaccessment;
+        this.specialty_id = specialty_id;
         this.role = role;
+    }
+
+    public Integer getSumOfaccessment() {
+        return sumOfaccessment;
+    }
+
+    public void setSumOfaccessment(Integer sumOfaccessment) {
+        this.sumOfaccessment = sumOfaccessment;
+    }
+
+    public Integer getSpecialty_id() {
+        return specialty_id;
+    }
+
+    public void setSpecialty_id(Integer specialty_id) {
+        this.specialty_id = specialty_id;
     }
 
     public Integer getId() {
@@ -97,7 +118,6 @@ public class Student {
     public void setRole(Integer role) {
         this.role = role;
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -111,6 +131,10 @@ public class Student {
         if (surnameEn != null ? !surnameEn.equals(student.surnameEn) : student.surnameEn != null) return false;
         if (email != null ? !email.equals(student.email) : student.email != null) return false;
         if (password != null ? !password.equals(student.password) : student.password != null) return false;
+        if (sumOfaccessment != null ? !sumOfaccessment.equals(student.sumOfaccessment) : student.sumOfaccessment != null)
+            return false;
+        if (specialty_id != null ? !specialty_id.equals(student.specialty_id) : student.specialty_id != null)
+            return false;
         return role != null ? role.equals(student.role) : student.role == null;
     }
 
@@ -122,6 +146,8 @@ public class Student {
         result = 31 * result + (surnameEn != null ? surnameEn.hashCode() : 0);
         result = 31 * result + (email != null ? email.hashCode() : 0);
         result = 31 * result + (password != null ? password.hashCode() : 0);
+        result = 31 * result + (sumOfaccessment != null ? sumOfaccessment.hashCode() : 0);
+        result = 31 * result + (specialty_id != null ? specialty_id.hashCode() : 0);
         result = 31 * result + (role != null ? role.hashCode() : 0);
         return result;
     }
@@ -136,6 +162,8 @@ public class Student {
                 ", surnameEn='" + surnameEn + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", sumOfaccessment=" + sumOfaccessment +
+                ", specialty_id=" + specialty_id +
                 ", role=" + role +
                 '}';
     }

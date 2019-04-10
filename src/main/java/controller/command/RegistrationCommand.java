@@ -26,7 +26,7 @@ public class RegistrationCommand implements Command {
                 throw new WrongDataException();
             }
             String nameUa = request.getParameter(AttributesResourseManager.getProperty("parameter.name.ua"));
-            String surnameUa = request.getParameter(AttributesResourseManager.getProperty("parameter.surname"));
+            String surnameUa = request.getParameter(AttributesResourseManager.getProperty("parameter.surname.ua"));
             String nameEn = request.getParameter(AttributesResourseManager.getProperty("parameter.name.en"));
             String surnameEn = request.getParameter(AttributesResourseManager.getProperty("parameter.surname.en"));
             Integer role = Role.ABITURIENT.getRole();

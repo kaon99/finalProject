@@ -18,6 +18,8 @@ public class StudentMapper implements ObjectMapper<Student> {
         student.setEmail(rs.getString("user_email"));
         student.setPassword(rs.getString("user_email"));
         student.setRole(rs.getInt("user_role"));
+        student.setSpecialty_id(rs.getInt("user_specialty_id"));
+        student.setSumOfaccessment(rs.getInt("user_assessment_sum"));
 
         return student;
     }
