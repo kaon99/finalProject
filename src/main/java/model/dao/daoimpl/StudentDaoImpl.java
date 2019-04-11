@@ -1,10 +1,12 @@
 package model.dao.daoimpl;
 
 
+
 import model.dao.StudentDao;
 import model.dao.connectionpool.ConnectionPool;
 import model.dao.mapper.StudentMapper;
 import model.entity.Student;
+import org.apache.log4j.Logger;
 import utils.QueriesResourseManager;
 
 import java.sql.Connection;
@@ -13,9 +15,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
+
 
 public class StudentDaoImpl implements StudentDao {
+    private Logger logger = Logger.getLogger(StudentDaoImpl.class);
     private Connection connection;
 
     public StudentDaoImpl() {
@@ -36,7 +39,7 @@ public class StudentDaoImpl implements StudentDao {
             statement.setInt(8,student.getSpecialty_id());
             statement.execute();
         } catch (SQLException e) {
-            e.printStackTrace();
+           logger.error("Student don`t create ",e);
         }
     }
     @Override
@@ -152,7 +155,7 @@ Student student = null;
         try {
             connection.close();
         } catch (SQLException e) {
-            e.printStackTrace();
+
         }
     }
 }

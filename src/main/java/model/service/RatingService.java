@@ -1,4 +1,7 @@
 package model.service;
 
-public interface RatingService  {
+import model.dao.GenericDao;
+import model.entity.Rating;
+
+public interface RatingService   {
 }

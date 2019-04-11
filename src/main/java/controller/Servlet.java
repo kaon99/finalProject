@@ -34,7 +34,7 @@ public class Servlet extends HttpServlet {
         String page = command.execute(request, response);
         if (page.contains("redirect:")) {
 
-            response.sendRedirect(cleanPath(page));
+            response.sendRedirect(page.replaceAll("redirect:","/university"));
         } else {
             request.getRequestDispatcher(page).forward(request, response);
 
@@ -44,7 +44,7 @@ public class Servlet extends HttpServlet {
     }
 
     private String cleanPath(String path) {
-        return path = path.replaceAll(".*/", "");
+        return path = path.replaceAll(".*/university/", "");
     }
 
 }

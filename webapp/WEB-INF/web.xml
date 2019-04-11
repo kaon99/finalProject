@@ -39,6 +39,7 @@
     <filter-mapping>
         <filter-name>RoleFilter</filter-name>
         <url-pattern>/university/admin/*</url-pattern>
+        <url-pattern>/university/studentpage/*</url-pattern>
     </filter-mapping>
 
     <error-page>

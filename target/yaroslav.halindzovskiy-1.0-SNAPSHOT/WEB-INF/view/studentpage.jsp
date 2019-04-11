@@ -15,13 +15,13 @@
 <body>
 <h1>Student Page</h1>
 <form method="post"
-      action="${pageContext.request.contextPath}/university/departament">
+      action="${pageContext.request.contextPath}/university/studentpage/departament">
     <input type="hidden">
     <button type="submit">Кафедры</button>
 </form>
 
 <form method="post"
-      action="${pageContext.request.contextPath}/university/studentrating">
+      action="${pageContext.request.contextPath}/university/studentpage/studentrating">
     <input type="hidden">
     <button type="submit">Показать рейтинг</button>
 </form>
@@ -30,11 +30,18 @@
     <input type="hidden">
     <button type="submit">Выйти</button>
     <div>
-        <c:out value="${requestScope.nameUa}" default="name" />
+
 
 
     </div>
 
 </form>
+<div>
+<c:out value="${nameUa}"/>
+<c:out value="${surnameUa}"/>
+<c:out value="${nameEn}"/>
+<c:out value="${surnameEn}"/>
+<c:out value="${email}"/>
+</div>
 </body>
 </html>

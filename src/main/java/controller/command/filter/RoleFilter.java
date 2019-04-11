@@ -1,5 +1,6 @@
 package controller.command.filter;
 
+import controller.command.util.CommandUtil;
 import model.entity.Student;
 import model.entity.types.Role;
 import utils.AttributesResourseManager;
@@ -28,29 +29,26 @@ public class RoleFilter implements Filter {
             if (Objects.nonNull(student.getEmail()) && student.getRole().equals(Role.ADMIN.getRole())) {
                 filterChain.doFilter(servletRequest, servletResponse);
             } else {
-                servletResponse.getWriter().append("AccessDenied");
+                CommandUtil.getUserPageByRole(student.getRole());
                 return;
             }
         } else if (path.contains("studentpage")) {
             if (Objects.nonNull(student.getEmail()) && student.getRole().equals(Role.ABITURIENT.getRole())) {
                 filterChain.doFilter(servletRequest, servletResponse);
-            }else {
-                servletResponse.getWriter().append("AccessDenied");
+            } else {
+                CommandUtil.getUserPageByRole(student.getRole());
                 return;
             }
 
-            }
-        else {
-            filterChain.doFilter(servletRequest,servletResponse);
+        } else {
+            filterChain.doFilter(servletRequest, servletResponse);
         }
 
-        }
-
-
-
-
-        @Override
-        public void destroy () {
-
-        }
     }
+
+
+    @Override
+    public void destroy() {
+
+    }
+}
