@@ -1,0 +1,191 @@
+2019-04-10 21:25:34 INFO  StudentDaoImpl:35 - Find all students =%d
+2019-04-11 10:26:00 INFO  SubjectDaoImpl:35 - Subject was not created 
+java.sql.SQLException: Field 'subject_id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:32)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:18)
+	at model.service.impl.SubjectServiceImpl.create(SubjectServiceImpl.java:22)
+	at MAIN.main(MAIN.java:10)
+2019-04-11 10:26:00 INFO  SubjectServiceImpl:23 - Create subject 
+2019-04-11 10:27:24 INFO  SubjectDaoImpl:35 - Subject was not created 
+java.sql.SQLException: Field 'subject_id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:32)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:18)
+	at model.service.impl.SubjectServiceImpl.create(SubjectServiceImpl.java:22)
+	at MAIN.main(MAIN.java:10)
+2019-04-11 10:27:24 INFO  SubjectServiceImpl:23 - Create subject 
+2019-04-11 10:30:11 INFO  SubjectDaoImpl:35 - Subject was not created 
+java.sql.SQLException: Field 'subject_id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:32)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:18)
+	at model.service.impl.SubjectServiceImpl.create(SubjectServiceImpl.java:22)
+	at MAIN.main(MAIN.java:10)
+2019-04-11 10:30:11 INFO  SubjectServiceImpl:23 - Create subject 
+2019-04-11 10:30:16 INFO  SubjectDaoImpl:36 - Subject was not created 
+java.sql.SQLException: Parameter index out of range (2 > number of parameters, which is 1).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1406)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1419)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:1786)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:32)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:18)
+	at model.service.impl.SubjectServiceImpl.create(SubjectServiceImpl.java:22)
+	at MAIN.main(MAIN.java:10)
+2019-04-11 10:30:16 INFO  SubjectServiceImpl:23 - Create subject 
+2019-04-11 10:30:27 INFO  SubjectDaoImpl:36 - Subject was not created 
+java.sql.SQLException: Parameter index out of range (2 > number of parameters, which is 1).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1406)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1419)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:1786)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:32)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:18)
+	at model.service.impl.SubjectServiceImpl.create(SubjectServiceImpl.java:22)
+	at MAIN.main(MAIN.java:10)
+2019-04-11 10:30:27 INFO  SubjectServiceImpl:23 - Create subject 
+2019-04-11 10:31:35 INFO  SubjectDaoImpl:36 - Subject was not created 
+java.sql.SQLException: Parameter index out of range (2 > number of parameters, which is 1).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1406)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1419)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:1786)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:32)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:18)
+	at model.service.impl.SubjectServiceImpl.create(SubjectServiceImpl.java:22)
+	at MAIN.main(MAIN.java:10)
+2019-04-11 10:31:35 INFO  SubjectServiceImpl:23 - Create subject 
+2019-04-11 10:31:39 INFO  SubjectDaoImpl:34 - Subject create 
+2019-04-11 10:31:39 INFO  SubjectServiceImpl:23 - Create subject 
+2019-04-11 10:32:04 ERROR SubjectDaoImpl:98 - Subject delete 
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1406)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1419)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setInt(ClientPreparedStatement.java:1607)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+	at model.dao.daoimpl.SubjectDaoImpl.delete(SubjectDaoImpl.java:95)
+	at model.service.impl.SubjectServiceImpl.delete(SubjectServiceImpl.java:48)
+	at MAIN.main(MAIN.java:10)
+2019-04-11 10:34:16 INFO  SubjectServiceImpl:42 - Subject update
+2019-04-11 10:34:49 INFO  SubjectServiceImpl:42 - Subject update
+2019-04-11 10:51:21 ERROR SpecialtyDaoImpl:33 - Specialty don`t create 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.SpecialtyDaoImpl.create(SpecialtyDaoImpl.java:30)
+	at model.dao.daoimpl.SpecialtyDaoImpl.create(SpecialtyDaoImpl.java:16)
+	at MAIN.main(MAIN.java:15)
+2019-04-11 10:51:54 ERROR SpecialtyDaoImpl:33 - Specialty don`t create 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.SpecialtyDaoImpl.create(SpecialtyDaoImpl.java:30)
+	at model.dao.daoimpl.SpecialtyDaoImpl.create(SpecialtyDaoImpl.java:16)
+	at MAIN.main(MAIN.java:15)
+2019-04-11 11:02:56 ERROR SpecialtyDaoImpl:52 - Cannot find Specialty by id $d
+java.sql.SQLException: No value specified for parameter 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1041)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:96)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:96)
+	at model.dao.daoimpl.SpecialtyDaoImpl.findById(SpecialtyDaoImpl.java:44)
+	at model.dao.daoimpl.SpecialtyDaoImpl.findById(SpecialtyDaoImpl.java:18)
+	at MAIN.main(MAIN.java:15)
+2019-04-11 17:12:39 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:01:54 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:15:16 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:16:23 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:19:29 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:20:02 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:21:16 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:21:46 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:24:36 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:24:47 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:24:51 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:25:01 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:26:05 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:26:14 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:26:22 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:33:31 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:34:01 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 18:34:58 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 21:54:02 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 21:54:20 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 21:54:51 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 21:56:08 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 21:57:31 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-11 21:58:06 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:11:48 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:12:25 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:14:12 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:19:14 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:21:34 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:24:47 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:25:20 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:27:42 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:27:53 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:28:07 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:28:50 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:29:28 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:30:18 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:31:57 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:32:42 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:32:52 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:35:48 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:35:58 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:40:28 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:41:19 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:43:25 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:44:37 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 00:46:10 INFO  StudentDaoImpl:61 - get Login and password

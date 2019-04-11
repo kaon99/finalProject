@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Map;
 
-public class SpecialtyDao implements ObjectMapper<Specialty> {
+public class SpecialtyMapper implements ObjectMapper<Specialty> {
     @Override
     public Specialty extractFromResultSet(ResultSet rs) throws SQLException {
         Specialty specialty = new Specialty();

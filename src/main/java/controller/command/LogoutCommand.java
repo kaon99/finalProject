@@ -11,6 +11,6 @@ public class LogoutCommand implements Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response)  {
         request.getSession().invalidate();
-        return PageResourseManager.getProperty("redirect") + PageResourseManager.getProperty("login");
+        return PageResourseManager.getProperty("redirect").concat("/login");
     }
 }

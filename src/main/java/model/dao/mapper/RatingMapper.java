@@ -11,7 +11,6 @@ public class RatingMapper implements ObjectMapper<Rating> {
     public Rating extractFromResultSet(ResultSet rs) throws SQLException {
         Rating rating = new Rating();
         rating.setId(rs.getInt("rating_id"));
-        rating.setSpecialtyId(rs.getInt("specialty_id"));
         rating.setStudentId(rs.getInt("user_id"));
         rating.setSubjectId(rs.getInt("subject_id"));
         rating.setAssessment(rs.getInt("assessment"));

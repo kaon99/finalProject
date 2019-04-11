@@ -20,12 +20,12 @@ public class CommandFactory {
     static {
         commandMap.put("admin", new AdminCommand());
         commandMap.put("login", new LoginCommand());
-        commandMap.put("departament", new DepartamentCommand());
+        commandMap.put("studentpage/departament", new DepartamentCommand());
         commandMap.put("registration", new RegistrationCommand());
-        commandMap.put("sendnotification", new SendNotificatioinCommand());
-        commandMap.put("setmarks", new SetMarksCommand());
+        commandMap.put("admin/sendnotification", new SendNotificatioinCommand());
+        commandMap.put("admin/setmarks", new SetMarksCommand());
         commandMap.put("studentpage", new StudentPageCommand());
-        commandMap.put("studentrating", new StudentRatingCommand());
+        commandMap.put("studentpage/studentrating", new StudentRatingCommand());
         commandMap.put("main", new MainCommand());
         commandMap.put("logout", new LogoutCommand());
 

@@ -6,11 +6,17 @@ public class Rating {
     private Integer assessment;
     private Integer subjectId;
     private Integer studentId;
-    private Integer specialtyId;
+
 
 
 
     public Rating() {
+    }
+
+    public Rating(Integer assessment, Integer subjectId, Integer studentId) {
+        this.assessment = assessment;
+        this.subjectId = subjectId;
+        this.studentId = studentId;
     }
 
     public Integer getId() {
@@ -45,12 +51,23 @@ public class Rating {
         this.studentId = studentId;
     }
 
-    public Integer getSpecialtyId() {
-        return specialtyId;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Rating rating = (Rating) o;
+
+        if (assessment != null ? !assessment.equals(rating.assessment) : rating.assessment != null) return false;
+        if (subjectId != null ? !subjectId.equals(rating.subjectId) : rating.subjectId != null) return false;
+        return studentId != null ? studentId.equals(rating.studentId) : rating.studentId == null;
     }
 
-    public void setSpecialtyId(int specialtyId) {
-        this.specialtyId = specialtyId;
+    @Override
+    public int hashCode() {
+        int result = assessment != null ? assessment.hashCode() : 0;
+        result = 31 * result + (subjectId != null ? subjectId.hashCode() : 0);
+        result = 31 * result + (studentId != null ? studentId.hashCode() : 0);
+        return result;
     }
-
 }

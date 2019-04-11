@@ -1,5 +1,6 @@
 package controller.command.filter;
 
+import controller.command.util.CommandUtil;
 import model.entity.Student;
 import model.entity.types.Role;
 import utils.AttributesResourseManager;
@@ -19,21 +20,31 @@ public class RoleFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        HttpServletRequest req = (HttpServletRequest)servletRequest;
-        HttpServletResponse resp = (HttpServletResponse)servletResponse;
+        HttpServletRequest req = (HttpServletRequest) servletRequest;
+        HttpServletResponse resp = (HttpServletResponse) servletResponse;
         HttpSession session = req.getSession(false);
-        Student student = (Student)session.getAttribute(AttributesResourseManager.getProperty("parameter.user"));
-        if (Objects.nonNull(student)) {
-            int accessLevel = student.getRole();
-            if (accessLevel == Role.ADMIN.getRole()) {
-                filterChain.doFilter(req, resp);
+        Student student = (Student) session.getAttribute(AttributesResourseManager.getProperty("parameter.user"));
+        String path = req.getRequestURI();
+        if (path.contains("admin")) {
+            if (Objects.nonNull(student.getEmail()) && student.getRole().equals(Role.ADMIN.getRole())) {
+                filterChain.doFilter(servletRequest, servletResponse);
             } else {
-                resp.sendRedirect("/university/main");
+                CommandUtil.getUserPageByRole(student.getRole());
+                return;
             }
+        } else if (path.contains("studentpage")) {
+            if (Objects.nonNull(student.getEmail()) && student.getRole().equals(Role.ABITURIENT.getRole())) {
+                filterChain.doFilter(servletRequest, servletResponse);
+            } else {
+                CommandUtil.getUserPageByRole(student.getRole());
+                return;
+            }
+
+        } else {
+            filterChain.doFilter(servletRequest, servletResponse);
         }
 
     }
-
 
 
     @Override

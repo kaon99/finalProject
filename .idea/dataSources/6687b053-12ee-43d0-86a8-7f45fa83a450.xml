@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.14">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.15">
     <root id="1">
       <ServerVersion>8.0.15</ServerVersion>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1119,195 +1119,205 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="282" parent="2" name="departament"/>
-    <table id="283" parent="2" name="rating"/>
-    <table id="284" parent="2" name="specialty"/>
-    <table id="285" parent="2" name="subject"/>
+    <table id="282" parent="2" name="rating"/>
+    <table id="283" parent="2" name="specialty"/>
+    <table id="284" parent="2" name="subject"/>
+    <table id="285" parent="2" name="subject_has_specialty"/>
     <table id="286" parent="2" name="user"/>
-    <column id="287" parent="282" name="departament_id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="288" parent="282" name="specialty_specialty_id">
-      <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="289" parent="282" name="subject_subject_id">
-      <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="290" parent="282" name="fk_specialty_has_subject_specialty_idx">
-      <ColNames>specialty_specialty_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="291" parent="282" name="fk_specialty_has_subject_subject1_idx">
-      <ColNames>subject_subject_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="292" parent="282" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>departament_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="293" parent="282" name="fk_specialty_has_subject_specialty">
-      <ColNames>specialty_specialty_id</ColNames>
-      <RefSchemaName>final_project</RefSchemaName>
-      <RefTableName>specialty</RefTableName>
-      <RefColNames>specialty_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="294" parent="282" name="fk_specialty_has_subject_subject1">
-      <ColNames>subject_subject_id</ColNames>
-      <RefSchemaName>final_project</RefSchemaName>
-      <RefTableName>subject</RefTableName>
-      <RefColNames>subject_id</RefColNames>
-    </foreign-key>
-    <column id="295" parent="283" name="rating_id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="296" parent="283" name="assessment">
-      <Position>2</Position>
-      <DataType>int(3)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="297" parent="283" name="subject_id">
-      <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="298" parent="283" name="specialty_id">
-      <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="299" parent="283" name="user_id">
-      <Position>5</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="300" parent="283" name="fk_raiting_subject1_idx">
-      <ColNames>subject_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="301" parent="283" name="fk_raiting_specialty1_idx">
-      <ColNames>specialty_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="302" parent="283" name="fk_raiting_user1_idx">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="303" parent="283" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>rating_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="304" parent="283" name="rating_user_user_id_fk">
-      <ColNames>rating_id</ColNames>
-      <RefSchemaName>final_project</RefSchemaName>
-      <RefTableName>user</RefTableName>
-      <RefColNames>user_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="305" parent="283" name="fk_raiting_subject1">
-      <ColNames>subject_id</ColNames>
-      <RefSchemaName>final_project</RefSchemaName>
-      <RefTableName>subject</RefTableName>
-      <RefColNames>subject_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="306" parent="283" name="fk_raiting_specialty1">
-      <ColNames>specialty_id</ColNames>
-      <RefSchemaName>final_project</RefSchemaName>
-      <RefTableName>specialty</RefTableName>
-      <RefColNames>specialty_id</RefColNames>
-    </foreign-key>
-    <column id="307" parent="284" name="specialty_id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="308" parent="284" name="title">
-      <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="309" parent="284" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>specialty_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="310" parent="285" name="subject_id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="311" parent="285" name="name">
-      <Position>2</Position>
-      <DataType>varchar(45)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="312" parent="285" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>subject_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="313" parent="286" name="user_id">
+    <column id="287" parent="282" name="rating_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="286" name="user_name_ua">
+    <column id="288" parent="282" name="assessment">
+      <Position>2</Position>
+      <DataType>int(3)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="289" parent="282" name="subject_id">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="290" parent="282" name="user_id">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="291" parent="282" name="fk_raiting_subject1_idx">
+      <ColNames>subject_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="292" parent="282" name="fk_raiting_user1_idx">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="293" parent="282" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>rating_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="294" parent="282" name="fk_raiting_subject1">
+      <ColNames>subject_id</ColNames>
+      <RefSchemaName>final_project</RefSchemaName>
+      <RefTableName>subject</RefTableName>
+      <RefColNames>subject_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="295" parent="282" name="rating_user_user_id_fk">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>final_project</RefSchemaName>
+      <RefTableName>user</RefTableName>
+      <RefColNames>user_id</RefColNames>
+    </foreign-key>
+    <column id="296" parent="283" name="specialty_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="297" parent="283" name="title">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="298" parent="283" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>specialty_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="299" parent="284" name="subject_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="300" parent="284" name="name">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="315" parent="286" name="user_surname_ua">
+    <key id="301" parent="284" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>subject_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="302" parent="285" name="subject_subject_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="303" parent="285" name="specialty_specialty_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="304" parent="285" name="fk_subject_has_specialty_subject1_idx">
+      <ColNames>subject_subject_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="305" parent="285" name="fk_subject_has_specialty_specialty1_idx">
+      <ColNames>specialty_specialty_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="306" parent="285" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>subject_subject_id
+specialty_specialty_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="307" parent="285" name="fk_subject_has_specialty_subject1">
+      <ColNames>subject_subject_id</ColNames>
+      <RefSchemaName>final_project</RefSchemaName>
+      <RefTableName>subject</RefTableName>
+      <RefColNames>subject_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="308" parent="285" name="fk_subject_has_specialty_specialty1">
+      <ColNames>specialty_specialty_id</ColNames>
+      <RefSchemaName>final_project</RefSchemaName>
+      <RefTableName>specialty</RefTableName>
+      <RefColNames>specialty_id</RefColNames>
+    </foreign-key>
+    <column id="309" parent="286" name="user_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="310" parent="286" name="user_name_ua">
+      <Position>2</Position>
+      <DataType>varchar(45)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="311" parent="286" name="user_surname_ua">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="316" parent="286" name="user_name_en">
+    <column id="312" parent="286" name="user_name_en">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="317" parent="286" name="user_surname_en">
+    <column id="313" parent="286" name="user_surname_en">
       <Position>5</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="318" parent="286" name="user_email">
+    <column id="314" parent="286" name="user_email">
       <Position>6</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="319" parent="286" name="user_password">
+    <column id="315" parent="286" name="user_password">
       <Position>7</Position>
       <DataType>varchar(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="320" parent="286" name="user_role">
+    <column id="316" parent="286" name="user_role">
       <Position>8</Position>
       <DataType>int(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
+    <column id="317" parent="286" name="user_specialty_id">
+      <Position>9</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="318" parent="286" name="user_assessment_sum">
+      <Position>10</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="319" parent="286" name="user_user_email_uindex">
+      <ColNames>user_email</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <index id="320" parent="286" name="user_specialty_specialty_id_fk">
+      <ColNames>user_specialty_id</ColNames>
+      <Type>btree</Type>
+    </index>
     <key id="321" parent="286" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>user_id</ColNames>
       <Primary>1</Primary>
     </key>
+    <key id="322" parent="286" name="user_user_email_uindex">
+      <ColNames>user_email</ColNames>
+      <UnderlyingIndexName>user_user_email_uindex</UnderlyingIndexName>
+    </key>
+    <foreign-key id="323" parent="286" name="user_specialty_specialty_id_fk">
+      <ColNames>user_specialty_id</ColNames>
+      <RefSchemaName>final_project</RefSchemaName>
+      <RefTableName>specialty</RefTableName>
+      <RefColNames>specialty_id</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>
