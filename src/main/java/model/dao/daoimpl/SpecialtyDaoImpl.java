@@ -74,12 +74,24 @@ public class SpecialtyDaoImpl implements SpecialtyDao {
 
     @Override
     public void update(Specialty entity) {
-
+        try{
+            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.update"));
+        statement.setString(1,entity.getTitle());
+        statement.setInt(2,entity.getId());
+        statement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void delete(int id) {
+try{
+    PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.delete"));
 
+} catch (SQLException e) {
+    e.printStackTrace();
+}
     }
 
     @Override

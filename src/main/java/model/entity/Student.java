@@ -26,7 +26,7 @@ public class Student {
         this.role = role;
     }
 
-    public Student(Integer id, String nameUa, String surnameUa, String nameEn, String surnameEn, String email, String password, Integer sumOfaccessment, Integer specialty_id, Integer role) {
+    public Student(Integer id, String nameUa, String surnameUa, String nameEn, String surnameEn, String email, Integer sumOfaccessment, Integer specialty_id, Integer role) {
         this.id = id;
         this.nameUa = nameUa;
         this.surnameUa = surnameUa;
