@@ -37,7 +37,6 @@ public class StudentDaoImpl implements StudentDao {
             statement.setString(5,student.getEmail());
             statement.setString(6,student.getPassword());
             statement.setInt(7,student.getRole());
-            statement.setInt(8,student.getSpecialty_id());
             statement.execute();
         } catch (SQLException e) {
            logger.error("Student don`t create ",e);
