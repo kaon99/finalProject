@@ -88,8 +88,14 @@ public class SpecialtyDaoImpl implements SpecialtyDao {
     public void delete(int id) {
 try{
     PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.delete"));
+<<<<<<< HEAD
 statement.setInt(1,id);
 statement.executeUpdate();
+=======
+    statement.setInt(1,id);
+    statement.executeUpdate();
+
+>>>>>>> web
 } catch (SQLException e) {
     e.printStackTrace();
 }

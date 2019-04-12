@@ -189,6 +189,42 @@ java.sql.SQLException: No value specified for parameter 1
 2019-04-12 00:43:25 INFO  StudentDaoImpl:61 - get Login and password
 2019-04-12 00:44:37 INFO  StudentDaoImpl:61 - get Login and password
 2019-04-12 00:46:10 INFO  StudentDaoImpl:61 - get Login and password
+<<<<<<< HEAD
 2019-04-12 19:18:08 INFO  RatingDaoImpl:96 - Rating don`t delete 
 2019-04-12 19:18:54 INFO  RatingDaoImpl:96 - Rating don`t delete 
 2019-04-12 19:19:57 INFO  RatingDaoImpl:96 - Rating don`t delete 
+=======
+2019-04-12 23:44:50 INFO  RatingDaoImpl:54 - Rating do not find by id 
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1406)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1419)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setInt(ClientPreparedStatement.java:1607)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+	at model.dao.daoimpl.RatingDaoImpl.findById(RatingDaoImpl.java:45)
+	at model.dao.daoimpl.RatingDaoImpl.findById(RatingDaoImpl.java:21)
+	at model.service.impl.RatingServiceImpl.findById(RatingServiceImpl.java:27)
+	at MAIN.main(MAIN.java:13)
+2019-04-12 23:44:50 INFO  RatingServiceImpl:28 - Find rating by id 
+2019-04-12 23:46:50 INFO  RatingDaoImpl:54 - Rating do not find by id 
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1406)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1419)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setInt(ClientPreparedStatement.java:1607)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+	at model.dao.daoimpl.RatingDaoImpl.findById(RatingDaoImpl.java:45)
+	at model.dao.daoimpl.RatingDaoImpl.findById(RatingDaoImpl.java:21)
+	at model.service.impl.RatingServiceImpl.findById(RatingServiceImpl.java:27)
+	at MAIN.main(MAIN.java:13)
+2019-04-12 23:46:50 INFO  RatingServiceImpl:28 - Find rating by id 
+2019-04-12 23:47:04 INFO  RatingServiceImpl:28 - Find rating by id 
+>>>>>>> web

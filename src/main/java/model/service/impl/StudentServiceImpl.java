@@ -46,7 +46,7 @@ logger.info("Create user = %d");
 
     @Override
     public void delete(int id) {
-    logger.info("delect user");
+    logger.info("delece user");
 studentDao.delete(id);
     }
 

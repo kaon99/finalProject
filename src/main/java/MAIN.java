@@ -1,13 +1,16 @@
 
 import model.dao.StudentDao;
 import model.dao.daoimpl.StudentDaoImpl;
+import model.entity.Rating;
 import model.entity.Student;
+import model.service.RatingService;
+import model.service.impl.RatingServiceImpl;
 
 
 public class MAIN {
     public static void main(String[] args) {
-        StudentDao studentDao = new StudentDaoImpl();
-        Student student = studentDao.findById(1);
-        studentDao.setSumMarks(student);
+        RatingService ratingService = new RatingServiceImpl();
+         Rating rating  = ratingService.findById(1);
+        System.out.println(rating);
     }
 }
