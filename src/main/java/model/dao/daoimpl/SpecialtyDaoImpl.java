@@ -16,6 +16,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static javax.swing.text.html.HTML.Tag.HEAD;
+
 public class SpecialtyDaoImpl implements SpecialtyDao {
     private Logger logger = Logger.getLogger(SpecialtyDaoImpl.class);
 
@@ -88,14 +90,14 @@ public class SpecialtyDaoImpl implements SpecialtyDao {
     public void delete(int id) {
 try{
     PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.delete"));
-<<<<<<< HEAD
+
 statement.setInt(1,id);
 statement.executeUpdate();
-=======
+
     statement.setInt(1,id);
     statement.executeUpdate();
 
->>>>>>> web
+
 } catch (SQLException e) {
     e.printStackTrace();
 }
