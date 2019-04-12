@@ -88,7 +88,8 @@ public class SpecialtyDaoImpl implements SpecialtyDao {
     public void delete(int id) {
 try{
     PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.delete"));
-
+statement.setInt(1,id);
+statement.executeUpdate();
 } catch (SQLException e) {
     e.printStackTrace();
 }
@@ -96,6 +97,10 @@ try{
 
     @Override
     public void close() {
-
+        try {
+            connection.close();
+        } catch (SQLException e) {
+            logger.error("Close ", e);
+        }
     }
 }
