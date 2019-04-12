@@ -5,6 +5,7 @@ package model.dao.daoimpl;
 import model.dao.StudentDao;
 import model.dao.connectionpool.ConnectionPool;
 import model.dao.mapper.StudentMapper;
+import model.entity.Rating;
 import model.entity.Student;
 import org.apache.log4j.Logger;
 import utils.QueriesResourseManager;
@@ -70,7 +71,12 @@ public class StudentDaoImpl implements StudentDao {
     @Override
     public void setSumMarks(Student student) {
         try {
-            PreparedStatement statement = connection.prepareStatement("update user set user_assessment_sum where ");
+            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.set.sum"));
+            statement.setInt(1,student.getSpecialty_id());
+            statement.setInt(2,student.getId());
+            ResultSet resultSet = statement.executeQuery();
+            System.out.println(resultSet.getInt("SUM(rating.assessment)"));
+
         } catch (SQLException e) {
             e.printStackTrace();
         }

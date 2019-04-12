@@ -77,7 +77,7 @@ public class SubjectDaoImpl  implements SubjectDao {
     @Override
     public void update(Subject entity) {
         try {
-           PreparedStatement  statement= statement = connection.prepareStatement(QueriesResourseManager.getProperty("subject.update"));
+           PreparedStatement  statement= connection.prepareStatement(QueriesResourseManager.getProperty("subject.update"));
             statement.setString(1, entity.getName());
             statement.setInt(2, entity.getId());
             statement.execute();
