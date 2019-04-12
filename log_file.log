@@ -189,3 +189,6 @@ java.sql.SQLException: No value specified for parameter 1
 2019-04-12 00:43:25 INFO  StudentDaoImpl:61 - get Login and password
 2019-04-12 00:44:37 INFO  StudentDaoImpl:61 - get Login and password
 2019-04-12 00:46:10 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-12 19:18:08 INFO  RatingDaoImpl:96 - Rating don`t delete 
+2019-04-12 19:18:54 INFO  RatingDaoImpl:96 - Rating don`t delete 
+2019-04-12 19:19:57 INFO  RatingDaoImpl:96 - Rating don`t delete 
