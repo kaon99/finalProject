@@ -11,6 +11,6 @@ public class MAIN {
     public static void main(String[] args) {
         StudentService studentService = new StudentServiceImpl();
 
-        studentService.setMarks(2);
+        System.out.println( studentService.findByEmail("user@gmail.com"));
     }
 }

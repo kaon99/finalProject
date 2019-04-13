@@ -68,11 +68,11 @@ public class StudentDaoImpl implements StudentDao {
     }
 
     @Override
-    public void findSumMarks(Student student) {
+    public void setSumMarks(Student student) {
 
         try {
             connection.setAutoCommit(false);
-            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.set.sum"));
+            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.find.sum"));
             statement.setInt(1, student.getSpecialty_id());
             statement.setInt(2, student.getId());
             ResultSet resultSet = statement.executeQuery();
@@ -83,7 +83,7 @@ public class StudentDaoImpl implements StudentDao {
             }
             if (Objects.isNull(sumOfResult)){
                 connection.rollback(); }
-            PreparedStatement setGradeStatement = connection.prepareStatement(" UPDATE user  set user_assessment_sum  = ? where user_id = ?");
+            PreparedStatement setGradeStatement = connection.prepareStatement(QueriesResourseManager.getProperty("user.set.sum"));
             setGradeStatement.setInt(1, sumOfResult);
             setGradeStatement.setInt(2, student.getId());
             setGradeStatement.execute();
@@ -95,6 +95,27 @@ public class StudentDaoImpl implements StudentDao {
 
         }
 
+    }
+
+    @Override
+    public Student findByEmail(String email) {
+        try {
+            PreparedStatement statement = connection.prepareStatement
+                    (QueriesResourseManager.getProperty("user.select.by.email"));
+            statement.setString(1, email);
+            ResultSet resultSet = statement.executeQuery();
+            Student student = null;
+            if (resultSet.next()) {
+                StudentMapper studentMapper = new StudentMapper();
+                student = studentMapper.extractFromResultSet(resultSet);
+            }
+
+
+            return student;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException("Cannot get user", e);
+        }
     }
 
 

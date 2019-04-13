@@ -54,7 +54,14 @@ studentDao.delete(id);
     public void setMarks(int id) {
     logger.info("set marks");
     Student student = studentDao.findById(id);
-studentDao.findSumMarks(student);
+studentDao.setSumMarks(student);
+    }
+
+    @Override
+    public Student findByEmail(String email) {
+        logger.info("find email");
+        Student student = studentDao.findByEmail(email);
+        return student;
     }
 
     @Override

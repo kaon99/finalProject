@@ -633,3 +633,5 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '4' for key '
 2019-04-13 11:04:53 INFO  StudentDaoImpl:61 - get Login and password
 2019-04-13 17:54:51 INFO  StudentDaoImpl:55 - set marks
 2019-04-13 17:55:34 INFO  StudentDaoImpl:55 - set marks
+2019-04-13 18:40:40 INFO  StudentDaoImpl:62 - find email
+2019-04-13 18:47:30 INFO  StudentDaoImpl:69 - get Login and password
