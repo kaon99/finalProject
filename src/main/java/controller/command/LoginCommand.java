@@ -28,8 +28,11 @@ public class LoginCommand implements Command {
                 String page = CommandUtil.getUserPageByRole(student.getRole());
                 return page;
             }
-
+            else  {
+                request.setAttribute("notFound", true);
+            }
         }
+
         return PageResourseManager.getProperty("login");
     }
 }

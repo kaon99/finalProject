@@ -2,11 +2,10 @@ package controller.command;
 
 import controller.command.admins.AdminCommand;
 import controller.command.admins.SendNotificatioinCommand;
-import controller.command.admins.SetMarksCommand;
+import controller.command.admins.SetGradeCommand;
 import controller.command.students.DepartamentCommand;
 import controller.command.students.StudentPageCommand;
 import controller.command.students.StudentRatingCommand;
-import utils.PageResourseManager;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,7 +22,7 @@ public class CommandFactory {
         commandMap.put("studentpage/departament", new DepartamentCommand());
         commandMap.put("registration", new RegistrationCommand());
         commandMap.put("admin/sendnotification", new SendNotificatioinCommand());
-        commandMap.put("admin/setmarks", new SetMarksCommand());
+        commandMap.put("admin/setgrade", new SetGradeCommand());
         commandMap.put("studentpage", new StudentPageCommand());
         commandMap.put("studentpage/studentrating", new StudentRatingCommand());
         commandMap.put("main", new MainCommand());

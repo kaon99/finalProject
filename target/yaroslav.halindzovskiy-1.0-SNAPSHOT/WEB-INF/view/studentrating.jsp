@@ -1,3 +1,5 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
+<fmt:setBundle basename="text"/>
 <%--
   Created by IntelliJ IDEA.
   User: Yaroslav
@@ -15,7 +17,7 @@
 <form method="post"
       action="${pageContext.request.contextPath}//university/logout">
     <input type="hidden">
-    <button type="submit">Выйти</button>
+    <button type="submit"><fmt:message key="text.logout"/></button>
 </form>
 </body>
 </html>

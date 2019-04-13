@@ -1,11 +1,9 @@
 package model.dao.daoimpl;
 
 
-
 import model.dao.StudentDao;
 import model.dao.connectionpool.ConnectionPool;
 import model.dao.mapper.StudentMapper;
-import model.entity.Rating;
 import model.entity.Student;
 import org.apache.log4j.Logger;
 import utils.QueriesResourseManager;
@@ -16,6 +14,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 
 public class StudentDaoImpl implements StudentDao {
@@ -28,24 +27,25 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public void create(Student student) {
-     try {
+        try {
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("insert.user"));
-            statement.setString(1,student.getNameUa());
-            statement.setString(2,student.getSurnameUa());
-            statement.setString(3,student.getNameEn());
-            statement.setString(4,student.getSurnameEn());
-            statement.setString(5,student.getEmail());
-            statement.setString(6,student.getPassword());
-            statement.setInt(7,student.getRole());
+            statement.setString(1, student.getNameUa());
+            statement.setString(2, student.getSurnameUa());
+            statement.setString(3, student.getNameEn());
+            statement.setString(4, student.getSurnameEn());
+            statement.setString(5, student.getEmail());
+            statement.setString(6, student.getPassword());
+            statement.setInt(7, student.getRole());
             statement.execute();
         } catch (SQLException e) {
-           logger.error("Student don`t create ",e);
+            logger.error("Student don`t create ", e);
         }
     }
+
     @Override
     public Student getByLoginAndPass(String login, String password) {
 
-        try  {
+        try {
             PreparedStatement statement = connection.prepareStatement
                     (QueriesResourseManager.getProperty("select.by.login.password"));
             statement.setString(1, login);
@@ -68,16 +68,31 @@ public class StudentDaoImpl implements StudentDao {
     }
 
     @Override
-    public void setSumMarks(Student student) {
+    public void findSumMarks(Student student) {
+
         try {
+            connection.setAutoCommit(false);
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.set.sum"));
-            statement.setInt(1,student.getSpecialty_id());
-            statement.setInt(2,student.getId());
+            statement.setInt(1, student.getSpecialty_id());
+            statement.setInt(2, student.getId());
             ResultSet resultSet = statement.executeQuery();
-            System.out.println(resultSet.getInt("SUM(rating.assessment)"));
+            Integer sumOfResult = null;
+            if (resultSet.next()) {
+                sumOfResult = resultSet.getInt("SUM(rating.assessment)");
+
+            }
+            if (Objects.isNull(sumOfResult)){
+                connection.rollback(); }
+            PreparedStatement setGradeStatement = connection.prepareStatement(" UPDATE user  set user_assessment_sum  = ? where user_id = ?");
+            setGradeStatement.setInt(1, sumOfResult);
+            setGradeStatement.setInt(2, student.getId());
+            setGradeStatement.execute();
+            connection.commit();
+            connection.setAutoCommit(true);
 
         } catch (SQLException e) {
             e.printStackTrace();
+
         }
 
     }
@@ -85,36 +100,36 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public Student findById(int id) {
-try {
-PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.find.by.id"));
-statement.setInt(1,id);
-ResultSet resultSet = statement.executeQuery();
-Student student = null;
-    if (resultSet.next()) {
-        StudentMapper studentMapper = new StudentMapper();
-        student = studentMapper.extractFromResultSet(resultSet);
-    }
-    return student;
+        try {
+            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.find.by.id"));
+            statement.setInt(1, id);
+            ResultSet resultSet = statement.executeQuery();
+            Student student = null;
+            if (resultSet.next()) {
+                StudentMapper studentMapper = new StudentMapper();
+                student = studentMapper.extractFromResultSet(resultSet);
+            }
+            return student;
 
 
-} catch (SQLException e) {
-    e.printStackTrace();
-}
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return null;
     }
 
     @Override
     public List<Student> findAll() {
-        try{
+        try {
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.find.all"));
             ResultSet resultSet = statement.executeQuery();
             List<Student> students = new ArrayList<>();
-           while (resultSet.next()){
-               students.add(new StudentMapper().extractFromResultSet(resultSet));
+            while (resultSet.next()) {
+                students.add(new StudentMapper().extractFromResultSet(resultSet));
 
 
-           }
-           return students;
+            }
+            return students;
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -123,18 +138,18 @@ Student student = null;
 
     @Override
     public void update(Student student) {
-        try{
+        try {
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.update"));
-            statement.setString(1,student.getNameUa());
-            statement.setString(2,student.getSurnameUa());
-            statement.setString(3,student.getNameEn());
-            statement.setString(4,student.getSurnameEn());
-            statement.setString(5,student.getEmail());
-            statement.setString(6,student.getPassword());
-            statement.setInt(7,student.getRole());
-           // statement.setInt(8,student.getSpecialty_id());
-            statement.setInt(8,student.getSumOfaccessment());
-            statement.setInt(9,student.getId());
+            statement.setString(1, student.getNameUa());
+            statement.setString(2, student.getSurnameUa());
+            statement.setString(3, student.getNameEn());
+            statement.setString(4, student.getSurnameEn());
+            statement.setString(5, student.getEmail());
+            statement.setString(6, student.getPassword());
+            statement.setInt(7, student.getRole());
+            // statement.setInt(8,student.getSpecialty_id());
+            statement.setInt(8, student.getSumOfaccessment());
+            statement.setInt(9, student.getId());
             statement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -144,12 +159,11 @@ Student student = null;
 
     @Override
     public void delete(int id) {
-        try{
-             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.delete"));
-                statement.setInt(1, id);
-                statement.executeUpdate();
-            }
-        catch (SQLException e) {
+        try {
+            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.delete"));
+            statement.setInt(1, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 

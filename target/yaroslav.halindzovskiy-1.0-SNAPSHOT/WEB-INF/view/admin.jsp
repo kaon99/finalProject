@@ -13,7 +13,7 @@
 <body>
 
 <form role="form" method="post"
-      action="${pageContext.request.contextPath}/university/admin/setmarks">
+      action="${pageContext.request.contextPath}/university/admin/setgrade">
     <input type="hidden" name="conference_id" value="${conference.id}">
     <button type="submit" >Выставить оценки</button>
 </form>

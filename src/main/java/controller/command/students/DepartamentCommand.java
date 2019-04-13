@@ -1,6 +1,7 @@
 package controller.command.students;
 
 import controller.command.Command;
+import utils.PageResourseManager;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -10,6 +11,6 @@ public class DepartamentCommand implements Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        return "/WEB-INF/view/departament.jsp";
+        return PageResourseManager.getProperty("studentpage/departament");
     }
 }

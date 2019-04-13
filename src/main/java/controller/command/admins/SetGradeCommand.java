@@ -7,9 +7,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class SetMarksCommand implements Command {
+public class SetGradeCommand implements Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        return PageResourseManager.getProperty("admin/setmarks");
+        return PageResourseManager.getProperty("admin/setgrade");
     }
 }

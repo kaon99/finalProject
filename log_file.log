@@ -222,3 +222,414 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 	at MAIN.main(MAIN.java:13)
 2019-04-12 23:46:50 INFO  RatingServiceImpl:28 - Find rating by id 
 2019-04-12 23:47:04 INFO  RatingServiceImpl:28 - Find rating by id 
+2019-04-13 00:02:11 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:02:23 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:07:53 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:07:59 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:08:02 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:22:38 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:30:53 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:30:57 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:31:01 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:31:02 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:31:05 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:31:06 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:31:09 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:33:23 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:33:30 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 00:41:53 INFO  RegistrationCommand:40 - Registration Error
+model.exception.WrongDataException
+	at controller.command.RegistrationCommand.execute(RegistrationCommand.java:28)
+	at controller.Servlet.processRequest(Servlet.java:34)
+	at controller.Servlet.doPost(Servlet.java:24)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.AuthenticationFilter.doFilter(AuthenticationFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.EncodingFilter.doFilter(EncodingFilter.java:17)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-13 00:42:29 INFO  RegistrationCommand:40 - Registration Error
+model.exception.WrongDataException
+	at controller.command.RegistrationCommand.execute(RegistrationCommand.java:28)
+	at controller.Servlet.processRequest(Servlet.java:34)
+	at controller.Servlet.doPost(Servlet.java:24)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.AuthenticationFilter.doFilter(AuthenticationFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.EncodingFilter.doFilter(EncodingFilter.java:17)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-13 00:43:19 INFO  RegistrationCommand:40 - Registration Error
+model.exception.WrongDataException
+	at controller.command.RegistrationCommand.execute(RegistrationCommand.java:28)
+	at controller.Servlet.processRequest(Servlet.java:34)
+	at controller.Servlet.doPost(Servlet.java:24)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.AuthenticationFilter.doFilter(AuthenticationFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.EncodingFilter.doFilter(EncodingFilter.java:17)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-13 00:48:17 INFO  RegistrationCommand:40 - Registration Error
+model.exception.WrongDataException
+	at controller.command.RegistrationCommand.execute(RegistrationCommand.java:28)
+	at controller.Servlet.processRequest(Servlet.java:34)
+	at controller.Servlet.doPost(Servlet.java:24)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.AuthenticationFilter.doFilter(AuthenticationFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.EncodingFilter.doFilter(EncodingFilter.java:17)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-13 00:53:18 INFO  RegistrationCommand:40 - Registration Error
+model.exception.WrongDataException
+	at controller.command.RegistrationCommand.execute(RegistrationCommand.java:28)
+	at controller.Servlet.processRequest(Servlet.java:34)
+	at controller.Servlet.doPost(Servlet.java:24)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.AuthenticationFilter.doFilter(AuthenticationFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.EncodingFilter.doFilter(EncodingFilter.java:17)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-13 00:54:08 INFO  RegistrationCommand:40 - Registration Error
+model.exception.WrongDataException
+	at controller.command.RegistrationCommand.execute(RegistrationCommand.java:28)
+	at controller.Servlet.processRequest(Servlet.java:34)
+	at controller.Servlet.doPost(Servlet.java:24)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.AuthenticationFilter.doFilter(AuthenticationFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.EncodingFilter.doFilter(EncodingFilter.java:17)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-13 01:09:40 ERROR StudentDaoImpl:42 - Student don`t create 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value ('TEST','erere',' erwer werg',' refergeg',' sdfsdf','123',2)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:40)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:21)
+	at model.service.impl.StudentServiceImpl.create(StudentServiceImpl.java:21)
+	at MAIN.main(MAIN.java:15)
+2019-04-13 01:09:40 INFO  StudentDaoImpl:22 - Create user = %d
+2019-04-13 01:13:48 ERROR StudentDaoImpl:42 - Student don`t create 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value ('TEST','erere',' erwer werg',' refergeg',' sdfsdf','123',2)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:40)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:21)
+	at model.service.impl.StudentServiceImpl.create(StudentServiceImpl.java:21)
+	at MAIN.main(MAIN.java:15)
+2019-04-13 01:13:48 INFO  StudentDaoImpl:22 - Create user = %d
+2019-04-13 01:13:50 ERROR StudentDaoImpl:42 - Student don`t create 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value ('TEST','erere',' erwer werg',' refergeg',' sdfsdf','123',2)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:40)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:21)
+	at model.service.impl.StudentServiceImpl.create(StudentServiceImpl.java:21)
+	at MAIN.main(MAIN.java:15)
+2019-04-13 01:13:50 INFO  StudentDaoImpl:22 - Create user = %d
+2019-04-13 01:16:14 ERROR StudentDaoImpl:42 - Student don`t create 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value ('QQQQQQQQ','QQQQQQQ','QQQQQQQ','QQQQQQQQ','QQQQQQ','QQQQQQ',2)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:40)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:21)
+	at model.service.impl.StudentServiceImpl.create(StudentServiceImpl.java:21)
+	at MAIN.main(MAIN.java:15)
+2019-04-13 01:16:14 INFO  StudentDaoImpl:22 - Create user = %d
+2019-04-13 01:23:10 ERROR StudentDaoImpl:42 - Student don`t create 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value ('QQQQQQQQ','QQQQQQQ','QQQQQQQ','QQQQQQQQ','QQQQQQ','QQQQQQ',2)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:40)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:21)
+	at model.service.impl.StudentServiceImpl.create(StudentServiceImpl.java:21)
+	at MAIN.main(MAIN.java:15)
+2019-04-13 01:23:10 INFO  StudentDaoImpl:22 - Create user = %d
+2019-04-13 01:25:35 ERROR StudentDaoImpl:42 - Student don`t create 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value ('QQQQQQQQ','QQQQQQQ','QQQQQQQ','QQQQQQQQ','QQQQQQ','QQQQQQ',2)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:40)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:21)
+	at model.service.impl.StudentServiceImpl.create(StudentServiceImpl.java:21)
+	at MAIN.main(MAIN.java:15)
+2019-04-13 01:25:35 INFO  StudentDaoImpl:22 - Create user = %d
+2019-04-13 01:28:06 INFO  StudentDaoImpl:35 - Find all students 
+2019-04-13 01:30:46 INFO  StudentDaoImpl:35 - Find all students 
+2019-04-13 01:34:36 INFO  RatingServiceImpl:22 - Rating user = %d
+2019-04-13 01:39:27 INFO  RatingServiceImpl:22 - Rating user = %d
+2019-04-13 01:40:01 INFO  RatingServiceImpl:22 - Rating user = %d
+2019-04-13 01:48:38 ERROR StudentDaoImpl:42 - Student don`t create 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'value ('QQQQQQQQ','QQQQQQQ','QQQQQQQ','QQQQQQQQ','QQQQQQ','QQQQQQ',2)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:40)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:21)
+	at model.service.impl.StudentServiceImpl.create(StudentServiceImpl.java:21)
+	at MAIN.main(MAIN.java:15)
+2019-04-13 01:48:38 INFO  StudentDaoImpl:22 - Create user = %d
+2019-04-13 01:52:24 INFO  StudentDaoImpl:22 - Create user = %d
+2019-04-13 01:57:34 INFO  SubjectDaoImpl:36 - Subject was not created 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:33)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:18)
+	at model.service.impl.SubjectServiceImpl.create(SubjectServiceImpl.java:22)
+	at MAIN.main(MAIN.java:18)
+2019-04-13 01:57:34 INFO  SubjectServiceImpl:23 - Create subject 
+2019-04-13 01:58:00 INFO  SubjectDaoImpl:36 - Subject was not created 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:33)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:18)
+	at model.service.impl.SubjectServiceImpl.create(SubjectServiceImpl.java:22)
+	at MAIN.main(MAIN.java:18)
+2019-04-13 01:58:00 INFO  SubjectServiceImpl:23 - Create subject 
+2019-04-13 01:58:30 INFO  SubjectDaoImpl:36 - Subject was not created 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:33)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:18)
+	at model.service.impl.SubjectServiceImpl.create(SubjectServiceImpl.java:22)
+	at MAIN.main(MAIN.java:18)
+2019-04-13 01:58:30 INFO  SubjectServiceImpl:23 - Create subject 
+2019-04-13 01:59:07 INFO  SubjectDaoImpl:36 - Subject was not created 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:33)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:18)
+	at model.service.impl.SubjectServiceImpl.create(SubjectServiceImpl.java:22)
+	at MAIN.main(MAIN.java:18)
+2019-04-13 01:59:07 INFO  SubjectServiceImpl:23 - Create subject 
+2019-04-13 01:59:21 INFO  SubjectDaoImpl:34 - Subject create 
+2019-04-13 01:59:21 INFO  SubjectServiceImpl:23 - Create subject 
+2019-04-13 09:26:25 INFO  SubjectDaoImpl:36 - Subject was not created 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '4' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:33)
+	at model.dao.daoimpl.SubjectDaoImpl.create(SubjectDaoImpl.java:18)
+	at model.service.impl.SubjectServiceImpl.create(SubjectServiceImpl.java:22)
+	at MAIN.main(MAIN.java:18)
+2019-04-13 09:26:25 INFO  SubjectServiceImpl:23 - Create subject 
+2019-04-13 09:28:17 INFO  StudentDaoImpl:22 - Create user = %d
+2019-04-13 09:42:39 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 09:42:47 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 09:45:04 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 09:47:13 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 09:48:51 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 10:44:15 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 11:04:53 INFO  StudentDaoImpl:61 - get Login and password
+2019-04-13 17:54:51 INFO  StudentDaoImpl:55 - set marks
+2019-04-13 17:55:34 INFO  StudentDaoImpl:55 - set marks

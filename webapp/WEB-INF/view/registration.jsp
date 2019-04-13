@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
-
+<fmt:setBundle basename="text"/>
 <%--
   Created by IntelliJ IDEA.
   User: Yaroslav
@@ -19,43 +19,45 @@
     <form class="w3-container" align="center" method="post">
     <p>
         <label>
-            <input class="w3-input" type="text" required placeholder="" name="nameUa"/>
+            <input class="w3-input" type="text" required placeholder= "<fmt:message key="text.name.ua"/>" name="nameUa"/>
         </label>
     </p>
     <p>
         <label>
-            <input class="w3-input" type="text" required placeholder="" name="surnameUa"/>
+            <input class="w3-input" type="text" required placeholder="<fmt:message key="text.surname.ua"/>" name="surnameUa"/>
         </label>
     </p>
     <p>
         <label>
-            <input class="w3-input" type="text" required placeholder="" name="nameEn"/>
+            <input class="w3-input" type="text" required placeholder="<fmt:message key="text.name.en"/>" name="nameEn"/>
         </label>
     </p>
     <p>
         <label>
-            <input class="w3-input" type="text" required placeholder="" name="surnameEn"/>
+            <input class="w3-input" type="text" required placeholder="<fmt:message key="text.surname.en"/>" name="surnameEn"/>
         </label>
     </p>
     <p>
         <label>
-            <input class="w3-input" type="text" required placeholder="" name="email"/>
+            <input class="w3-input" type="text" required placeholder="<fmt:message key="text.email"/>" name="email"/>
         </label>
     </p>
     <p>
         <label>
-            <input class="w3-input" type="password" required placeholder="" name="password"/>
+            <input class="w3-input" type="password" required placeholder="<fmt:message key="text.password"/>" name="password"/>
         </label>
     </p>
         <div>
-            <input class="w3-button w3-green" type="submit" value="<fmt:message key="registration"/>">
-            <c:if test="${requestScope.wrongData}">
-            <div class="w3-container">
-
-            </div>
-            </c:if>
+            <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.registration"/>">
+<%--            <c:if test="${requestScope.registrationError}">--%>
+<%--            <div class="w3-container">--%>
+<%--                <fmt:message key="text.rerisration.error"/>--%>
+<%--            </div>--%>
+<%--            </c:if>--%>
     </form>
 </div>
 
 </body>
 </html>
+
+
