@@ -38,7 +38,7 @@ public class ConnectionPool {
                     } catch (ClassNotFoundException e) {
                         e.printStackTrace();
                     }
-                    ds.setUrl("jdbc:mysql://localhost:3306/final_project?useSSL=false&serverTimezone=UTC");
+                    ds.setUrl("jdbc:mysql://localhost:3306/final_project?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true");
                     ds.setUsername("root");
                     ds.setPassword("root");
                     ds.setMinIdle(5);

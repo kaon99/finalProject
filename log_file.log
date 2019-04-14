@@ -811,3 +811,4 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 2019-04-14 18:12:34 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 20:59:20 INFO  StudentDaoImpl:69 - get Login and password
