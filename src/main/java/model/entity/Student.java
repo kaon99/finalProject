@@ -26,7 +26,7 @@ public class Student {
         this.role = role;
     }
 
-    public Student(Integer id, String nameUa, String surnameUa, String nameEn, String surnameEn, String email, Integer sumOfaccessment, Integer specialty_id, Integer role) {
+    public Student(Integer id, String nameUa, String surnameUa, String nameEn, String surnameEn, String email,  Integer specialty_id, Integer role) {
         this.id = id;
         this.nameUa = nameUa;
         this.surnameUa = surnameUa;
@@ -34,7 +34,6 @@ public class Student {
         this.surnameEn = surnameEn;
         this.email = email;
         this.password = password;
-        this.sumOfaccessment = sumOfaccessment;
         this.specialty_id = specialty_id;
         this.role = role;
     }

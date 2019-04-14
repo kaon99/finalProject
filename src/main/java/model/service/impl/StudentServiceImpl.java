@@ -51,9 +51,17 @@ studentDao.delete(id);
     }
 
     @Override
-    public void setMarks(Student entity) {
+    public void setMarks(int id) {
     logger.info("set marks");
-studentDao.setSumMarks(entity);
+    Student student = studentDao.findById(id);
+studentDao.setSumMarks(student);
+    }
+
+    @Override
+    public Student findByEmail(String email) {
+        logger.info("find email");
+        Student student = studentDao.findByEmail(email);
+        return student;
     }
 
     @Override

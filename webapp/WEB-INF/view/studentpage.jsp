@@ -28,7 +28,7 @@
 <form method="post"
       action="${pageContext.request.contextPath}/university/logout">
     <input type="hidden">
-    <button type="submit">Выйти</button>
+    <button type="submit"><fmt:message key="text.logout"/></button>
     <div>
 
 
