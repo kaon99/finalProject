@@ -1,4 +1,5 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <fmt:setBundle basename="text"/>
 <%--
   Created by IntelliJ IDEA.
@@ -14,26 +15,34 @@
 </head>
 <body>
 <div>
-    <form>
+    <form  method="post"  action="${pageContext.request.contextPath} /university/admin/setgrade/button">
 
         <p>
             <label>
                 <input class="w3-input" type="text" required placeholder="<fmt:message key="text.setmarks.email"/>"
-                       name="student.email"/>
+                       name="email"/>
             </label>
         </p>
         <p>
             <label>
-                <input class="w3-input" type="text" required placeholder="<fmt:message key="text.setmarks.subject"/>"
-                       name="student.subject"/>
+                <select class="w3-input"  name="subject">
+                    <option disabled><fmt:message key="text.setmarks.subject"/></option>
+                    <c:forEach items="${databaseList}" var="subject1">
+                        <option value="${subject1.getId()}">
+                                ${subject1.getName()}
+                        </option>
+                    </c:forEach>
+
+                </select>
             </label>
         </p>
         <p>
             <label>
-                <input class="w3-input" type="text" required placeholder="<fmt:message key="text.setmarks.assessment"/>"
-                       name="student.subject"/>
+                <input class="w3-input" type="number" required placeholder="<fmt:message key="text.setmarks.assessment"/>"
+                       name="grade"/>
             </label>
         </p>
+        <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.set.marks"/>">
     </form>
 
 

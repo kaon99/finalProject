@@ -12,5 +12,6 @@ public interface RatingService   {
     List<Rating> findAll();
     void update(Rating entity);
     void delete(int id);
+    void setmark (String email, Integer subjectId, Integer assessment);
 }
 

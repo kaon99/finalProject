@@ -635,3 +635,178 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '4' for key '
 2019-04-13 17:55:34 INFO  StudentDaoImpl:55 - set marks
 2019-04-13 18:40:40 INFO  StudentDaoImpl:62 - find email
 2019-04-13 18:47:30 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 20:04:07 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 21:11:50 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 21:13:07 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 21:14:24 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 21:30:25 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 21:30:27 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 21:33:22 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 21:33:58 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 21:34:01 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 21:41:12 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 21:41:14 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 22:10:46 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 22:10:47 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 22:10:57 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 22:11:08 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 22:14:23 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 22:14:26 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 22:14:31 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 22:17:23 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 22:17:47 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 22:19:02 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 22:20:14 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 22:20:41 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 22:27:39 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 22:27:39 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 22:31:14 INFO  StudentDaoImpl:22 - Create user = %d
+2019-04-13 22:31:38 INFO  StudentDaoImpl:22 - Create user = %d
+2019-04-13 22:36:27 ERROR StudentDaoImpl:41 - Student don`t create 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'kaon1999@gmail.com' for key 'user_user_email_uindex'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:39)
+	at model.dao.daoimpl.StudentDaoImpl.create(StudentDaoImpl.java:20)
+	at model.service.impl.StudentServiceImpl.create(StudentServiceImpl.java:21)
+	at controller.command.RegistrationCommand.execute(RegistrationCommand.java:34)
+	at controller.Servlet.processRequest(Servlet.java:34)
+	at controller.Servlet.doPost(Servlet.java:24)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.AuthenticationFilter.doFilter(AuthenticationFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.EncodingFilter.doFilter(EncodingFilter.java:17)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-13 22:36:27 INFO  StudentDaoImpl:22 - Create user = %d
+2019-04-13 22:37:59 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 22:38:52 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-13 22:38:53 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-13 22:39:01 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-14 13:11:13 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 13:11:23 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-14 13:21:57 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 13:21:59 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-14 13:26:56 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 13:26:58 INFO  RatingServiceImpl:35 - Find all ratings 
+2019-04-14 13:28:41 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 13:56:58 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:01:26 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:04:05 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:10:54 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:12:18 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:15:57 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:26:13 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:28:20 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:28:20 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:29:53 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:29:53 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:31:24 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:33:00 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:55:41 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:57:49 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 14:59:00 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 15:21:22 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 15:23:14 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 15:37:42 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 15:39:48 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 15:40:43 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 15:42:01 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 15:42:36 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 15:48:44 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 15:51:56 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 15:54:07 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 15:55:50 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 15:59:52 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 16:23:47 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 16:24:56 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 16:40:53 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 16:42:40 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 16:47:42 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 16:48:24 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 16:49:30 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 16:59:51 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 17:02:22 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 17:03:16 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 18:01:15 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 18:02:27 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 18:06:19 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 18:08:43 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 18:08:43 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-14 18:09:36 INFO  RatingDaoImpl:36 -  Rating do not create
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`final_project`.`rating`, CONSTRAINT `rating_user_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.RatingDaoImpl.create(RatingDaoImpl.java:34)
+	at model.dao.daoimpl.RatingDaoImpl.create(RatingDaoImpl.java:21)
+	at model.service.impl.RatingServiceImpl.setmark(RatingServiceImpl.java:62)
+	at controller.command.admins.SetGradeCommand.execute(SetGradeCommand.java:37)
+	at controller.Servlet.processRequest(Servlet.java:34)
+	at controller.Servlet.doPost(Servlet.java:24)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.RoleFilter.doFilter(RoleFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.AuthenticationFilter.doFilter(AuthenticationFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.EncodingFilter.doFilter(EncodingFilter.java:17)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
