@@ -11,10 +11,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>StudentRating</title>
+    <title><fmt:message key="text.student.rating"/> </title>
 </head>
 <body>
-<h1>Student Rating</h1>
+<h1><fmt:message key="text.student.rating" /></h1>
+
+<form method="post"
+      action="${pageContext.request.contextPath}/university/main">
+    <input type="hidden">
+    <button type="submit"><fmt:message key="text.main"/></button>
+</form>
 <form method="post"
       action="${pageContext.request.contextPath}/university/logout">
     <input type="hidden">

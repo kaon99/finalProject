@@ -1,3 +1,5 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
+<fmt:setBundle basename="text"/>
 <%--
   Created by IntelliJ IDEA.
   User: Yaroslav
@@ -12,7 +14,10 @@
 
 </head>
 <body>
-<h1> У вас возникла 404 ошибка, перейдите на другой адрес.
-</h1>
+<form method="post"
+      action="${pageContext.request.contextPath}/university/main">
+    <input type="hidden">
+    <button type="submit"><fmt:message key="text.main"/></button>
+</form>
 </body>
 </html>
