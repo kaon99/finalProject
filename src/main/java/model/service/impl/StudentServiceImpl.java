@@ -71,4 +71,16 @@ studentDao.setSumMarks(student);
 
     return student;
     }
+
+    @Override
+    public void setSpecialty(Integer specialtyId, Student student) {
+        logger.info("set specialty to user");
+        studentDao.setSpecialty(specialtyId,student);
+    }
+
+    @Override
+    public List<Student> receivedStudents(Integer specialtyId) {
+        logger.info("received students list");
+        return studentDao.findReceivedStudents(specialtyId);
+    }
 }

@@ -12,4 +12,5 @@ public interface SpecialtyService {
     void update(Specialty entity);
     void delete(int id);
 
+
 }

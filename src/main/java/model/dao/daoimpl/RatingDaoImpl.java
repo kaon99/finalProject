@@ -26,8 +26,8 @@ public class RatingDaoImpl implements RatingDao {
     }
 
     public void create(Rating entity) {
-        try {
-            PreparedStatement statement = this.connection.prepareStatement(QueriesResourseManager.getProperty("insert.rating"));
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
+            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("insert.rating"));
             statement.setInt(1, entity.getAssessment());
             statement.setInt(2, entity.getSubjectId());
             statement.setInt(3, entity.getSubjectId());
@@ -39,8 +39,8 @@ public class RatingDaoImpl implements RatingDao {
     }
 
     public Rating findById(int id) {
-        try {
-            PreparedStatement statement = this.connection.prepareStatement(QueriesResourseManager.getProperty("rating.find.by.id"));
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
+            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("rating.find.by.id"));
             Rating rating = null;
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
@@ -57,8 +57,8 @@ public class RatingDaoImpl implements RatingDao {
     }
 
     public List<Rating> findAll() {
-        try {
-            PreparedStatement statement = this.connection.prepareStatement(QueriesResourseManager.getProperty("rating.find.all"));
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
+            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("rating.find.all"));
             ResultSet resultSet = statement.executeQuery();
             ArrayList ratings = new ArrayList();
 
@@ -74,8 +74,8 @@ public class RatingDaoImpl implements RatingDao {
     }
 
     public void update(Rating entity) {
-        try {
-            PreparedStatement statement = this.connection.prepareStatement(QueriesResourseManager.getProperty("rating.update"));
+        try(Connection connection = ConnectionPool.getInstance().getConnection()) {
+            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("rating.update"));
             statement.setInt(1, entity.getAssessment());
             statement.setInt(2, entity.getSubjectId());
             statement.setInt(3, entity.getStudentId());
@@ -88,8 +88,8 @@ public class RatingDaoImpl implements RatingDao {
     }
 
     public void delete(int id) {
-        try {
-            PreparedStatement statement = this.connection.prepareStatement(QueriesResourseManager.getProperty("rating.delete"));
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
+            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("rating.delete"));
             statement.setInt(1, id);
             statement.execute();
         } catch (SQLException var3) {

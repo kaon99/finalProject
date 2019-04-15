@@ -21,14 +21,10 @@ import static javax.swing.text.html.HTML.Tag.HEAD;
 public class SpecialtyDaoImpl implements SpecialtyDao {
     private Logger logger = Logger.getLogger(SpecialtyDaoImpl.class);
 
-    private Connection connection;
-    public SpecialtyDaoImpl(){
-        this.connection = ConnectionPool.getInstance().getConnection();
-    }
 
     @Override
     public void create(Specialty entity) {
-        try {
+        try(Connection connection = ConnectionPool.getInstance().getConnection()) {
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("insert.specialty"));
             statement.setInt(1,entity.getId());
             statement.setString(2, entity.getTitle());
@@ -41,7 +37,7 @@ public class SpecialtyDaoImpl implements SpecialtyDao {
 
     @Override
     public Specialty findById(int id) {
-        try {
+        try(Connection connection = ConnectionPool.getInstance().getConnection()) {
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.find.by.id"));
             Specialty specialty = null;
             statement.setInt(1,id);
@@ -60,7 +56,7 @@ public class SpecialtyDaoImpl implements SpecialtyDao {
 
     @Override
     public List<Specialty> findAll() {
-        try{
+        try(Connection connection = ConnectionPool.getInstance().getConnection()) {
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.find.all"));
             ResultSet resultSet = statement.executeQuery();
             List<Specialty> specialties = new ArrayList<>();
@@ -76,7 +72,7 @@ public class SpecialtyDaoImpl implements SpecialtyDao {
 
     @Override
     public void update(Specialty entity) {
-        try{
+        try(Connection connection = ConnectionPool.getInstance().getConnection()) {
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.update"));
         statement.setString(1,entity.getTitle());
         statement.setInt(2,entity.getId());
@@ -88,7 +84,7 @@ public class SpecialtyDaoImpl implements SpecialtyDao {
 
     @Override
     public void delete(int id) {
-try{
+        try(Connection connection = ConnectionPool.getInstance().getConnection()) {
     PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.delete"));
 
 statement.setInt(1,id);
@@ -105,8 +101,8 @@ statement.executeUpdate();
 
     @Override
     public void close() {
-        try {
-            connection.close();
+        try(Connection connection = ConnectionPool.getInstance().getConnection()) {
+
         } catch (SQLException e) {
             logger.error("Close ", e);
         }

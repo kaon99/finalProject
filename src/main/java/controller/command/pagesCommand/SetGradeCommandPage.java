@@ -9,9 +9,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class SetGradeCommandPage implements Command {
+    SubjectService subjectService = new SubjectServiceImpl();
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        SubjectService subjectService = new SubjectServiceImpl();
+
         request.setAttribute("databaseList", subjectService.findAll());
         return PageResourseManager.getProperty("admin/setgrade");
     }

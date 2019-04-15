@@ -14,4 +14,6 @@ public interface StudentService {
     void setMarks ( int id );
     Student findByEmail (String email);
     Student loginUser (String login,String password);
+    void setSpecialty (Integer specialtyId , Student student);
+    List<Student> receivedStudents (Integer specialtyId);
 }

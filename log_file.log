@@ -865,3 +865,59 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 	at java.lang.Thread.run(Thread.java:748)
 2019-04-15 15:24:46 INFO  StudentDaoImpl:69 - get Login and password
 2019-04-15 15:24:54 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 16:47:46 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 16:49:10 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 16:53:00 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 16:54:05 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 16:54:08 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 16:57:43 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 16:59:22 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:02:38 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:05:38 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:07:26 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:10:16 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:12:11 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:12:49 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 17:14:28 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:16:33 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:22:09 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:24:25 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:31:20 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:33:39 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:33:51 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:34:16 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:35:37 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:35:40 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 17:36:08 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:46:28 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:46:32 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:49:05 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:49:10 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:49:12 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 17:49:19 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:52:15 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:52:42 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 17:55:34 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:55:37 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 17:55:46 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 17:55:53 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 17:56:44 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 17:58:02 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 17:58:09 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 17:58:12 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 18:00:02 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 18:00:02 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 18:01:05 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 18:01:37 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 18:02:07 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 18:02:10 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 18:02:57 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 18:03:03 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 18:03:14 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 18:04:16 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 18:04:19 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 18:04:27 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 18:04:32 INFO  StudentDaoImpl:77 - set specialty to user
+2019-04-15 18:04:33 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 18:06:47 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 18:09:49 INFO  StudentDaoImpl:69 - get Login and password

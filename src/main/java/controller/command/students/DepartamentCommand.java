@@ -1,6 +1,7 @@
 package controller.command.students;
 
 import controller.command.Command;
+import controller.command.pagesCommand.DepartamentCommandPage;
 import model.entity.Student;
 import model.service.SpecialtyService;
 import model.service.StudentService;
@@ -28,7 +29,7 @@ public class DepartamentCommand implements Command {
         Integer specialtyId = Integer.parseInt(request.getParameter(AttributesResourseManager.getProperty("parameter.specialty")));
         Student student = (Student) session.getAttribute(AttributesResourseManager.getProperty("parameter.user"));
 
-       // studentService.
-        return PageResourseManager.getProperty("studentpage/departament");
+        studentService.setSpecialty(specialtyId,student);
+        return new DepartamentCommandPage().execute(request,response);
     }
 }

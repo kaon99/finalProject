@@ -43,6 +43,7 @@ public class ConnectionPool {
                     ds.setPassword("root");
                     ds.setMinIdle(5);
                     ds.setMaxIdle(10);
+                    ds.setMaxActive(10000);
                     ds.setMaxOpenPreparedStatements(100);
                     dataSource = ds;
                 }

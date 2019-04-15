@@ -27,8 +27,9 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public void create(Student student) {
-        try {
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("insert.user"));
+
             statement.setString(1, student.getNameUa());
             statement.setString(2, student.getSurnameUa());
             statement.setString(3, student.getNameEn());
@@ -45,9 +46,10 @@ public class StudentDaoImpl implements StudentDao {
     @Override
     public Student getByLoginAndPass(String login, String password) {
 
-        try {
+        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
             PreparedStatement statement = connection.prepareStatement
                     (QueriesResourseManager.getProperty("select.by.login.password"));
+
             statement.setString(1, login);
             statement.setString(2, password);
             ResultSet resultSet = statement.executeQuery();
@@ -70,9 +72,10 @@ public class StudentDaoImpl implements StudentDao {
     @Override
     public void setSumMarks(Student student) {
 
-        try {
-            connection.setAutoCommit(false);
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.find.sum"));
+            connection.setAutoCommit(false);
+
             statement.setInt(1, student.getSpecialty_id());
             statement.setInt(2, student.getId());
             ResultSet resultSet = statement.executeQuery();
@@ -81,15 +84,16 @@ public class StudentDaoImpl implements StudentDao {
                 sumOfResult = resultSet.getInt("SUM(rating.assessment)");
 
             }
-            if (Objects.isNull(sumOfResult)){
-                connection.rollback(); }
-            PreparedStatement setGradeStatement = connection.prepareStatement(QueriesResourseManager.getProperty("user.set.sum"));
-            setGradeStatement.setInt(1, sumOfResult);
-            setGradeStatement.setInt(2, student.getId());
-            setGradeStatement.execute();
-            connection.commit();
-            connection.setAutoCommit(true);
-
+            if (Objects.isNull(sumOfResult)) {
+                connection.rollback();
+            }
+            try (PreparedStatement setGradeStatement = connection.prepareStatement(QueriesResourseManager.getProperty("user.set.sum"));) {
+                setGradeStatement.setInt(1, sumOfResult);
+                setGradeStatement.setInt(2, student.getId());
+                setGradeStatement.execute();
+                connection.commit();
+                connection.setAutoCommit(true);
+            }
         } catch (SQLException e) {
             e.printStackTrace();
 
@@ -99,9 +103,10 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public Student findByEmail(String email) {
-        try {
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
             PreparedStatement statement = connection.prepareStatement
-                    (QueriesResourseManager.getProperty("user.select.by.email"));
+                (QueriesResourseManager.getProperty("user.select.by.email"));
+
             statement.setString(1, email);
             ResultSet resultSet = statement.executeQuery();
             Student student = null;
@@ -120,10 +125,11 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public void setSpecialty(Integer specialtyId, Student student) {
-        try {
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.set.specialty"));
-            statement.setInt(1,specialtyId);
-            statement.setInt(2,student.getId());
+
+            statement.setInt(1, specialtyId);
+            statement.setInt(2, student.getId());
             statement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -132,9 +138,10 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public List<Student> findReceivedStudents(Integer specialtyId) {
-        try {
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.find.received"));
-            statement.setInt(1,specialtyId);
+
+            statement.setInt(1, specialtyId);
             ResultSet resultSet = statement.executeQuery();
             List<Student> students = new ArrayList<>();
             while (resultSet.next()) {
@@ -172,8 +179,8 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public List<Student> findAll() {
-        try {
-            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.find.all"));
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.find.all"));
+
             ResultSet resultSet = statement.executeQuery();
             List<Student> students = new ArrayList<>();
             while (resultSet.next()) {
@@ -190,7 +197,7 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public void update(Student student) {
-        try {
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.update"));
             statement.setString(1, student.getNameUa());
             statement.setString(2, student.getSurnameUa());
@@ -211,8 +218,10 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public void delete(int id) {
-        try {
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.delete"));
+
+
             statement.setInt(1, id);
             statement.executeUpdate();
         } catch (SQLException e) {

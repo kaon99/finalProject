@@ -41,7 +41,7 @@ public class SubjectDaoImpl  implements SubjectDao {
 
     @Override
     public Subject findById(int id) {
-        try {
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("subject.find.by.id"));
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
@@ -59,7 +59,7 @@ public class SubjectDaoImpl  implements SubjectDao {
 
     @Override
     public List<Subject> findAll() {
-        try {
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("subject.find.all"));
             ResultSet resultSet = statement.executeQuery();
             List<Subject> subjects = new ArrayList<>();
@@ -76,7 +76,7 @@ public class SubjectDaoImpl  implements SubjectDao {
 
     @Override
     public void update(Subject entity) {
-        try {
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
            PreparedStatement  statement= connection.prepareStatement(QueriesResourseManager.getProperty("subject.update"));
             statement.setString(1, entity.getName());
             statement.setInt(2, entity.getId());
@@ -90,7 +90,7 @@ public class SubjectDaoImpl  implements SubjectDao {
 
     @Override
     public void delete(int id) {
-        try {
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
             PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("subject.delete"));
             statement.setInt(1, id);
             statement.executeUpdate();

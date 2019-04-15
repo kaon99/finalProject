@@ -14,7 +14,6 @@ public class StudentPageCommand implements Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         Student student = (Student) request.getSession().getAttribute(AttributesResourseManager.getProperty("parameter.user"));
-      //  if (student.getRole().equals(Role.ABITURIENT.getRole())) {
             request.setAttribute(AttributesResourseManager.getProperty("parameter.name.ua"),student.getNameUa());
             request.setAttribute(AttributesResourseManager.getProperty("parameter.surname.ua"),student.getSurnameUa());
             request.setAttribute(AttributesResourseManager.getProperty("parameter.name.en"),student.getNameEn());
@@ -29,7 +28,6 @@ public class StudentPageCommand implements Command {
 
 
 
-//        else {
-//            return "/university/main";
+
        }
 
