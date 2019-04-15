@@ -8,13 +8,15 @@ import model.service.StudentService;
 import model.service.impl.RatingServiceImpl;
 import model.service.impl.StudentServiceImpl;
 
+import java.util.Scanner;
+
 
 public class MAIN {
     public static void main(String[] args) {
-        StudentService studentService = new StudentServiceImpl();
-       Student student = studentService.findById(24);
-       studentService.setMarks(student);
+        Scanner scanner = new Scanner(System.in);
+        Integer g = scanner.nextInt();
 
+        System.out.println(g);
 
     }
 }
