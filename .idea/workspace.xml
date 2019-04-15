@@ -12,6 +12,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d2085131-b3dc-40ab-8205-ff22918eb031" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/log_file.log" beforeDir="false" afterPath="$PROJECT_DIR$/log_file.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/CommandFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/queries.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/queries.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/text.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/text.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/view/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/view/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/view/setgrade.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/view/setgrade.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/view/studentrating.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/view/studentrating.jsp" afterDir="false" />
     </list>
     <list id="007b95d3-b475-4971-8828-78b7e71170e7" name="Revert &quot;Revert &quot;model , util, dao , resourse&quot;&quot;" comment="Revert &quot;Revert &quot;model , util, dao , resourse&quot;&quot;&#10;&#10;This reverts commit bac33859" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -72,19 +80,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/admins/SetGradeCommand.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="374">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,10 +92,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/StudentDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="28" column="83" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="83" />
+            <state relative-caret-position="187">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,53 +106,93 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
+            <state relative-caret-position="300">
               <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/entity/Subject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://DATABASE/6687b053-12ee-43d0-86a8-7f45fa83a450.SCHEMA:final_project">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>DATABASE</ID>
+              <OriginalElement>6687b053-12ee-43d0-86a8-7f45fa83a450.SCHEMA:final_project</OriginalElement>
+              <nodes>
+                <node x="104.99999999999997" y="420.0">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.rating</node>
+                <node x="197.12499999999997" y="0.0">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.specialty</node>
+                <node x="274.625" y="442.5">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject_has_specialty</node>
+                <node x="-56.93722935988416" y="106.15587571263791">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.user</node>
+                <node x="209.99999999999997" y="210.0">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.rating" target="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject">
+                  <point x="31.5" y="-58.0" />
+                  <point x="199.49999999999997" y="395.0" />
+                  <point x="240.99999999999997" y="395.0" />
+                  <point x="-31.0" y="36.0" />
+                </edge>
+                <edge source="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject_has_specialty" target="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.specialty">
+                  <point x="46.25" y="-35.5" />
+                  <point x="413.375" y="395.0" />
+                  <point x="387.875" y="395.0" />
+                  <point x="387.875" y="97.0" />
+                  <point x="296.12499999999994" y="97.0" />
+                  <point x="33.0" y="36.0" />
+                </edge>
+                <edge source="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.user" target="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.specialty">
+                  <point x="0.0" y="-124.0" />
+                  <point x="95.0" y="97.0" />
+                  <point x="230.12499999999997" y="97.0" />
+                  <point x="-33.0" y="36.0" />
+                </edge>
+                <edge source="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject_has_specialty" target="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject">
+                  <point x="-46.25" y="-35.5" />
+                  <point x="320.875" y="395.0" />
+                  <point x="302.99999999999994" y="395.0" />
+                  <point x="31.0" y="36.0" />
+                </edge>
+                <edge source="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.rating" target="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.user">
+                  <point x="-31.5" y="-58.0" />
+                  <point x="136.49999999999997" y="395.0" />
+                  <point x="95.0" y="395.0" />
+                  <point x="0.0" y="124.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.7595238095238095" x="76.98746081504703" y="242.98746081504703" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Key columns</Category>
+                <Category>Columns</Category>
+              </Categories>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://6687b053-12ee-43d0-86a8-7f45fa83a450/schema/final_project/table/user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SubjectDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="43" column="83" selection-start-line="43" selection-start-column="83" selection-end-line="43" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MAIN.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/queries.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="30" column="121" selection-start-line="30" selection-start-column="121" selection-end-line="30" selection-end-column="121" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="method#findById#0;class#StudentDaoImpl#0" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -161,7 +200,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/LogoutCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
+            <state relative-caret-position="153">
               <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -171,10 +210,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/SetGradeCommandPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -207,7 +255,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/model/entity/Specialty.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6687b053-12ee-43d0-86a8-7f45fa83a450/console_1.sql" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/MainCommand.java" />
         <option value="$PROJECT_DIR$/webapp/WEB-INF/web.xml" />
@@ -220,44 +267,45 @@
         <option value="$PROJECT_DIR$/webapp/WEB-INF/view/setmarks.jsp" />
         <option value="$PROJECT_DIR$/webapp/WEB-INF/view/admin.jsp" />
         <option value="$PROJECT_DIR$/webapp/WEB-INF/view/studentpage.jsp" />
-        <option value="$PROJECT_DIR$/webapp/WEB-INF/view/studentrating.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/SerGradeCommandPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/service/RatingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/MAIN.java" />
-        <option value="$PROJECT_DIR$/webapp/WEB-INF/view/setgrade.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/admins/SetGradeCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/admins/AdminCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/admins/SendNotificatioinCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/RegistrationPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/RegistrationCommand.java" />
         <option value="$PROJECT_DIR$/src/main/resources/pages.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/DepartamentPageCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/StudentDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/queries.properties" />
         <option value="$PROJECT_DIR$/src/main/java/model/service/SpecialtyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/service/StudentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/service/impl/StudentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/students/DepartamentCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/SetGradeCommandPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/students/RegistrationCommandPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/LogoutCommand.java" />
         <option value="$PROJECT_DIR$/webapp/WEB-INF/view/login.jsp" />
-        <option value="$PROJECT_DIR$/webapp/WEB-INF/view/registration.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/students/StudentPageCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/connectionpool/ConnectionPool.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/text.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/command/CommandFactory.java" />
         <option value="$PROJECT_DIR$/src/main/resources/attributes.properties" />
         <option value="$PROJECT_DIR$/webapp/WEB-INF/view/departament.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6687b053-12ee-43d0-86a8-7f45fa83a450/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SubjectDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/SetGradeCommandPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/command/CommandFactory.java" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/view/setgrade.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/text.properties" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/view/registration.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/view/studentrating.jsp" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/java/model/entity/Subject.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/queries.properties" />
       </list>
     </option>
   </component>
@@ -282,9 +330,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="1059" />
-    <option name="height" value="1039" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -334,6 +382,55 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+              <item name="admins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+              <item name="pagesCommand" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+              <item name="students" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -344,6 +441,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="connectionpool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
@@ -354,6 +461,24 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
@@ -656,7 +781,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257795000" />
+    <option name="totallyTimeSpent" value="261477000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -670,6 +795,41 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23758389" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49679077" weight="0.0509915" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7281553" visible="true" weight="0.24645892" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8624161" weight="0.50716335" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.52578795" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49597314" weight="0.12181303" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.27184466" side_tool="true" weight="0.8868195" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.51699716" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.13456091" />
+      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.71208054" weight="0.0878187" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.518792" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23825504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
@@ -680,55 +840,20 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49679077" weight="0.0509915" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7281553" weight="0.1388102" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7281553" weight="0.49858356" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8624161" weight="0.07223796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.52578795" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49597314" visible="true" weight="0.12181303" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49597314" weight="0.12181303" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.27184466" side_tool="true" weight="0.8868195" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.51699716" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49932885" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.5141643" />
-      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.71208054" weight="0.5410765" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.16442953" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20268457" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49679077" weight="0.0509915" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7281553" visible="true" weight="0.07082153" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8624161" weight="0.058073655" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.52578795" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49597314" weight="0.10339943" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.27184466" side_tool="true" weight="0.8868195" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.51699716" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49932885" weight="0.3286119" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.53824365" />
-      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.71208054" weight="0.5410765" />
+      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.13456091" />
+      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.71208054" weight="0.0878187" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1188,6 +1313,30 @@
           <properties />
           <option name="timeStamp" value="405" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="407" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="408" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="411" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="412" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/model/service/impl/StudentServiceImpl.java</url>
           <line>18</line>
@@ -1228,55 +1377,18 @@
           </properties>
           <option name="timeStamp" value="397" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java</url>
+          <line>15</line>
+          <properties class="controller.command.pagesCommand.StudentRatingCommandPage" method="execute">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="410" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/service/SubjectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/entity/types/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/entity/Rating.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6687b053-12ee-43d0-86a8-7f45fa83a450/schema/final_project/table/specialty">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/service/RatingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/util/CommandUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1295,30 +1407,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6687b053-12ee-43d0-86a8-7f45fa83a450/schema/final_project/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1346,16 +1434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/RegistrationCommandPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1369,8 +1447,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/students/RegistrationCommandPage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/pages.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="102">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1388,13 +1466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/view/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="76" selection-start-line="34" selection-start-column="76" selection-end-line="34" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/students/StudentPageCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1406,16 +1477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
           <caret line="31" column="74" lean-forward="true" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/LoginCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1460,42 +1521,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/text.properties">
-      <provider editor-type-id="ResourceBundle" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/admins/AdminCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/view/registration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/DepartamentCommandPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/CommandFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -1513,51 +1542,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/students/DepartamentCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/view/setgrade.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="27" column="52" lean-forward="true" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/LogoutCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/SetGradeCommandPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/admins/SetGradeCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/queries.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -1592,23 +1580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6687b053-12ee-43d0-86a8-7f45fa83a450/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="83" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1622,10 +1593,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6687b053-12ee-43d0-86a8-7f45fa83a450/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1633,6 +1611,231 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="43" column="83" selection-start-line="43" selection-start-column="83" selection-end-line="43" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="83" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/DepartamentCommandPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/SpecialtyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/students/DepartamentCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="32" column="54" lean-forward="true" selection-start-line="31" selection-start-column="57" selection-end-line="32" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/CommandFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/view/setgrade.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/text.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/view/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="34" column="76" selection-start-line="34" selection-start-column="76" selection-end-line="34" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/LoginCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="31" column="55" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/view/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/entity/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="40" column="39" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/view/studentrating.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/SetGradeCommandPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/LogoutCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/StudentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/entity/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/6687b053-12ee-43d0-86a8-7f45fa83a450.SCHEMA:final_project">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>6687b053-12ee-43d0-86a8-7f45fa83a450.SCHEMA:final_project</OriginalElement>
+          <nodes>
+            <node x="104.99999999999997" y="420.0">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.rating</node>
+            <node x="197.12499999999997" y="0.0">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.specialty</node>
+            <node x="274.625" y="442.5">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject_has_specialty</node>
+            <node x="-56.93722935988416" y="106.15587571263791">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.user</node>
+            <node x="209.99999999999997" y="210.0">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.rating" target="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject">
+              <point x="31.5" y="-58.0" />
+              <point x="199.49999999999997" y="395.0" />
+              <point x="240.99999999999997" y="395.0" />
+              <point x="-31.0" y="36.0" />
+            </edge>
+            <edge source="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject_has_specialty" target="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.specialty">
+              <point x="46.25" y="-35.5" />
+              <point x="413.375" y="395.0" />
+              <point x="387.875" y="395.0" />
+              <point x="387.875" y="97.0" />
+              <point x="296.12499999999994" y="97.0" />
+              <point x="33.0" y="36.0" />
+            </edge>
+            <edge source="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.user" target="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.specialty">
+              <point x="0.0" y="-124.0" />
+              <point x="95.0" y="97.0" />
+              <point x="230.12499999999997" y="97.0" />
+              <point x="-33.0" y="36.0" />
+            </edge>
+            <edge source="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject_has_specialty" target="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject">
+              <point x="-46.25" y="-35.5" />
+              <point x="320.875" y="395.0" />
+              <point x="302.99999999999994" y="395.0" />
+              <point x="31.0" y="36.0" />
+            </edge>
+            <edge source="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.rating" target="6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.user">
+              <point x="-31.5" y="-58.0" />
+              <point x="136.49999999999997" y="395.0" />
+              <point x="95.0" y="395.0" />
+              <point x="0.0" y="124.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7595238095238095" x="76.98746081504703" y="242.98746081504703" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6687b053-12ee-43d0-86a8-7f45fa83a450/schema/final_project/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/queries.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
         </state>
       </provider>
     </entry>

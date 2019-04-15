@@ -49,11 +49,11 @@
     </p>
         <div>
             <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.registration"/>">
-<%--            <c:if test="${requestScope.registrationError}">--%>
-<%--            <div class="w3-container">--%>
-<%--                <fmt:message key="text.rerisration.error"/>--%>
-<%--            </div>--%>
-<%--            </c:if>--%>
+            <c:if test="${requestScope.registrationError}">
+            <div class="w3-container">
+                <fmt:message key="text.rerisration.error"/>
+            </div>
+            </c:if>
     </form>
 </div>
 
