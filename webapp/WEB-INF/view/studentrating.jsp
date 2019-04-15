@@ -26,7 +26,9 @@
     <p>
         <label>
             <select class="w3-input" name="specialty">
-                <option disabled><fmt:message key="text.set.specialty"/></option>
+                <option selected disabled hidden style='display: none' value=''></option>
+                <option disabled hidden><fmt:message key="text.set.specialty"/></option>
+
                 <c:forEach items="${speciatlyList}" var="specialty">
                     <option value="${specialty.getId()}">
                             ${specialty.getTitle()}

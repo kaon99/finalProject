@@ -86,6 +86,7 @@ public class StudentDaoImpl implements StudentDao {
             }
             if (Objects.isNull(sumOfResult)) {
                 connection.rollback();
+                sumOfResult = 0;
             }
             PreparedStatement setGradeStatement = connection.prepareStatement(QueriesResourseManager.getProperty("user.set.sum"));
                 setGradeStatement.setInt( 1,sumOfResult);
