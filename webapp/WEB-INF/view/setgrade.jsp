@@ -27,9 +27,9 @@
             <label>
                 <select class="w3-input"  name="subject">
                     <option disabled><fmt:message key="text.setmarks.subject"/></option>
-                    <c:forEach items="${databaseList}" var="subject1">
-                        <option value="${subject1.getId()}">
-                                ${subject1.getName()}
+                    <c:forEach items="${databaseList}" var="subject">
+                        <option value="${subject.getId()}">
+                                ${subject.getName()}
                         </option>
                     </c:forEach>
 

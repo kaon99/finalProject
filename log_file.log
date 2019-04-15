@@ -986,3 +986,111 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 2019-04-15 19:50:49 INFO  StudentDaoImpl:77 - set specialty to user
 2019-04-15 19:50:49 INFO  SpecialtyServiceImpl:36 - Find all specialty 
 2019-04-15 19:52:59 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 20:06:29 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 20:07:18 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 20:07:24 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 20:34:27 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 20:34:29 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:43:10 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 20:43:22 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:46:38 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 20:47:36 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:49:19 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 20:49:25 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:49:29 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:49:29 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:49:32 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:49:39 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:49:39 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:49:41 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:49:42 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:49:42 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:49:45 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:49:49 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:49:49 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:49:51 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:49:56 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:49:56 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:49:58 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:50:03 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:50:03 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:50:05 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:50:45 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:50:45 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:50:52 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:51:13 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:51:13 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:51:14 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:51:19 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:51:19 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:51:20 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:51:26 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:51:26 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:51:28 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:52:36 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 20:52:48 INFO  RatingDaoImpl:36 -  Rating do not create
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`final_project`.`rating`, CONSTRAINT `rating_user_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at model.dao.daoimpl.RatingDaoImpl.create(RatingDaoImpl.java:34)
+	at model.dao.daoimpl.RatingDaoImpl.create(RatingDaoImpl.java:21)
+	at model.service.impl.RatingServiceImpl.setmark(RatingServiceImpl.java:62)
+	at controller.command.admins.SetGradeCommand.execute(SetGradeCommand.java:35)
+	at controller.Servlet.processRequest(Servlet.java:34)
+	at controller.Servlet.doPost(Servlet.java:24)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.RoleFilter.doFilter(RoleFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.AuthenticationFilter.doFilter(AuthenticationFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at controller.command.filter.EncodingFilter.doFilter(EncodingFilter.java:17)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-15 20:53:03 INFO  StudentDaoImpl:69 - get Login and password
+2019-04-15 20:53:05 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:53:13 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:53:13 INFO  StudentDaoImpl:77 - set specialty to user
+2019-04-15 20:53:13 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:53:19 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:53:22 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:53:22 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:53:22 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:53:31 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:53:31 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:53:31 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:53:36 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:53:36 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:53:36 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:53:38 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-15 20:53:38 INFO  StudentDaoImpl:83 - received students list
+2019-04-15 20:53:38 INFO  SpecialtyServiceImpl:36 - Find all specialty 

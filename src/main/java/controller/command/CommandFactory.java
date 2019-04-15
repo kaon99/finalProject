@@ -32,7 +32,7 @@ public class CommandFactory {
         commandMap.put("admin/setgrade/button",new SetGradeCommand());
         commandMap.put("studentpage", new StudentPageCommand());
         commandMap.put("studentpage/studentrating", new StudentRatingCommandPage());
-        commandMap.put("studentpage/studentrating/set", new StudentRatingCommand());
+        commandMap.put("studentpage/studentrating/show", new StudentRatingCommand());
         commandMap.put("main", new MainCommand());
         commandMap.put("logout", new LogoutCommand());
 
