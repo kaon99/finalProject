@@ -15,7 +15,11 @@
 <body>
 <h1>Student Rating</h1>
 <form method="post"
+<<<<<<< HEAD
+      action="${pageContext.request.contextPath}/university/logout">
+=======
       action="${pageContext.request.contextPath}//university/logout">
+>>>>>>> web
     <input type="hidden">
     <button type="submit"><fmt:message key="text.logout"/></button>
 </form>
