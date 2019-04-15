@@ -12,12 +12,8 @@ import model.service.impl.StudentServiceImpl;
 public class MAIN {
     public static void main(String[] args) {
         StudentService studentService = new StudentServiceImpl();
-        RatingService ratingService = new RatingServiceImpl();
-        String email = "kaon199999@gmail.com";
-        Integer subjectId = 1;
-        Integer assessment = 100;
-
-        ratingService.setmark(email,subjectId,assessment);
+       Student student = studentService.findById(24);
+       studentService.setMarks(student);
 
 
     }

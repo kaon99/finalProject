@@ -51,9 +51,8 @@ studentDao.delete(id);
     }
 
     @Override
-    public void setMarks(int id) {
+    public void setMarks(Student student) {
     logger.info("set marks");
-    Student student = studentDao.findById(id);
 studentDao.setSumMarks(student);
     }
 

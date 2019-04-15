@@ -81,19 +81,19 @@ public class StudentDaoImpl implements StudentDao {
             ResultSet resultSet = statement.executeQuery();
             Integer sumOfResult = null;
             if (resultSet.next()) {
-                sumOfResult = resultSet.getInt("SUM(rating.assessment)");
+                sumOfResult = resultSet.getInt("grade");
 
             }
             if (Objects.isNull(sumOfResult)) {
                 connection.rollback();
             }
-            try (PreparedStatement setGradeStatement = connection.prepareStatement(QueriesResourseManager.getProperty("user.set.sum"));) {
-                setGradeStatement.setInt(1, sumOfResult);
+            PreparedStatement setGradeStatement = connection.prepareStatement(QueriesResourseManager.getProperty("user.set.sum"));
+                setGradeStatement.setInt( 1,sumOfResult);
                 setGradeStatement.setInt(2, student.getId());
                 setGradeStatement.execute();
                 connection.commit();
                 connection.setAutoCommit(true);
-            }
+
         } catch (SQLException e) {
             e.printStackTrace();
 

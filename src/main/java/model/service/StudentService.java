@@ -11,7 +11,7 @@ public interface StudentService {
     List<Student> findAll();
     void update(Student entity);
     void delete(int id);
-    void setMarks ( int id );
+    void setMarks ( Student student );
     Student findByEmail (String email);
     Student loginUser (String login,String password);
     void setSpecialty (Integer specialtyId , Student student);
