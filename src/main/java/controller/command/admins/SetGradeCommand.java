@@ -24,10 +24,6 @@ public class SetGradeCommand implements Command {
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         try {
 
-
-
-//            RatingService ratingService = new RatingServiceImpl();
-//            SubjectService subjectService =new SubjectServiceImpl();
             String email = request.getParameter((AttributesResourseManager.getProperty("parameter.email")));
             Integer subject =Integer.parseInt(request.getParameter((AttributesResourseManager.getProperty("parameter.subject"))));
 

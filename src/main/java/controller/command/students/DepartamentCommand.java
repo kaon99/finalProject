@@ -13,6 +13,7 @@ import utils.PageResourseManager;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 public class DepartamentCommand implements Command {
     SpecialtyService specialtyService  = new SpecialtyServiceImpl();
@@ -21,12 +22,13 @@ public class DepartamentCommand implements Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
+        final HttpSession session = request.getSession();
 
         request.setAttribute("speciatlyList" ,specialtyService.findAll());
         Integer specialtyId = Integer.parseInt(request.getParameter(AttributesResourseManager.getProperty("parameter.specialty")));
         Student student = (Student) session.getAttribute(AttributesResourseManager.getProperty("parameter.user"));
 
-
+       // studentService.
         return PageResourseManager.getProperty("studentpage/departament");
     }
 }

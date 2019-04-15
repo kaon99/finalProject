@@ -1,5 +1,6 @@
 package controller.command;
 
+import controller.command.pagesCommand.RegistrationCommandPage;
 import controller.command.util.CommandUtil;
 import model.entity.Student;
 import model.entity.types.Role;
@@ -7,7 +8,6 @@ import model.exception.WrongDataException;
 import model.service.StudentService;
 import model.service.impl.StudentServiceImpl;
 import utils.AttributesResourseManager;
-import utils.PageResourseManager;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -37,6 +37,6 @@ public class RegistrationCommand implements Command {
         } catch (WrongDataException e) {
             e.printStackTrace();
         }
-        return PageResourseManager.getProperty("registration");
+        return new RegistrationCommandPage().execute(request,response);
     }
 }

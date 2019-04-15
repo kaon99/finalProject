@@ -118,6 +118,37 @@ public class StudentDaoImpl implements StudentDao {
         }
     }
 
+    @Override
+    public void setSpecialty(Integer specialtyId, Student student) {
+        try {
+            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.set.specialty"));
+            statement.setInt(1,specialtyId);
+            statement.setInt(2,student.getId());
+            statement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public List<Student> findReceivedStudents(Integer specialtyId) {
+        try {
+            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.find.received"));
+            statement.setInt(1,specialtyId);
+            ResultSet resultSet = statement.executeQuery();
+            List<Student> students = new ArrayList<>();
+            while (resultSet.next()) {
+                students.add(new StudentMapper().extractFromResultSet(resultSet));
+
+
+            }
+            return students;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 
     @Override
     public Student findById(int id) {

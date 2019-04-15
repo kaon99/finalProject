@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <form class="w3-container" action="${pageContext.request.contextPath}/university/login" align="center"  method="post">
+    <form class="w3-container" action="${pageContext.request.contextPath}/university/registration" align="center"  method="post">
     <p>
         <label>
             <input class="w3-input" type="text" required placeholder= "<fmt:message key="text.name.ua"/>" name="nameUa"/>
