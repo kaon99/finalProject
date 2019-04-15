@@ -4,7 +4,7 @@ public class CommandUtil {
 
 
     public static String getUserPageByRole(int accessLevel) {
-        String page = "";
+        String page = "redirect:/login";
         switch (accessLevel) {
             case 2:
                 page = "redirect:/studentpage";
