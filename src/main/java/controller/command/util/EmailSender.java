@@ -6,18 +6,18 @@ import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
 
-public class Main {
-    public static void main(String[] args) {
-        Main main = new Main();
+public class EmailSender {
+    public static void send(String email) {
+        EmailSender main = new EmailSender(email);
     }
     final String senderEmailID = "bandits.corporation@gmail.com";
     final String senderPassword = "bandits12345";
     final String emailSMTPserver = "smtp.gmail.com";
     final String emailServerPort = "465";
-    String receiverEmailID = "kaon1999@gmail.com";
-    static String emailSubject = "Complete your account registration";
-    static String emailBody = "Your verification code: 0984";
-    public Main(){
+
+    static String emailSubject = "Selection results ";
+    static String emailBody = "Dear candidate. Thank you for your interested in out program. We congratulation  you on successful test.";
+    public EmailSender(String email){
 
         // Receiver Email Address
         // Subject
@@ -39,7 +39,7 @@ public class Main {
             msg.setSubject(emailSubject);
             msg.setFrom(new InternetAddress(senderEmailID));
             msg.addRecipient(Message.RecipientType.TO,
-                    new InternetAddress(receiverEmailID));
+                    new InternetAddress(email));
             Transport.send(msg);
             System.out.println("Message send Successfully:)"); }
 
@@ -53,5 +53,5 @@ public class Main {
             return new PasswordAuthentication(senderEmailID, senderPassword);
         }
 
-    }
+  }
 }

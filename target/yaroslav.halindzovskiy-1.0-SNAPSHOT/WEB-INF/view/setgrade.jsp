@@ -15,6 +15,11 @@
 </head>
 <body>
 <div>
+    <form method="post"
+          action="${pageContext.request.contextPath}/university/main">
+        <input type="hidden">
+        <button type="submit"><fmt:message key="text.main"/></button>
+    </form>
     <form  method="post"  action="${pageContext.request.contextPath} /university/admin/setgrade/button">
 
         <p>

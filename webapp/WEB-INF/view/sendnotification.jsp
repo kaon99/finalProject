@@ -10,19 +10,26 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Send Notification</title>
+    <title><fmt:message key="text.send.notification"/></title>
 </head>
 <body>
-<h1>Отправить сообщения </h1>
+<h1><fmt:message key="text.send.notification"/> </h1>
 <form method="post"
       action="${pageContext.request.contextPath}/university/main">
-    <input type="hidden">
     <button type="submit"><fmt:message key="text.main"/></button>
 </form>
 <form method="post"
       action="${pageContext.request.contextPath}/university/logout">
-    <input type="hidden">
-    <button type="submit">Выйти</button>
+    <button type="submit"><fmt:message key="text.logout"/> </button>
+</form>
+<form method="post"
+      action="${pageContext.request.contextPath}/university/admin/sendnotification/send">
+    <p>
+        <label>
+            <input class="w3-input" type="text" required placeholder="<fmt:message key="text.email"/>" name="email"/>
+        </label>
+    </p>
+    <button type="submit"><fmt:message key="text.send"/></button>
 </form>
 </body>
 </html>

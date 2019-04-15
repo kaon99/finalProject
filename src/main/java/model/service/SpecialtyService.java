@@ -5,7 +5,7 @@ import model.entity.Specialty;
 import java.util.List;
 
 public interface SpecialtyService {
-    void create (Specialty specialty);
+    void create(Specialty specialty);
 
     Specialty findById(int id);
     List<Specialty> findAll();

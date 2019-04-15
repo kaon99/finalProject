@@ -15,6 +15,11 @@
     <title>регистрация</title>
 </head>
 <body>
+<form method="post"
+      action="${pageContext.request.contextPath}/university/main">
+    <input type="hidden">
+    <button type="submit"><fmt:message key="text.main"/></button>
+</form>
 
     <form class="w3-container" action="${pageContext.request.contextPath}/university/registration/create" align="center"  method="post">
     <p>

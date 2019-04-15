@@ -1321,3 +1321,10 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 2019-04-15 22:55:27 INFO  SpecialtyServiceImpl:36 - Find all specialty 
 2019-04-15 22:55:27 INFO  StudentDaoImpl:82 - received students list
 2019-04-15 22:55:27 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-16 01:29:32 INFO  StudentDaoImpl:68 - get Login and password
+2019-04-16 01:29:38 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-16 01:29:42 INFO  StudentDaoImpl:55 - set marks
+2019-04-16 01:29:42 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-16 01:29:42 INFO  StudentDaoImpl:82 - received students list
+2019-04-16 01:29:42 INFO  SpecialtyServiceImpl:36 - Find all specialty 
+2019-04-16 01:29:50 INFO  StudentDaoImpl:68 - get Login and password

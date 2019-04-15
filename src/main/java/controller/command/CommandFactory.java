@@ -1,7 +1,8 @@
 package controller.command;
 
 import controller.command.admins.AdminCommand;
-import controller.command.admins.SendNotificatioinCommand;
+import controller.command.admins.SendNotificationCommandButton;
+import controller.command.pagesCommand.SendNotificatioinCommandPage;
 import controller.command.admins.SetGradeCommand;
 import controller.command.pagesCommand.DepartamentCommandPage;
 import controller.command.pagesCommand.RegistrationCommandPage;
@@ -27,7 +28,8 @@ public class CommandFactory {
         commandMap.put("studentpage/departament/set", new DepartamentCommand());
         commandMap.put("registration", new RegistrationCommandPage());
         commandMap.put("registration/create", new RegistrationCommand());
-        commandMap.put("admin/sendnotification", new SendNotificatioinCommand());
+        commandMap.put("admin/sendnotification", new SendNotificatioinCommandPage());
+        commandMap.put("admin/sendnotification/send", new SendNotificationCommandButton());
         commandMap.put("admin/setgrade", new SetGradeCommandPage());
         commandMap.put("admin/setgrade/button",new SetGradeCommand());
         commandMap.put("studentpage", new StudentPageCommand());
