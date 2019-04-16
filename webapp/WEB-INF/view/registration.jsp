@@ -15,6 +15,7 @@
     <title>регистрация</title>
 </head>
 <body>
+<jsp:include page="/WEB-INF/parts/header.jsp"/>
 <form method="post"
       action="${pageContext.request.contextPath}/university/main">
     <input type="hidden">

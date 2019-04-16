@@ -14,18 +14,8 @@
     <title><fmt:message key="text.student.rating"/> </title>
 </head>
 <body>
+<jsp:include page="/WEB-INF/parts/header.jsp"/>
 <h1><fmt:message key="text.student.rating" /></h1>
-
-<form method="post"
-      action="${pageContext.request.contextPath}/university/main">
-    <input type="hidden">
-    <button type="submit"><fmt:message key="text.main"/></button>
-</form>
-<form method="post"
-      action="${pageContext.request.contextPath}/university/logout">
-    <input type="hidden">
-    <button type="submit"><fmt:message key="text.logout"/></button>
-</form>
 
 
 <form method="post" action="${pageContext.request.contextPath}/university/studentpage/studentrating/show">
@@ -47,14 +37,21 @@
     <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.set.specialty"/>">
 </form>
 
+
+<table class="highlight">
+
+    <tbody>
 <c:forEach items="${studentsReceivedList}" var="student">
-    ${student.getNameUa()}
-    ${student.getSurnameUa()}
-    ${student.getNameEn()}
-    ${student.getSurnameEn()}
-    ${student.getSumOfaccessment()}
-    <br>
+    <tr>
+        <td> ${student.getNameUa()} </td>
+        <td> ${student.getSurnameUa()} </td>
+        <td> ${student.getNameEn()} </td>
+        <td> ${student.getSurnameEn()} </td>
+        <td> ${student.getSumOfaccessment()} </td>
+    </tr>
+
 </c:forEach>
+    </table>
 
 </body>
 </html>

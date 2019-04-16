@@ -10,18 +10,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <jsp:include page="/WEB-INF/parts/header.jsp"/>
     <title><fmt:message key="text.send.notification"/></title>
 </head>
 <body>
 <h1><fmt:message key="text.send.notification"/> </h1>
-<form method="post"
-      action="${pageContext.request.contextPath}/university/main">
-    <button type="submit"><fmt:message key="text.main"/></button>
-</form>
-<form method="post"
-      action="${pageContext.request.contextPath}/university/logout">
-    <button type="submit"><fmt:message key="text.logout"/> </button>
-</form>
+
 <form method="post"
       action="${pageContext.request.contextPath}/university/admin/sendnotification/send">
     <p>

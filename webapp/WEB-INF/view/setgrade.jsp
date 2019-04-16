@@ -14,6 +14,7 @@
     <title><fmt:message key="text.set.marks"/></title>
 </head>
 <body>
+<jsp:include page="/WEB-INF/parts/header.jsp"/>
 <div>
     <form method="post"
           action="${pageContext.request.contextPath}/university/main">
@@ -54,10 +55,6 @@
 </div>
 
 
-<form method="post"
-      action="${pageContext.request.contextPath}/university/logout">
-    <input type="hidden">
-    <button type="submit"><fmt:message key="text.logout"/></button>
-</form>
+
 </body>
 </html>

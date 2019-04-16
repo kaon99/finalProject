@@ -11,32 +11,23 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Student</title>
+    <jsp:include page="/WEB-INF/parts/header.jsp"/>
+    <title><fmt:message key="text.student" /></title>
 </head>
 <body>
 <h1>Student Page</h1>
 <form method="post"
       action="${pageContext.request.contextPath}/university/studentpage/departament">
     <input type="hidden">
-    <button type="submit">Кафедры</button>
+    <button type="submit"><fmt:message key="text.departament"/> </button>
 </form>
 
 <form method="post"
       action="${pageContext.request.contextPath}/university/studentpage/studentrating">
     <input type="hidden">
-    <button type="submit">Показать рейтинг</button>
+    <button type="submit"><fmt:message key="text.student.rating" /></button>
 </form>
-<form method="post"
-      action="${pageContext.request.contextPath}/university/logout">
-    <input type="hidden">
-    <button type="submit"><fmt:message key="text.logout"/></button>
-    <div>
 
-
-
-    </div>
-
-</form>
 <div>
 <c:out value="${nameUa}"/>
 <c:out value="${surnameUa}"/>

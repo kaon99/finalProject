@@ -14,18 +14,11 @@
     <title><fmt:message key="text.departament"/> </title>
 </head>
 <body>
+<jsp:include page="/WEB-INF/parts/header.jsp"/>
 <h1><fmt:message key="text.departament"/></h1>
-<form method="post"
-      action="${pageContext.request.contextPath}/university/main">
-    <input type="hidden">
-    <button type="submit"><fmt:message key="text.main"/></button>
-</form>
 
-<form method="post"
-      action="${pageContext.request.contextPath}/university/logout">
-    <input type="hidden">
-    <button type="submit"><fmt:message key="text.logout"/></button>
-</form>
+
+
 
 <form method="post" action="${pageContext.request.contextPath}/university/studentpage/departament/set"  >
     <p>

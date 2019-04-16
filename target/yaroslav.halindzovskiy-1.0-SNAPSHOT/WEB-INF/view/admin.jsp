@@ -1,3 +1,4 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: Yaroslav
@@ -12,22 +13,19 @@
     <title></title>
 </head>
 <body>
+<jsp:include page="/WEB-INF/parts/header.jsp"/>
 
 <form role="form" method="post"
       action="${pageContext.request.contextPath}/university/admin/setgrade">
     <input type="hidden" name="conference_id" value="${conference.id}">
-    <button type="submit" >Выставить оценки</button>
+    <button type="submit" ><fmt:message key="text.set.marks"/> </button>
 </form>
 
 <form role="form"  method="post"
       action="${pageContext.request.contextPath}/university/admin/sendnotification">
-    <button type="submit" >Отправить уведомление</button>
+    <input type="hidden" name="conference_id" value="${conference.id}">
+    <button type="submit" ><fmt:message key="text.notification"/> </button>
 </form>
 
-<form method="post"
-      action="${pageContext.request.contextPath}/university/logout">
-    <input type="hidden">
-    <button type="submit">Выйти</button>
-</form>
 </body>
 </html>

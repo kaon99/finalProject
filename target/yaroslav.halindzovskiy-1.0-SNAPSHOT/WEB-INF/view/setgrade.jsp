@@ -14,6 +14,7 @@
     <title><fmt:message key="text.set.marks"/></title>
 </head>
 <body>
+<jsp:include page="/WEB-INF/parts/header.jsp"/>
 <div>
     <form method="post"
           action="${pageContext.request.contextPath}/university/main">
