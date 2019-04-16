@@ -19,7 +19,8 @@ public class StudentPageCommand implements Command {
             request.setAttribute(AttributesResourseManager.getProperty("parameter.name.en"),student.getNameEn());
             request.setAttribute(AttributesResourseManager.getProperty("parameter.surname.en"),student.getSurnameEn());
             request.setAttribute(AttributesResourseManager.getProperty("parameter.email"),student.getEmail());
-
+        System.out.println(request.getSession().getAttribute(AttributesResourseManager.getProperty("parameter.language")));
+        System.out.println(request.getSession().getAttribute(AttributesResourseManager.getProperty("parameter.language")));
 
 
 

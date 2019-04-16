@@ -35,5 +35,6 @@
         </label>
         <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.set.marks"/>">
 </form>
+<jsp:include page="/WEB-INF/parts/footer.jsp"/>
 </body>
 </html>

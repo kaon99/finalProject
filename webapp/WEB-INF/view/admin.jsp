@@ -26,6 +26,6 @@
     <input type="hidden" name="conference_id" value="${conference.id}">
     <button type="submit" ><fmt:message key="text.notification"/> </button>
 </form>
-
+<jsp:include page="/WEB-INF/parts/footer.jsp"/>
 </body>
 </html>
