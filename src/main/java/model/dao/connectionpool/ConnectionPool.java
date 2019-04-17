@@ -34,7 +34,7 @@ public class ConnectionPool {
                 if (dataSource == null) {
                     BasicDataSource ds = new BasicDataSource();
                     try {
-                        Class.forName("com.mysql.jdbc.Driver");
+                        Class.forName("com.mysql.cj.jdbc.Driver");
                     } catch (ClassNotFoundException e) {
                         e.printStackTrace();
                     }
@@ -43,8 +43,8 @@ public class ConnectionPool {
                     ds.setPassword("root");
                     ds.setMinIdle(5);
                     ds.setMaxIdle(10);
-                    ds.setMaxActive(10000);
-                    ds.setMaxOpenPreparedStatements(100);
+                    ds.setMaxActive(1000);
+                    ds.setMaxOpenPreparedStatements(200);
                     dataSource = ds;
                 }
             }

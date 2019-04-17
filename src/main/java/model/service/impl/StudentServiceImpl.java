@@ -82,4 +82,7 @@ studentDao.setSumMarks(student);
         logger.info("received students list");
         return studentDao.findReceivedStudents(specialtyId);
     }
+
+
+
 }

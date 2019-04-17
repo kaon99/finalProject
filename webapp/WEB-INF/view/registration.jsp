@@ -24,22 +24,22 @@
 <form class="w3-container" action="${pageContext.request.contextPath}/university/registration/create" align="center"  method="post">
     <p>
         <label>
-            <input class="w3-input" type="text" pattern="[А-ЯЇЄІ[^ЫЪЬЭ]][а-яїіє'&&[^ыъэ]{1,20}" required placeholder= "<fmt:message key="text.name.ua"/>" name="nameUa"/>
+            <input class="w3-input" type="text" pattern="^[А-ЩЬЮЯҐІЇЄ][а-щьюяґіїє']{1,20}$" required placeholder= "<fmt:message key="text.name.ua"/>" name="nameUa"/>
         </label>
     </p>
     <p>
         <label>
-            <input class="w3-input" type="text" pattern="[А-ЯЇЄІ[^ЫЪЬЭ]][а-яїіє'&&[^ыъэ]{1,20}" required placeholder="<fmt:message key="text.surname.ua"/>" name="surnameUa"/>
+            <input class="w3-input" type="text" pattern="^[А-ЩЬЮЯҐІЇЄ][а-щьюяґіїє']{1,20}$" required placeholder="<fmt:message key="text.surname.ua"/>" name="surnameUa"/>
         </label>
     </p>
     <p>
         <label>
-            <input class="w3-input" type="text" pattern="[A-Za-z]{1,20}" required placeholder="<fmt:message key="text.name.en"/>" name="nameEn"/>
+            <input class="w3-input" type="text" pattern="^[A-Z][a-z]{1,20}$" required placeholder="<fmt:message key="text.name.en"/>" name="nameEn"/>
         </label>
     </p>
     <p>
         <label>
-            <input class="w3-input" type="text"pattern="[A-Za-z]{1,20}" required placeholder="<fmt:message key="text.surname.en"/>" name="surnameEn"/>
+            <input class="w3-input" type="text"pattern="^[A-Z][a-z]{1,20}$" required placeholder="<fmt:message key="text.surname.en"/>" name="surnameEn"/>
         </label>
     </p>
     <p>
@@ -59,6 +59,12 @@
             <fmt:message key="text.rerisration.error"/>
         </div>
         </c:if>
+        <c:if test="${requestScope.userExist}">
+        <div class="w3-container">
+            <fmt:message key="text.user.exist"/>
+        </div>
+        </c:if>
+
 </form>
 </div>
 <jsp:include page="/WEB-INF/parts/footer.jsp"/>

@@ -16,4 +16,5 @@ public interface StudentService {
     Student loginUser(String login, String password);
     void setSpecialty(Integer specialtyId, Student student);
     List<Student> receivedStudents(Integer specialtyId);
+
 }
