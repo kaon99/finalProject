@@ -1,5 +1,8 @@
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<c:set var="language" value="${not empty sessionScope.language ? sessionScope.language : pageContext.request.locale}"
+       scope="session"/>
+<fmt:setLocale value="${language}"/>
 <fmt:setBundle basename="text"/>
 <%--
   Created by IntelliJ IDEA.
@@ -9,13 +12,13 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<html lang="${language}">
 <head>
     <jsp:include page="/WEB-INF/parts/header.jsp"/>
     <title><fmt:message key="text.student" /></title>
 </head>
 <body>
-<h1>Student Page</h1>
+<h1><fmt:message key="text.student"/> </h1>
 <form method="post"
       action="${pageContext.request.contextPath}/university/studentpage/departament">
     <input type="hidden">
@@ -35,5 +38,6 @@
 <c:out value="${surnameEn}"/>
 <c:out value="${email}"/>
 </div>
+<jsp:include page="/WEB-INF/parts/footer.jsp"/>
 </body>
 </html>

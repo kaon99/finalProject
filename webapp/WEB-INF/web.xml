@@ -38,7 +38,8 @@
 
     <filter-mapping>
         <filter-name>AuthorizationFilter</filter-name>
-        <url-pattern>/university/*</url-pattern>
+        <url-pattern>/university/admin/*</url-pattern>
+        <url-pattern>/university/studentpage/*</url-pattern>
     </filter-mapping>
     <filter>
         <filter-name>RoleFilter</filter-name>
