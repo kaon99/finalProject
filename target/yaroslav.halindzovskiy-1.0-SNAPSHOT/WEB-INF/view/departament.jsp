@@ -1,6 +1,4 @@
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<fmt:setBundle basename="text"/>
+
 <%--
   Created by IntelliJ IDEA.
   User: Yaroslav
@@ -39,7 +37,7 @@
 
             </select>
         </label>
-        <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.set.marks"/>">
+        <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.set.specialty"/>">
 </form>
 <jsp:include page="/WEB-INF/parts/footer.jsp"/>
 </body>

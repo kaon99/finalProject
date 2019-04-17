@@ -37,7 +37,7 @@
 
             </select>
         </label>
-        <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.set.marks"/>">
+        <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.set.specialty"/>">
 </form>
 <jsp:include page="/WEB-INF/parts/footer.jsp"/>
 </body>

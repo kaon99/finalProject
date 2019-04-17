@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.Optional;
 
 public class DepartamentCommand implements Command {
     SpecialtyService specialtyService  = new SpecialtyServiceImpl();
@@ -29,7 +30,7 @@ public class DepartamentCommand implements Command {
         Integer specialtyId = Integer.parseInt(request.getParameter(AttributesResourseManager.getProperty("parameter.specialty")));
         Student student = (Student) session.getAttribute(AttributesResourseManager.getProperty("parameter.user"));
 
-        studentService.setSpecialty(specialtyId,student);
-        return new DepartamentCommandPage().execute(request,response);
+      Optional.ofNullable(specialtyId).ifPresent(s-> studentService.setSpecialty(s,student));
+        return PageResourseManager.getProperty("redirect.studentpage.departament");
     }
 }

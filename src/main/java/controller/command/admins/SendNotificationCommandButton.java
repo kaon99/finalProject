@@ -4,6 +4,7 @@ import controller.command.Command;
 import controller.command.pagesCommand.SendNotificatioinCommandPage;
 import controller.command.util.EmailSender;
 import utils.AttributesResourseManager;
+import utils.PageResourseManager;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,6 +16,6 @@ public class SendNotificationCommandButton implements Command {
         String email = request.getParameter(AttributesResourseManager.getProperty("parameter.email"));
         EmailSender.send(email);
 
-        return new SendNotificatioinCommandPage().execute(request, response);
+        return PageResourseManager.getProperty("redirect.admin.notification");
     }
 }
