@@ -15,22 +15,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class SubjectDaoImpl  implements SubjectDao {
+public class SubjectDaoImpl implements SubjectDao {
     private Logger logger = Logger.getLogger(SubjectDaoImpl.class);
     private Connection connection;
 
-    public SubjectDaoImpl() {
-        this.connection = ConnectionPool.getInstance().getConnection();
+    public SubjectDaoImpl(Connection connection) {
+        this.connection = connection;
     }
 
     @Override
     public void create(Subject entity) {
-        try {
-            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("insert.subject"));
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("insert.subject"));
+        ) {
 
-            statement.setInt(1,entity.getId());
+            statement.setInt(1, entity.getId());
             statement.setString(2, entity.getName());
             statement.execute();
+            close();
             logger.info("Subject create ");
         } catch (SQLException e) {
             logger.info("Subject was not created ", e);
@@ -41,8 +42,8 @@ public class SubjectDaoImpl  implements SubjectDao {
 
     @Override
     public Subject findById(int id) {
-        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("subject.find.by.id"));
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("subject.find.by.id"));
+        ) {
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
             Subject subject = null;
@@ -50,7 +51,9 @@ public class SubjectDaoImpl  implements SubjectDao {
                 SubjectMapper subjectMapper = new SubjectMapper();
                 subject = subjectMapper.extractFromResultSet(resultSet);
             }
+            close();
             return subject;
+
         } catch (SQLException e) {
             logger.info("Subject do not find", e);
         }
@@ -59,14 +62,15 @@ public class SubjectDaoImpl  implements SubjectDao {
 
     @Override
     public List<Subject> findAll() {
-        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("subject.find.all"));
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("subject.find.all"));
+        ) {
             ResultSet resultSet = statement.executeQuery();
             List<Subject> subjects = new ArrayList<>();
             while (resultSet.next()) {
                 subjects.add(new SubjectMapper().extractFromResultSet(resultSet));
 
             }
+            close();
             return subjects;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -76,11 +80,12 @@ public class SubjectDaoImpl  implements SubjectDao {
 
     @Override
     public void update(Subject entity) {
-        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-           PreparedStatement  statement= connection.prepareStatement(QueriesResourseManager.getProperty("subject.update"));
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("subject.update"));
+        ) {
             statement.setString(1, entity.getName());
             statement.setInt(2, entity.getId());
             statement.execute();
+            close();
         } catch (SQLException e) {
             logger.error("Subject update ", e);
         }
@@ -90,10 +95,11 @@ public class SubjectDaoImpl  implements SubjectDao {
 
     @Override
     public void delete(int id) {
-        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("subject.delete"));
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("subject.delete"));
+        ) {
             statement.setInt(1, id);
             statement.executeUpdate();
+            close();
         } catch (SQLException e) {
             logger.error("Subject delete ", e);
         }

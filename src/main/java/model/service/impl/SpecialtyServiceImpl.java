@@ -1,11 +1,13 @@
 package model.service.impl;
 
 import model.dao.SpecialtyDao;
+import model.dao.daoimpl.DaoFactory;
 import model.dao.daoimpl.SpecialtyDaoImpl;
 import model.entity.Specialty;
 import model.service.SpecialtyService;
 import org.apache.log4j.Logger;
 
+import java.sql.Connection;
 import java.util.List;
 
 public class SpecialtyServiceImpl implements SpecialtyService {
@@ -14,7 +16,7 @@ public class SpecialtyServiceImpl implements SpecialtyService {
 
     public SpecialtyServiceImpl() {
 
-        specialtyDao = new SpecialtyDaoImpl();
+        specialtyDao = DaoFactory.getInstance().createSpecialtyDao();
     }
 
     @Override

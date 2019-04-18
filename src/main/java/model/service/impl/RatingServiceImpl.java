@@ -2,6 +2,7 @@ package model.service.impl;
 
 import model.dao.RatingDao;
 import model.dao.StudentDao;
+import model.dao.daoimpl.DaoFactory;
 import model.dao.daoimpl.RatingDaoImpl;
 import model.dao.daoimpl.StudentDaoImpl;
 import model.entity.Rating;
@@ -17,8 +18,8 @@ public class RatingServiceImpl implements RatingService {
     private StudentDao studentDao;
     private static Logger logger = Logger.getLogger(RatingServiceImpl.class);
     public RatingServiceImpl(){
-        studentDao = new StudentDaoImpl();
-        ratingDao =  new RatingDaoImpl();
+        studentDao = DaoFactory.getInstance().createStudentDao();
+        ratingDao =  DaoFactory.getInstance().createRatingDao();
 
     }
 

@@ -49,6 +49,6 @@ public class RegistrationCommand implements Command {
             request.setAttribute("userExist", true);
 
         }
-        return new RegistrationCommand().execute(request,response);
+        return new RegistrationCommandPage().execute(request,response);
     }
 }

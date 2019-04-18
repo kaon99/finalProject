@@ -1,11 +1,9 @@
 package model.dao.daoimpl;
 
 import model.dao.SpecialtyDao;
-import model.dao.SubjectDao;
 import model.dao.connectionpool.ConnectionPool;
 import model.dao.mapper.SpecialtyMapper;
 import model.entity.Specialty;
-import model.entity.Subject;
 import org.apache.log4j.Logger;
 import utils.QueriesResourseManager;
 
@@ -16,67 +14,71 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static javax.swing.text.html.HTML.Tag.HEAD;
-
 public class SpecialtyDaoImpl implements SpecialtyDao {
     private Logger logger = Logger.getLogger(SpecialtyDaoImpl.class);
+    private Connection connection;
 
+    public SpecialtyDaoImpl(Connection connection) {
+        this.connection = connection;
+    }
 
     @Override
     public void create(Specialty entity) {
-        try(Connection connection = ConnectionPool.getInstance().getConnection()) {
-            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("insert.specialty"));
-            statement.setInt(1,entity.getId());
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("insert.specialty"));
+        ) {
+            statement.setInt(1, entity.getId());
             statement.setString(2, entity.getTitle());
             statement.execute();
+        } catch (SQLException e) {
+            logger.error("Specialty don`t create ", e);
         }
-     catch (SQLException e) {
-        logger.error("Specialty don`t create ",e);
-    }
     }
 
     @Override
     public Specialty findById(int id) {
-        try(Connection connection = ConnectionPool.getInstance().getConnection()) {
-            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.find.by.id"));
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.find.by.id"));
+        ) {
             Specialty specialty = null;
-            statement.setInt(1,id);
+            statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
 
-            if(resultSet.next()){
+            if (resultSet.next()) {
                 SpecialtyMapper specialtyMapper = new SpecialtyMapper();
                 specialty = specialtyMapper.extractFromResultSet(resultSet);
             }
+            close();
             return specialty;
         } catch (SQLException e) {
-            logger.error("Cannot find Specialty by id $d",e);
+            logger.error("Cannot find Specialty by id $d", e);
         }
         return null;
     }
 
     @Override
     public List<Specialty> findAll() {
-        try(Connection connection = ConnectionPool.getInstance().getConnection()) {
-            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.find.all"));
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.find.all"));
+        ) {
             ResultSet resultSet = statement.executeQuery();
             List<Specialty> specialties = new ArrayList<>();
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 specialties.add(new SpecialtyMapper().extractFromResultSet(resultSet));
             }
+            close();
             return specialties;
+
         } catch (SQLException e) {
-            logger.error("Find all specialty error",e);
+            logger.error("Find all specialty error", e);
         }
         return null;
     }
 
     @Override
     public void update(Specialty entity) {
-        try(Connection connection = ConnectionPool.getInstance().getConnection()) {
-            PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.update"));
-        statement.setString(1,entity.getTitle());
-        statement.setInt(2,entity.getId());
-        statement.execute();
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.update"));
+        ) {
+            statement.setString(1, entity.getTitle());
+            statement.setInt(2, entity.getId());
+            statement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -84,27 +86,23 @@ public class SpecialtyDaoImpl implements SpecialtyDao {
 
     @Override
     public void delete(int id) {
-        try(Connection connection = ConnectionPool.getInstance().getConnection()) {
-    PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.delete"));
-
-statement.setInt(1,id);
-statement.executeUpdate();
-
-    statement.setInt(1,id);
-    statement.executeUpdate();
-
-
-} catch (SQLException e) {
-    e.printStackTrace();
-}
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("specialty.delete"));
+        ) {
+            statement.setInt(1, id);
+            statement.executeUpdate();
+            statement.setInt(1, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void close() {
-        try(Connection connection = ConnectionPool.getInstance().getConnection()) {
-
+        try {
+            connection.close();
         } catch (SQLException e) {
-            logger.error("Close ", e);
+
         }
     }
 }

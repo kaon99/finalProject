@@ -1,8 +1,7 @@
 package model.service.impl;
 
 import model.dao.SubjectDao;
-import model.dao.daoimpl.StudentDaoImpl;
-import model.dao.daoimpl.SubjectDaoImpl;
+import model.dao.daoimpl.DaoFactory;
 import model.entity.Subject;
 import model.service.SubjectService;
 import org.apache.log4j.Logger;
@@ -14,7 +13,8 @@ public class SubjectServiceImpl implements SubjectService {
     private static Logger logger = Logger.getLogger(SubjectServiceImpl.class);
 
     public SubjectServiceImpl() {
-        subjectDao = new SubjectDaoImpl();
+
+        subjectDao = DaoFactory.getInstance().createSubjectDao();
     }
 
     @Override
@@ -45,6 +45,6 @@ public class SubjectServiceImpl implements SubjectService {
 
     @Override
     public void delete(int id) {
-subjectDao.delete(id);
+        subjectDao.delete(id);
     }
 }

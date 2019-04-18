@@ -1,6 +1,7 @@
 package model.service.impl;
 
 import model.dao.StudentDao;
+import model.dao.daoimpl.DaoFactory;
 import model.dao.daoimpl.StudentDaoImpl;
 import model.entity.Student;
 import model.service.StudentService;
@@ -13,7 +14,7 @@ public class StudentServiceImpl implements StudentService {
     private static Logger logger = Logger.getLogger(StudentDaoImpl.class);
 public StudentServiceImpl(){
 
-    studentDao =  new StudentDaoImpl();
+    studentDao = DaoFactory.getInstance().createStudentDao();
     }
 
     @Override
