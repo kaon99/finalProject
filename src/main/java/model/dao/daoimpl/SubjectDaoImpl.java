@@ -1,7 +1,6 @@
 package model.dao.daoimpl;
 
 import model.dao.SubjectDao;
-import model.dao.connectionpool.ConnectionPool;
 import model.dao.mapper.SubjectMapper;
 import model.entity.Subject;
 import org.apache.log4j.Logger;
@@ -31,7 +30,6 @@ public class SubjectDaoImpl implements SubjectDao {
             statement.setInt(1, entity.getId());
             statement.setString(2, entity.getName());
             statement.execute();
-            close();
             logger.info("Subject create ");
         } catch (SQLException e) {
             logger.info("Subject was not created ", e);
@@ -51,7 +49,6 @@ public class SubjectDaoImpl implements SubjectDao {
                 SubjectMapper subjectMapper = new SubjectMapper();
                 subject = subjectMapper.extractFromResultSet(resultSet);
             }
-            close();
             return subject;
 
         } catch (SQLException e) {
@@ -70,8 +67,8 @@ public class SubjectDaoImpl implements SubjectDao {
                 subjects.add(new SubjectMapper().extractFromResultSet(resultSet));
 
             }
-            close();
             return subjects;
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -85,7 +82,6 @@ public class SubjectDaoImpl implements SubjectDao {
             statement.setString(1, entity.getName());
             statement.setInt(2, entity.getId());
             statement.execute();
-            close();
         } catch (SQLException e) {
             logger.error("Subject update ", e);
         }
@@ -99,7 +95,6 @@ public class SubjectDaoImpl implements SubjectDao {
         ) {
             statement.setInt(1, id);
             statement.executeUpdate();
-            close();
         } catch (SQLException e) {
             logger.error("Subject delete ", e);
         }

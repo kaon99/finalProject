@@ -52,6 +52,11 @@
             </label>
         </p>
         <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.set.marks"/>">
+        <c:if test="${requestScope.userExist}">
+            <div class="w3-container">
+                <fmt:message key="text.user.not.exist"/>
+            </div>
+        </c:if>
     </form>
 
 

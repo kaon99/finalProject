@@ -21,19 +21,19 @@ import java.util.List;
 
 public class RatingDaoImpl implements RatingDao {
     private Logger logger = Logger.getLogger(RatingDaoImpl.class);
-    private Connection connection = ConnectionPool.getInstance().getConnection();
+    private Connection connection ;
 
     public RatingDaoImpl(Connection connection) {
         this.connection =connection;
     }
 
     public void create(Rating entity) {
-        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("insert.rating"));) {
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("insert.rating"))) {
             statement.setInt(1, entity.getAssessment());
             statement.setInt(2, entity.getSubjectId());
             statement.setInt(3, entity.getSubjectId());
             statement.execute();
-            close();
+
         } catch (SQLException var3) {
             this.logger.info(" Rating do not create", var3);
         }
@@ -41,7 +41,7 @@ public class RatingDaoImpl implements RatingDao {
     }
 
     public Rating findById(int id) {
-        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("rating.find.by.id"));) {
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("rating.find.by.id"))) {
             Rating rating = null;
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
@@ -49,7 +49,7 @@ public class RatingDaoImpl implements RatingDao {
                 RatingMapper ratingMapper = new RatingMapper();
                 rating = ratingMapper.extractFromResultSet(resultSet);
             }
-            close();
+
             return rating;
         } catch (SQLException var6) {
             this.logger.info("Rating do not find by id ", var6);
@@ -58,14 +58,14 @@ public class RatingDaoImpl implements RatingDao {
     }
 
     public List<Rating> findAll() {
-        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("rating.find.all"));) {
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("rating.find.all"))) {
             ResultSet resultSet = statement.executeQuery();
             ArrayList ratings = new ArrayList();
 
             while (resultSet.next()) {
                 ratings.add((new RatingMapper()).extractFromResultSet(resultSet));
             }
-            close();
+
             return ratings;
         } catch (SQLException var4) {
             this.logger.info("Cannot find All", var4);
@@ -74,13 +74,13 @@ public class RatingDaoImpl implements RatingDao {
     }
 
     public void update(Rating entity) {
-        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("rating.update"));) {
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("rating.update"))) {
             statement.setInt(1, entity.getAssessment());
             statement.setInt(2, entity.getSubjectId());
             statement.setInt(3, entity.getStudentId());
             statement.setInt(4, entity.getId());
             statement.execute();
-            close();
+
         } catch (SQLException var3) {
             this.logger.info("Rating do not update E", var3);
         }
@@ -88,22 +88,22 @@ public class RatingDaoImpl implements RatingDao {
     }
 
     public void delete(int id) {
-        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("rating.delete"));) {
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("rating.delete"))) {
             statement.setInt(1, id);
             statement.execute();
-            close();
+
         } catch (SQLException var3) {
             this.logger.info("Rating don`t delete ");
         }
 
     }
 
+    @Override
     public void close() {
         try {
-            this.connection.close();
-        } catch (SQLException var2) {
-            this.logger.error("Close ", var2);
+            connection.close();
+        } catch (SQLException e) {
+            logger.error("Close ", e);
         }
-
     }
 }

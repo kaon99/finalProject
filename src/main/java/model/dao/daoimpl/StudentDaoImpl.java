@@ -2,7 +2,6 @@ package model.dao.daoimpl;
 
 
 import model.dao.StudentDao;
-import model.dao.connectionpool.ConnectionPool;
 import model.dao.mapper.StudentMapper;
 import model.entity.Student;
 import org.apache.log4j.Logger;
@@ -38,7 +37,7 @@ public class StudentDaoImpl implements StudentDao {
             statement.setString(6, student.getPassword());
             statement.setInt(7, student.getRole());
             statement.execute();
-            close();
+
         } catch (SQLException e) {
             logger.error("Student don`t create ", e);
         }
@@ -48,7 +47,7 @@ public class StudentDaoImpl implements StudentDao {
     public Student getByLoginAndPass(String login, String password) {
 
         try (PreparedStatement statement = connection.prepareStatement
-                (QueriesResourseManager.getProperty("select.by.login.password"));) {
+                (QueriesResourseManager.getProperty("select.by.login.password"))) {
 
 
             statement.setString(1, login);
@@ -96,7 +95,7 @@ public class StudentDaoImpl implements StudentDao {
                 setGradeStatement.execute();
                 connection.commit();
                 connection.setAutoCommit(true);
-                close();
+
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -117,7 +116,6 @@ public class StudentDaoImpl implements StudentDao {
             if (resultSet.next()) {
                 StudentMapper studentMapper = new StudentMapper();
                 student = studentMapper.extractFromResultSet(resultSet);
-                close();
             }
 
 
@@ -130,13 +128,12 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public void setSpecialty(Integer specialtyId, Student student) {
-        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.set.specialty"));
+        try (PreparedStatement statement =connection.prepareStatement(QueriesResourseManager.getProperty("user.set.specialty"));
         ) {
 
             statement.setInt(1, specialtyId);
             statement.setInt(2, student.getId());
             statement.execute();
-            close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -155,7 +152,6 @@ public class StudentDaoImpl implements StudentDao {
 
 
             }
-            close();
             return students;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -175,7 +171,6 @@ public class StudentDaoImpl implements StudentDao {
                 StudentMapper studentMapper = new StudentMapper();
                 student = studentMapper.extractFromResultSet(resultSet);
             }
-            close();
             return student;
 
 
@@ -187,7 +182,7 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public List<Student> findAll() {
-        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.find.all"));) {
+        try (PreparedStatement statement =connection.prepareStatement(QueriesResourseManager.getProperty("user.find.all"));) {
 
 
             ResultSet resultSet = statement.executeQuery();
@@ -197,7 +192,6 @@ public class StudentDaoImpl implements StudentDao {
 
 
             }
-            close();
             return students;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -220,7 +214,6 @@ public class StudentDaoImpl implements StudentDao {
             statement.setInt(8, student.getSumOfaccessment());
             statement.setInt(9, student.getId());
             statement.execute();
-            close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -232,7 +225,7 @@ public class StudentDaoImpl implements StudentDao {
         try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.delete"))) {
             statement.setInt(1, id);
             statement.executeUpdate();
-            close();
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -244,7 +237,7 @@ public class StudentDaoImpl implements StudentDao {
         try {
             connection.close();
         } catch (SQLException e) {
-
+            logger.error("Close ", e);
         }
     }
 }

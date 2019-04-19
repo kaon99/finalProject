@@ -51,7 +51,9 @@
         <url-pattern>/university/studentpage/*</url-pattern>
     </filter-mapping>
 
-
+<listener>
+    <listener-class>controller.command.listener.ContextListener</listener-class>
+</listener>
 
 
 

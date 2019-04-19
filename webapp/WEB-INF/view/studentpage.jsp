@@ -15,28 +15,35 @@
 <html lang="${language}">
 <head>
     <jsp:include page="/WEB-INF/parts/header.jsp"/>
-    <title><fmt:message key="text.student" /></title>
+    <title><fmt:message key="text.student"/></title>
 </head>
 <body>
-<h1><fmt:message key="text.student"/> </h1>
+<h1><fmt:message key="text.student"/></h1>
 <form method="post"
       action="${pageContext.request.contextPath}/university/studentpage/departament">
     <input type="hidden">
-    <button type="submit"><fmt:message key="text.departament"/> </button>
+    <button type="submit"><fmt:message key="text.departament"/></button>
 </form>
 
 <form method="post"
       action="${pageContext.request.contextPath}/university/studentpage/studentrating">
     <input type="hidden">
-    <button type="submit"><fmt:message key="text.student.rating" /></button>
+    <button type="submit"><fmt:message key="text.student.rating"/></button>
 </form>
 
 <div>
-<c:out value="${nameUa}"/>
-<c:out value="${surnameUa}"/>
-<c:out value="${nameEn}"/>
-<c:out value="${surnameEn}"/>
-<c:out value="${email}"/>
+    <c:choose>
+        <c:when test="${language == 'ua'}">
+            <c:out value="${nameUa}"/>
+            <c:out value="${surnameUa}"/>
+        </c:when>
+        <c:otherwise>
+            <c:out value="${nameEn}"/>
+            <c:out value="${surnameEn}"/>
+        </c:otherwise>
+    </c:choose>
+
+    <c:out value="${email}"/>
 </div>
 <jsp:include page="/WEB-INF/parts/footer.jsp"/>
 </body>

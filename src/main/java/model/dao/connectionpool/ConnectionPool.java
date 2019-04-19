@@ -19,6 +19,7 @@ public class ConnectionPool {
         if (instance == null) {
             synchronized (ConnectionPool.class) {
                 if (instance == null) {
+
                     instance = new ConnectionPool();
                 }
             }
@@ -34,7 +35,7 @@ public class ConnectionPool {
                 if (dataSource == null) {
                     BasicDataSource ds = new BasicDataSource();
                     try {
-                        Class.forName("com.mysql.cj.jdbc.Driver");
+                        Class.forName("com.mysql.jdbc.Driver");
                     } catch (ClassNotFoundException e) {
                         e.printStackTrace();
                     }
@@ -45,6 +46,7 @@ public class ConnectionPool {
                     ds.setMaxIdle(10);
                     ds.setMaxActive(100);
                     ds.setMaxOpenPreparedStatements(100);
+                    ds.setRemoveAbandonedTimeout(50);
                     dataSource = ds;
                 }
             }

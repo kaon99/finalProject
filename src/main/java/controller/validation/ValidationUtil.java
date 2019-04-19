@@ -8,7 +8,7 @@ import model.service.impl.StudentServiceImpl;
 
 import java.util.Optional;
 
-public class RegistrationUtil {
+public class ValidationUtil {
 
     public boolean verificate(String email,  String nameUa, String surnameUa, String nameEn, String surnameEn) throws WrongDataException {
         return InputValid.isUkraininanValid(nameUa) &&
@@ -21,7 +21,7 @@ public class RegistrationUtil {
 
     }
 
-    public boolean userExist (String email) throws UserExistException {
+    public boolean userExist (String email) {
         StudentService studentService = new StudentServiceImpl();
        Optional<Student> student = Optional.ofNullable(studentService.findByEmail(email));
         return student.isPresent();

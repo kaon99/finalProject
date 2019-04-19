@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 
 public abstract class DaoFactory {
     protected static Logger log = Logger.getLogger(DaoFactory.class.getName());
-    private static volatile DaoFactory daoFactory;
+    private static  DaoFactory daoFactory;
 
     public abstract StudentDao createStudentDao();
 
