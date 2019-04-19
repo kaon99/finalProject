@@ -45,11 +45,18 @@
 
     <tbody>
 <c:forEach items="${studentsReceivedList}" var="student">
+
     <tr>
+        <c:choose>
+        <c:when test="${language == 'ua'}">
         <td> ${student.getNameUa()} </td>
         <td> ${student.getSurnameUa()} </td>
+        </c:when>
+        <c:otherwise>
         <td> ${student.getNameEn()} </td>
         <td> ${student.getSurnameEn()} </td>
+        </c:otherwise>
+        </c:choose>
         <td> ${student.getSumOfaccessment()} </td>
     </tr>
 
@@ -58,3 +65,4 @@
 <jsp:include page="/WEB-INF/parts/footer.jsp"/>
 </body>
 </html>
+
