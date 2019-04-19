@@ -2,21 +2,18 @@ package controller.command;
 
 import controller.command.admins.AdminCommand;
 import controller.command.admins.SendNotificationCommandButton;
-import controller.command.pagesCommand.SendNotificatioinCommandPage;
 import controller.command.admins.SetGradeCommand;
-import controller.command.pagesCommand.DepartamentCommandPage;
-import controller.command.pagesCommand.RegistrationCommandPage;
-import controller.command.pagesCommand.SetGradeCommandPage;
-import controller.command.pagesCommand.StudentRatingCommandPage;
+import controller.command.pagesCommand.*;
 import controller.command.students.DepartamentCommand;
 import controller.command.students.StudentPageCommand;
 import controller.command.students.StudentRatingCommand;
+import org.apache.log4j.Logger;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class CommandFactory {
-
+    private static Logger logger = Logger.getLogger(CommandFactory.class);
 
     static private Map<String, Command> commandMap = new HashMap<>();
 
@@ -31,7 +28,7 @@ public class CommandFactory {
         commandMap.put("admin/sendnotification", new SendNotificatioinCommandPage());
         commandMap.put("admin/sendnotification/send", new SendNotificationCommandButton());
         commandMap.put("admin/setgrade", new SetGradeCommandPage());
-        commandMap.put("admin/setgrade/button",new SetGradeCommand());
+        commandMap.put("admin/setgrade/button", new SetGradeCommand());
         commandMap.put("studentpage", new StudentPageCommand());
         commandMap.put("studentpage/studentrating", new StudentRatingCommandPage());
         commandMap.put("studentpage/studentrating/show", new StudentRatingCommand());
@@ -42,12 +39,11 @@ public class CommandFactory {
     }
 
     public static Command getCommand(String url) {
+        logger.info("Command get");
         Command command = commandMap.get(url);
-
-
-if (command == null){
-    return new PageErrorCommand() ;
-}
+        if (command == null) {
+            return new PageErrorCommand();
+        }
         return command;
     }
 

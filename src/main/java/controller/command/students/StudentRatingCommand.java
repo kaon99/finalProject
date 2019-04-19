@@ -8,6 +8,7 @@ import model.service.SpecialtyService;
 import model.service.StudentService;
 import model.service.impl.SpecialtyServiceImpl;
 import model.service.impl.StudentServiceImpl;
+import org.apache.log4j.Logger;
 import utils.AttributesResourseManager;
 import utils.PageResourseManager;
 
@@ -19,6 +20,7 @@ import java.util.InputMismatchException;
 import java.util.Optional;
 
 public class StudentRatingCommand implements Command {
+    private Logger logger = Logger.getLogger(StudentRatingCommand.class);
     SpecialtyService specialtyService = new SpecialtyServiceImpl();
     StudentService studentService = new StudentServiceImpl();
     @Override
@@ -31,9 +33,11 @@ public class StudentRatingCommand implements Command {
             Integer specialtyId = Integer.parseInt(request.getParameter(AttributesResourseManager.getProperty("parameter.specialty")));
             request.setAttribute("studentsReceivedList",studentService.receivedStudents(specialtyId));
         } catch (NumberFormatException e) {
+            logger.debug("numberFormat", e);
             request.setAttribute("notFound", true);
             return new StudentRatingCommandPage().execute(request,response);
         }
+        logger.info("execute");
         return new StudentRatingCommandPage().execute(request,response);
     }
 }

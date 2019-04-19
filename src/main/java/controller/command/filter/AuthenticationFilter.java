@@ -1,5 +1,6 @@
 package controller.command.filter;
 import model.entity.Student;
+import org.apache.log4j.Logger;
 import utils.AttributesResourseManager;
 import utils.PageResourseManager;
 
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 public class AuthenticationFilter implements Filter  {
+    private Logger logger = Logger.getLogger(AuthenticationFilter.class);
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 
@@ -17,6 +19,7 @@ public class AuthenticationFilter implements Filter  {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        logger.info("doFilter");
         final HttpServletRequest request = (HttpServletRequest) servletRequest;
         final HttpServletResponse response = (HttpServletResponse) servletResponse;
         final HttpSession session = request.getSession();
@@ -29,10 +32,13 @@ public class AuthenticationFilter implements Filter  {
         if (loggedIn || loginRequest || signUpRequest) {
             filterChain.doFilter(request, response);
         } else if (request.getRequestURI().equals("/university/registration")) {
+            logger.info("Registration Forward");
             request.getRequestDispatcher(PageResourseManager.getProperty("registration")).forward(request,response);
 
         }
         else if (request.getRequestURI().equals("/university/login")) {
+            logger.info("Login Forward");
+
             request.getRequestDispatcher(PageResourseManager.getProperty("login")).forward(request, response);
         }
         else {

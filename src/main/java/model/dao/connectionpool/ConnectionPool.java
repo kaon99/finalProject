@@ -2,43 +2,26 @@ package model.dao.connectionpool;
 
 
 import org.apache.commons.dbcp.BasicDataSource;
+import org.apache.log4j.Logger;
 
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.SQLException;
 
 public class ConnectionPool {
-    private static ConnectionPool instance;
+    private static Logger logger = Logger.getLogger(ConnectionPool.class);
+
     private static volatile DataSource dataSource;
-
-    private ConnectionPool() {
-        getDataSource();
-    }
-
-    public static synchronized ConnectionPool getInstance() {
-        if (instance == null) {
-            synchronized (ConnectionPool.class) {
-                if (instance == null) {
-
-                    instance = new ConnectionPool();
-                }
-            }
-        }
-        return instance;
-    }
-
 
     public static DataSource getDataSource() {
 
         if (dataSource == null) {
             synchronized (ConnectionPool.class) {
                 if (dataSource == null) {
-                    BasicDataSource ds = new BasicDataSource();
                     try {
                         Class.forName("com.mysql.jdbc.Driver");
                     } catch (ClassNotFoundException e) {
-                        e.printStackTrace();
+                        logger.error(e);
                     }
+                    BasicDataSource ds = new BasicDataSource();
                     ds.setUrl("jdbc:mysql://localhost:3306/final_project?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true");
                     ds.setUsername("root");
                     ds.setPassword("root");
@@ -53,16 +36,6 @@ public class ConnectionPool {
         }
         return dataSource;
 
+
     }
-
-    public Connection getConnection() {
-        try {
-            return dataSource.getConnection();
-        } catch (SQLException ex) {
-
-            throw new RuntimeException(ex);
-        }
-    }
-
-
 }

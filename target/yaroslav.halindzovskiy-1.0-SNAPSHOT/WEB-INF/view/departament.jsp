@@ -38,7 +38,15 @@
             </select>
         </label>
         <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.set.specialty"/>">
+
+
+
 </form>
+<c:if test="${setSpecialty}">
+    <div class="w3-container">
+        <fmt:message key="text.set.your.spectialty"/>
+    </div>
+</c:if>
 <jsp:include page="/WEB-INF/parts/footer.jsp"/>
 </body>
 </html>

@@ -3,6 +3,7 @@ package controller.command.filter;
 import controller.command.util.CommandUtil;
 import model.entity.Student;
 import model.entity.types.Role;
+import org.apache.log4j.Logger;
 import utils.AttributesResourseManager;
 
 import javax.servlet.*;
@@ -13,6 +14,8 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class RoleFilter implements Filter {
+    private Logger logger = Logger.getLogger(RoleFilter.class);
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 
@@ -20,6 +23,7 @@ public class RoleFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        logger.info("Do Filter");
         HttpServletRequest req = (HttpServletRequest) servletRequest;
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
         HttpSession session = req.getSession(false);

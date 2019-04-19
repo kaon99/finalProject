@@ -9,12 +9,15 @@ import model.exception.UserExistException;
 import model.exception.WrongDataException;
 import model.service.StudentService;
 import model.service.impl.StudentServiceImpl;
+import org.apache.log4j.Logger;
 import utils.AttributesResourseManager;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class RegistrationCommand implements Command {
+    private static Logger logger = Logger.getLogger(RegistrationCommand.class);
+
 
 
     @Override
@@ -40,9 +43,11 @@ public class RegistrationCommand implements Command {
             studentService.create(student);
             CommandUtil.getUserPageByRole(student.getRole());
         } catch (WrongDataException e) {
+            logger.error(e);
             request.setAttribute("registrationError", true);
 
         } catch (UserExistException e) {
+            logger.error(e);
             request.setAttribute("userExist", true);
 
         }

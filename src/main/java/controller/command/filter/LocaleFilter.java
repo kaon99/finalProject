@@ -1,6 +1,7 @@
 package controller.command.filter;
 
 
+import org.apache.log4j.Logger;
 import utils.AttributesResourseManager;
 
 import javax.servlet.*;
@@ -13,6 +14,8 @@ import java.util.Locale;
 import java.util.Map;
 
 public class LocaleFilter implements Filter {
+    private Logger logger = Logger.getLogger(LocaleFilter.class);
+
     private Map<String, Locale> languages = new HashMap<>();
 
     @Override
@@ -23,6 +26,7 @@ public class LocaleFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        logger.info("do Filter");
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         HttpSession session = request.getSession();

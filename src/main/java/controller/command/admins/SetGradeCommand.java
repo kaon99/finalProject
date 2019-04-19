@@ -8,6 +8,7 @@ import model.service.RatingService;
 import model.service.SubjectService;
 import model.service.impl.RatingServiceImpl;
 import model.service.impl.SubjectServiceImpl;
+import org.apache.log4j.Logger;
 import utils.AttributesResourseManager;
 import utils.PageResourseManager;
 
@@ -20,7 +21,7 @@ public class SetGradeCommand implements Command {
     RatingService ratingService = new RatingServiceImpl();
     SubjectService subjectService = new SubjectServiceImpl();
     ValidationUtil validationUtil = new ValidationUtil();
-
+    private Logger logger = Logger.getLogger(SetGradeCommand.class);
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         try {
@@ -40,6 +41,7 @@ public class SetGradeCommand implements Command {
 
         } catch (WrongDataException e) {
             request.setAttribute("userExist", true);
+            logger.info("User Exist ",e);
             return new SetGradeCommandPage().execute(request, response);
         }
 

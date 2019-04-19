@@ -1,5 +1,7 @@
 package controller.command.util;
 
+import org.apache.log4j.Logger;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -7,6 +9,7 @@ import java.util.Properties;
 
 
 public class EmailSender {
+    private Logger logger = Logger.getLogger(EmailSender.class);
     public static void send(String email) {
         EmailSender main = new EmailSender(email);
     }
@@ -30,7 +33,6 @@ public class EmailSender {
         props.put("mail.smtp.socketFactory.port", emailServerPort);
         props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
         props.put("mail.smtp.socketFactory.fallback", "false");
-        SecurityManager security = System.getSecurityManager();
         try{
             Authenticator auth = new SMTPAuthenticator();
             Session session = Session.getInstance(props, auth);
@@ -44,7 +46,7 @@ public class EmailSender {
             System.out.println("Message send Successfully:)"); }
 
         catch (Exception mex){
-            mex.printStackTrace();}
+           logger.error(mex);}
 
 
     }

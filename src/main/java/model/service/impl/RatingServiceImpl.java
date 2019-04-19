@@ -14,52 +14,59 @@ import org.apache.log4j.Logger;
 import java.util.List;
 
 public class RatingServiceImpl implements RatingService {
-    private RatingDao ratingDao;
-    private StudentDao studentDao;
+  private DaoFactory daoFactory = DaoFactory.getInstance();
     private static Logger logger = Logger.getLogger(RatingServiceImpl.class);
-    public RatingServiceImpl(){
-        studentDao = DaoFactory.getInstance().createStudentDao();
-        ratingDao =  DaoFactory.getInstance().createRatingDao();
 
-    }
 
     @Override
     public void create(Rating rating) {
-        ratingDao.create(rating);
-        logger.info("Rating user = %d");
+        try (RatingDao ratingDao = daoFactory.createRatingDao()) {
+            ratingDao.create(rating);
+            logger.info("Rating user = %d");
+        }
     }
 
     @Override
     public Rating findById(int id) {
-        Rating rating = ratingDao.findById(id);
-        logger.info("Find rating by id ");
-        return rating;
+        try (RatingDao ratingDao = daoFactory.createRatingDao()) {
+            Rating rating = ratingDao.findById(id);
+            logger.info("Find rating by id ");
+            return rating;
+        }
     }
 
     @Override
     public List<Rating> findAll() {
-        List <Rating > ratings = ratingDao.findAll();
-        logger.info("Find all ratings ");
+        try (RatingDao ratingDao = daoFactory.createRatingDao()) {
+            List<Rating> ratings = ratingDao.findAll();
+            logger.info("Find all ratings ");
 
-        return ratings;
+            return ratings;
+        }
     }
 
     @Override
     public void update(Rating entity) {
-        logger.info("Rating update %d");
-        ratingDao.update(entity);
+        try (RatingDao ratingDao = daoFactory.createRatingDao()) {
+            logger.info("Rating update %d");
+            ratingDao.update(entity);
+        }
     }
 
     @Override
     public void delete(int id) {
-        logger.info("delece rating");
-        ratingDao.delete(id);
+        try (RatingDao ratingDao = daoFactory.createRatingDao()) {
+            logger.info("delece rating");
+            ratingDao.delete(id);
+        }
     }
 
     @Override
     public void setmark(String email, Integer subjectId, Integer assessment) {
+        try (RatingDao ratingDao = daoFactory.createRatingDao();
+             StudentDao studentDao = daoFactory.createStudentDao() ) {
         Student student = studentDao.findByEmail(email);
         Rating rating = new Rating(assessment,subjectId,student.getId());
         ratingDao.create(rating);
-    }
+    }}
 }
