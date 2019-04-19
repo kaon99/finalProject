@@ -1,10 +1,13 @@
 package controller.command;
 
 import controller.command.util.CommandUtil;
+
 import model.entity.Student;
 import model.service.StudentService;
 import model.service.impl.StudentServiceImpl;
 import utils.AttributesResourseManager;
+import utils.ContextUtil;
+import utils.ContextUtil.*;
 import utils.PageResourseManager;
 
 import javax.servlet.http.HttpServletRequest;
@@ -23,7 +26,12 @@ public class LoginCommand implements Command {
             StudentService studentService = new StudentServiceImpl();
 
             Student student = studentService.loginUser(login, password);
+            if(ContextUtil.isUserInContext(request.getSession(),student)){
+                ContextUtil.logoutUser(student);
+            }
             request.getSession().setAttribute("user", student);
+            ContextUtil.setAttributesToContext(request.getSession(),student);
+
             if (Objects.nonNull(student)) {
                 String page = CommandUtil.getUserPageByRole(student.getRole());
                 return page;
