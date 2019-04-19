@@ -7,7 +7,7 @@ import model.dao.SubjectDao;
 import org.apache.log4j.Logger;
 
 public abstract class DaoFactory {
-    protected static Logger log = Logger.getLogger(DaoFactory.class.getName());
+    protected static Logger logger = Logger.getLogger(DaoFactory.class);
     private static  DaoFactory daoFactory;
 
     public abstract StudentDao createStudentDao();
@@ -26,6 +26,7 @@ public abstract class DaoFactory {
                 }
             }
         }
+        logger.info("dao factory");
         return daoFactory;
     }
 }

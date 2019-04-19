@@ -34,6 +34,8 @@ public class SubjectServiceImpl implements SubjectService {
     public List<Subject> findAll() {
         try (SubjectDao subjectDao = daoFactory.createSubjectDao()) {
             List<Subject> subjects = subjectDao.findAll();
+            logger.info("Find subject all ");
+
             return subjects;
         }
     }
@@ -51,6 +53,7 @@ public class SubjectServiceImpl implements SubjectService {
     public void delete(int id) {
         try (SubjectDao subjectDao = daoFactory.createSubjectDao()) {
             subjectDao.delete(id);
+            logger.info("Subject delete");
         }
     }
 }

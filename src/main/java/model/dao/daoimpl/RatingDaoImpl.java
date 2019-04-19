@@ -52,7 +52,7 @@ public class RatingDaoImpl implements RatingDao {
 
             return rating;
         } catch (SQLException var6) {
-            this.logger.info("Rating do not find by id ", var6);
+            logger.info("Rating do not find by id ", var6);
             return null;
         }
     }
@@ -68,7 +68,7 @@ public class RatingDaoImpl implements RatingDao {
 
             return ratings;
         } catch (SQLException var4) {
-            this.logger.info("Cannot find All", var4);
+           logger.info("Cannot find All", var4);
             return null;
         }
     }
@@ -82,7 +82,7 @@ public class RatingDaoImpl implements RatingDao {
             statement.execute();
 
         } catch (SQLException var3) {
-            this.logger.info("Rating do not update E", var3);
+            logger.info("Rating do not update E", var3);
         }
 
     }
@@ -93,7 +93,7 @@ public class RatingDaoImpl implements RatingDao {
             statement.execute();
 
         } catch (SQLException var3) {
-            this.logger.info("Rating don`t delete ");
+            logger.info("Rating don`t delete ");
         }
 
     }

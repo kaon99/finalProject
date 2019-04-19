@@ -68,5 +68,6 @@ public class RatingServiceImpl implements RatingService {
         Student student = studentDao.findByEmail(email);
         Rating rating = new Rating(assessment,subjectId,student.getId());
         ratingDao.create(rating);
+        logger.info("set marks");
     }}
 }

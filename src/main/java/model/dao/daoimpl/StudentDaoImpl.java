@@ -62,7 +62,7 @@ public class StudentDaoImpl implements StudentDao {
             close();
             return student;
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("get by login and pass", e);
             throw new RuntimeException("Cannot get user", e);
         }
 
@@ -98,8 +98,7 @@ public class StudentDaoImpl implements StudentDao {
 
             }
         } catch (SQLException e) {
-            e.printStackTrace();
-
+            logger.error("set sum marks", e);
         }
 
     }
@@ -107,9 +106,7 @@ public class StudentDaoImpl implements StudentDao {
     @Override
     public Student findByEmail(String email) {
         try (PreparedStatement statement = connection.prepareStatement
-                (QueriesResourseManager.getProperty("user.select.by.email"));) {
-
-
+                (QueriesResourseManager.getProperty("user.select.by.email"))) {
             statement.setString(1, email);
             ResultSet resultSet = statement.executeQuery();
             Student student = null;
@@ -117,25 +114,23 @@ public class StudentDaoImpl implements StudentDao {
                 StudentMapper studentMapper = new StudentMapper();
                 student = studentMapper.extractFromResultSet(resultSet);
             }
-
-
             return student;
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("find by email", e);
             throw new RuntimeException("Cannot get user", e);
         }
     }
 
     @Override
     public void setSpecialty(Integer specialtyId, Student student) {
-        try (PreparedStatement statement =connection.prepareStatement(QueriesResourseManager.getProperty("user.set.specialty"));
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.set.specialty"));
         ) {
 
             statement.setInt(1, specialtyId);
             statement.setInt(2, student.getId());
             statement.execute();
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("set specialty", e);
         }
     }
 
@@ -154,7 +149,7 @@ public class StudentDaoImpl implements StudentDao {
             }
             return students;
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("find received students");
         }
         return null;
     }
@@ -175,14 +170,14 @@ public class StudentDaoImpl implements StudentDao {
 
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("find by id ", e);
         }
         return null;
     }
 
     @Override
     public List<Student> findAll() {
-        try (PreparedStatement statement =connection.prepareStatement(QueriesResourseManager.getProperty("user.find.all"));) {
+        try (PreparedStatement statement = connection.prepareStatement(QueriesResourseManager.getProperty("user.find.all"));) {
 
 
             ResultSet resultSet = statement.executeQuery();
@@ -194,7 +189,7 @@ public class StudentDaoImpl implements StudentDao {
             }
             return students;
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("find all ", e);
         }
         return null;
     }
@@ -215,7 +210,7 @@ public class StudentDaoImpl implements StudentDao {
             statement.setInt(9, student.getId());
             statement.execute();
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("update ", e);
         }
 
     }
@@ -227,7 +222,7 @@ public class StudentDaoImpl implements StudentDao {
             statement.executeUpdate();
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("delete", e);
         }
 
     }

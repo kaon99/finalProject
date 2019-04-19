@@ -70,8 +70,7 @@ public class SubjectDaoImpl implements SubjectDao {
             return subjects;
 
         } catch (SQLException e) {
-            e.printStackTrace();
-        }
+            logger.error("Subject find all", e);        }
         return null;
     }
 

@@ -8,77 +8,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d2085131-b3dc-40ab-8205-ff22918eb031" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/CommandFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/LoginCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/LogoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/LogoutCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/MainCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/PageErrorCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/PageErrorCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/RegistrationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/RegistrationCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/admins/AdminCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/admins/AdminCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/admins/SendNotificationCommandButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/admins/SendNotificationCommandButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/admins/SetGradeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/admins/SetGradeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/filter/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/filter/EncodingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/filter/LocaleFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/filter/LocaleFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/filter/RoleFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/filter/RoleFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/listener/ContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/listener/ContextListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/DepartamentCommandPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/DepartamentCommandPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/RegistrationCommandPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/RegistrationCommandPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/SendNotificatioinCommandPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/SendNotificatioinCommandPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/SetGradeCommandPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/SetGradeCommandPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/students/DepartamentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/students/DepartamentCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/students/StudentPageCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/students/StudentPageCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/util/EmailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/util/EmailSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/connectionpool/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/connectionpool/ConnectionPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/JDBCDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/JDBCDaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SubjectDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SubjectDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/impl/SpecialtyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/impl/SpecialtyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/impl/StudentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/service/impl/SubjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/impl/SubjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/text.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/text.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/text_ua.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/text_ua.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/admins/AdminCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/admins/AdminCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/admins/SendNotificationCommandButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/admins/SendNotificationCommandButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/admins/SetGradeCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/admins/SetGradeCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/filter/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/filter/AuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/filter/EncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/filter/EncodingFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/filter/LocaleFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/filter/LocaleFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/filter/RoleFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/filter/RoleFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/listener/ContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/listener/ContextListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/pagesCommand/DepartamentCommandPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/pagesCommand/DepartamentCommandPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/pagesCommand/RegistrationCommandPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/pagesCommand/RegistrationCommandPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/pagesCommand/SendNotificatioinCommandPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/pagesCommand/SendNotificatioinCommandPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/pagesCommand/SetGradeCommandPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/pagesCommand/SetGradeCommandPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/pagesCommand/StudentRatingCommandPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/pagesCommand/StudentRatingCommandPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/students/DepartamentCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/students/DepartamentCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/students/StudentPageCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/students/StudentPageCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/students/StudentRatingCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/students/StudentRatingCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/text.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/text.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/text_ua.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/text_ua.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/admins/AdminCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/admins/AdminCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/admins/SendNotificationCommandButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/admins/SendNotificationCommandButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/admins/SetGradeCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/admins/SetGradeCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/filter/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/filter/AuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/filter/EncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/filter/EncodingFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/filter/LocaleFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/filter/LocaleFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/filter/RoleFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/filter/RoleFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/listener/ContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/listener/ContextListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/DepartamentCommandPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/DepartamentCommandPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/RegistrationCommandPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/RegistrationCommandPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/SendNotificatioinCommandPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/SendNotificatioinCommandPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/SetGradeCommandPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/SetGradeCommandPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/StudentRatingCommandPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/StudentRatingCommandPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/students/DepartamentCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/students/DepartamentCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/students/StudentPageCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/students/StudentPageCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/students/StudentRatingCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/students/StudentRatingCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/text.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/text.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/text_ua.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/text_ua.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/departament.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/departament.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/view/departament.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/view/departament.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AttributesResourseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/AttributesResourseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/PageResourseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/PageResourseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/QueriesResourseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/QueriesResourseManager.java" afterDir="false" />
     </list>
     <list id="007b95d3-b475-4971-8828-78b7e71170e7" name="Revert &quot;Revert &quot;model , util, dao , resourse&quot;&quot;" comment="Revert &quot;Revert &quot;model , util, dao , resourse&quot;&quot;&#10;&#10;This reverts commit bac33859" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -125,10 +63,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/validation/ValidationUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/ContextUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+            <state relative-caret-position="493">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,42 +75,53 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6687b053-12ee-43d0-86a8-7f45fa83a450/console.sql">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/connectionpool/ConnectionPool.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/JDBCDaoFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-                <element signature="e#688#689#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="714">
+              <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/RegistrationCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="386">
+              <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1326">
+              <caret line="90" column="29" lean-forward="true" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
+              <folding>
+                <element signature="e#634#635#0" expanded="true" />
+                <element signature="e#678#679#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="224" column="32" selection-start-line="224" selection-start-column="32" selection-end-line="224" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SubjectDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -187,37 +136,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/StudentServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="917">
-              <caret line="103" column="6" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/SubjectServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+            <state relative-caret-position="-3">
+              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/validation/InputValid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
-              <caret line="187" column="10" selection-start-line="187" selection-start-column="10" selection-end-line="187" selection-end-column="10" />
+            <state relative-caret-position="479">
+              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/DaoFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/validation/ValidationUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="309">
+              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -250,17 +190,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6687b053-12ee-43d0-86a8-7f45fa83a450/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/command/listener/SessionListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SubjectDaoImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java" />
         <option value="$PROJECT_DIR$/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/DaoFactory.java" />
         <option value="$PROJECT_DIR$/webapp/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/connectionpool/ConnPool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java" />
         <option value="$PROJECT_DIR$/webapp/WEB-INF/view/setgrade.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controller/validation/RegistrationUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/validation/InputValid.java" />
@@ -297,10 +230,17 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/command/RegistrationCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/connectionpool/ConnectionPool.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/JDBCDaoFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/service/impl/SpecialtyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/service/impl/StudentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/service/impl/SubjectServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/QueriesResourseManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/PageResourseManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/AttributesResourseManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SubjectDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -481,6 +421,16 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="connectionpool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
@@ -755,7 +705,7 @@
       <workItem from="1555526396398" duration="5939000" />
       <workItem from="1555532913148" duration="9622000" />
       <workItem from="1555569002114" duration="31550000" />
-      <workItem from="1555688385966" duration="12063000" />
+      <workItem from="1555688385966" duration="14683000" />
     </task>
     <task id="LOCAL-00001" summary="Create Mapper">
       <created>1554126810125</created>
@@ -873,7 +823,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363682000" />
+    <option name="totallyTimeSpent" value="366302000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -888,7 +838,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1818792" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1818792" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -904,13 +854,13 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.52549577" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49597314" weight="0.36819485" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49597314" weight="0.04249292" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.27315435" side_tool="true" weight="0.36685553" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.36402267" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49932885" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="14" visible="true" weight="0.15014164" />
+      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.23796034" />
       <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.71208054" weight="0.058073655" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
@@ -1043,7 +993,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java</url>
-          <line>183</line>
+          <line>178</line>
           <properties class="model.dao.daoimpl.StudentDaoImpl" method="findAll">
             <option name="EMULATED" value="true" />
           </properties>
@@ -1060,47 +1010,6 @@
     <SUITE FILE_PATH="coverage/finalProject$Tomcat_8_5_37.ic" NAME="Tomcat 8.5.37 Coverage Results" MODIFIED="1555523064419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/view/registration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6687b053-12ee-43d0-86a8-7f45fa83a450/schema/final_project/table/rating">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/attributes.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ContextUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/Command.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1115,38 +1024,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/AttributesResourseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
-          <folding>
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/admins/AdminCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/admins/SetGradeCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1235,13 +1116,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/SetGradeCommandPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/DepartamentCommandPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1295,13 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/students/StudentPageCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1324,11 +1191,6 @@
         <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log_file.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42832" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/CommandFactory.java">
@@ -1369,33 +1231,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/RegistrationCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/validation/InputValid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/validation/ValidationUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/DaoFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1403,13 +1238,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="187" column="10" selection-start-line="187" selection-start-column="10" selection-end-line="187" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1436,6 +1264,118 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/log_file.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2397" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6687b053-12ee-43d0-86a8-7f45fa83a450/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/admins/SetGradeCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/SetGradeCommandPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="33" column="88" selection-start-line="33" selection-start-column="88" selection-end-line="33" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/StudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="103" column="6" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/QueriesResourseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/PageResourseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/AttributesResourseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding>
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ContextUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="90" column="29" lean-forward="true" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
+          <folding>
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="224" column="32" selection-start-line="224" selection-start-column="32" selection-end-line="224" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SubjectDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/SpecialtyServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1445,25 +1385,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/SubjectServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+        <state relative-caret-position="-3">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/StudentServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/validation/InputValid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="917">
-          <caret line="103" column="6" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
+        <state relative-caret-position="479">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6687b053-12ee-43d0-86a8-7f45fa83a450/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/validation/ValidationUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="309">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/RegistrationCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

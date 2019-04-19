@@ -82,7 +82,7 @@ public class SpecialtyDaoImpl implements SpecialtyDao {
             statement.execute();
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("update",e);
         }
     }
 
@@ -94,7 +94,7 @@ public class SpecialtyDaoImpl implements SpecialtyDao {
             statement.executeUpdate();
 
         } catch (SQLException e) {
-            e.printStackTrace();
+          logger.error("delete",e);
         }
     }
     @Override
