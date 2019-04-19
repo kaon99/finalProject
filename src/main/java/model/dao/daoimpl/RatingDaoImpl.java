@@ -93,7 +93,7 @@ public class RatingDaoImpl implements RatingDao {
             statement.execute();
 
         } catch (SQLException var3) {
-            gilogger.info("Rating don`t delete ");
+            logger.info("Rating don`t delete ");
         }
 
     }
