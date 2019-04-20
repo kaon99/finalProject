@@ -15,8 +15,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title><fmt:message key="text.departament"/> </title>
-</head>
+    <title><fmt:message key="text.title"/></title></head>
 <body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
 <h1><fmt:message key="text.departament"/></h1>

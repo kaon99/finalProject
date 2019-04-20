@@ -15,8 +15,7 @@
 <html lang="${language}">
 <head>
     <jsp:include page="/WEB-INF/parts/header.jsp"/>
-    <title><fmt:message key="text.student"/></title>
-</head>
+    <title><fmt:message key="text.title"/></title></head>
 <body>
 <h1><fmt:message key="text.student"/></h1>
 <form method="post"

@@ -14,8 +14,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
-</head>
+    <title><fmt:message key="text.title"/></title></head>
 <body>
 <li><a href="${pageContext.request.contextPath}/university/main"><fmt:message key="text.main"/></a></li>
 <li><a href="${pageContext.request.contextPath}/university/logout"><fmt:message key="text.logout"/></a></li>

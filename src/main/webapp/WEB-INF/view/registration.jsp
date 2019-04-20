@@ -15,8 +15,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title><fmt:message key="text.registration"/> </title>
-</head>
+    <title><fmt:message key="text.title"/></title></head>
 <body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
 

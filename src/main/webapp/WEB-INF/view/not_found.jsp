@@ -14,6 +14,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <title><fmt:message key="text.title"/></title>
     <jsp:include page="/WEB-INF/parts/header.jsp"/>
     <title>Error 404</title>
 

@@ -15,7 +15,7 @@
 
 <html>
 <head>
-    <title></title>
+    <title><fmt:message key="test.admin" </title>
 </head>
 <body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>

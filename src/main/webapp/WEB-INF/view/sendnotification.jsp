@@ -15,9 +15,7 @@
 <html>
 <head>
 
-    <title><fmt:message key="text.send.notification"/></title>
-</head>
-<body>
+    <title><fmt:message key="text.title"/></title><body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
 <h1><fmt:message key="text.send.notification"/> </h1>
 
