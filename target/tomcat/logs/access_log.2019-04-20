@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [20/Apr/2019:22:49:57 +0300] "GET / HTTP/1.1" 200 991 http-bio-8080-exec-1 1988
+0:0:0:0:0:0:0:1 - - [20/Apr/2019:22:49:58 +0300] "GET /favicon.ico HTTP/1.1" 404 678 http-bio-8080-exec-3 108
+0:0:0:0:0:0:0:1 - - [20/Apr/2019:22:50:03 +0300] "POST /university/login HTTP/1.1" 302 - http-bio-8080-exec-4 1564
+0:0:0:0:0:0:0:1 - - [20/Apr/2019:22:50:03 +0300] "GET /university/studentpage HTTP/1.1" 200 979 http-bio-8080-exec-5 180

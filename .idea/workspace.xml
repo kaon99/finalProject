@@ -7,16 +7,303 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2085131-b3dc-40ab-8205-ff22918eb031" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/controller/ServletTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/finalProject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/finalProject_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__backport_util_concurrent_backport_util_concurrent_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__classworlds_classworlds_1_1_alpha_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_10_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jtidy_jtidy_4aug2000r7_dev.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_sink_api_1_0_alpha_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_archiver_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_2_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_manager_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_core_2_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_error_diagnostics_2_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_2_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_monitor_2_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_descriptor_2_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_parameter_documenter_2_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_registry_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_profile_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_project_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_2_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_2_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_api_2_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_filtering_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_file_1_0_beta_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_lightweight_1_0_beta_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_shared_1_0_beta_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_1_0_beta_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_1_0_beta_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_common_1_0_beta_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_external_1_0_beta_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_logging_juli_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_logging_log4j_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_maven_common_tomcat_maven_plugin_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_maven_tomcat7_maven_plugin_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_maven_tomcat7_war_runner_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_api_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_catalina_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_catalina_ha_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_coyote_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_dbcp_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_el_api_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jasper_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jasper_el_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jsp_api_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_servlet_api_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_tribes_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_util_7_0_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_archiver_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_classworlds_2_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_1_5_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_container_default_1_0_alpha_9_stable_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interactivity_api_1_0_alpha_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_io_2_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_core_compiler_ecj_4_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_build_api_0_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_tukaani_xz_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/resourceBundles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/resourceBundles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SubjectDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SubjectDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/impl/SubjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/impl/SubjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AttributesResourseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/AttributesResourseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/PageResourseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/PageResourseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/QueriesResourseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/QueriesResourseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/admins/AdminCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/admins/AdminCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/filter/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/finalProject.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/admins/AdminCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/admins/AdminCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/filter/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/filter/AuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/validation/InputValid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/validation/InputValid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/daoimpl/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/dao/daoimpl/DaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/daoimpl/SpecialtyDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/dao/daoimpl/SpecialtyDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/daoimpl/StudentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/dao/daoimpl/StudentDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/daoimpl/SubjectDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/dao/daoimpl/SubjectDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/entity/Departament.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/service/DepartamentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/service/impl/DepartamentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/service/impl/RatingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/service/impl/RatingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/service/impl/SubjectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/service/impl/SubjectServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/AttributesResourseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/AttributesResourseManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/PageResourseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/PageResourseManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/QueriesResourseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/QueriesResourseManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/MAIN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/META-INF/finalProject.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/attributes.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/CommandFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/LoginCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/LogoutCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/MainCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/PageErrorCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/RegistrationCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/admins/AdminCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/admins/SendNotificationCommandButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/admins/SetGradeCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/filter/AuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/filter/EncodingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/filter/LocaleFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/filter/RoleFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/listener/ContextListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/listener/SessionListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/DepartamentCommandPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/RegistrationCommandPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/SendNotificatioinCommandPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/SetGradeCommandPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/pagesCommand/StudentRatingCommandPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/students/DepartamentCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/students/StudentPageCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/students/StudentRatingCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/util/CommandUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/util/EmailSender$SMTPAuthenticator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/command/util/EmailSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/validation/InputValid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/controller/validation/ValidationUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/GenericDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/RatingDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/SpecialtyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/StudentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/SubjectDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/connectionpool/ConnectionPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/daoimpl/DaoFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/daoimpl/JDBCDaoFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/daoimpl/RatingDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/daoimpl/SpecialtyDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/daoimpl/StudentDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/daoimpl/SubjectDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/mapper/ObjectMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/mapper/RatingMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/mapper/SpecialtyMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/mapper/StudentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/dao/mapper/SubjectMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/entity/Departament.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/entity/Rating.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/entity/Specialty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/entity/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/entity/Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/entity/types/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/exception/UserExistException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/exception/WrongDataException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/service/DepartamentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/service/RatingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/service/SpecialtyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/service/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/service/SubjectService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/service/impl/DepartamentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/service/impl/RatingServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/service/impl/SpecialtyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/service/impl/StudentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/model/service/impl/SubjectServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/pages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/queries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/text.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/text_ua.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/utils/AttributesResourseManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/utils/ContextUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/utils/PageResourseManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/classes/utils/QueriesResourseManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/backport-util-concurrent-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/classworlds-1.1-alpha-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/common-tomcat-maven-plugin-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/commons-cli-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/commons-compress-1.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/commons-dbcp-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/commons-dbcp2-2.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/commons-pool-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/doxia-sink-api-1.0-alpha-7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/ecj-4.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/guava-10.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/httpclient-4.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/httpcore-4.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/jsch-0.1.27.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/jsr305-1.3.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/jtidy-4aug2000r7-dev.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/junit-3.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/mail-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-archiver-2.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-artifact-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-artifact-manager-2.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-core-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-error-diagnostics-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-filtering-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-model-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-monitor-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-plugin-api-2.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-plugin-descriptor-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-plugin-parameter-documenter-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-plugin-registry-2.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-profile-2.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-project-2.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-reporting-api-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-repository-metadata-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/maven-settings-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/plexus-archiver-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/plexus-build-api-0.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/plexus-classworlds-2.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/plexus-component-annotations-1.5.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/plexus-container-default-1.0-alpha-9-stable-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/plexus-interactivity-api-1.0-alpha-4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/plexus-interpolation-1.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/plexus-io-2.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/plexus-utils-3.0.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-annotations-api-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-api-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-catalina-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-catalina-ha-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-coyote-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-dbcp-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-el-api-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-core-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-logging-juli-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-logging-log4j-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-jasper-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-jasper-el-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-jdbc-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-jsp-api-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-juli-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-servlet-api-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-tribes-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat-util-7.0.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat7-maven-plugin-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/tomcat7-war-runner-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/wagon-file-1.0-beta-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/wagon-http-lightweight-1.0-beta-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/wagon-http-shared-1.0-beta-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/wagon-provider-api-1.0-beta-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/wagon-ssh-1.0-beta-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/wagon-ssh-common-1.0-beta-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/wagon-ssh-external-1.0-beta-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/xml-apis-1.0.b2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/lib/xz-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/parts/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/parts/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/admin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/departament.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/not_found.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/registration.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/sendnotification.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/setgrade.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/studentpage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/studentrating.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/parts/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/parts/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/parts/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/parts/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/view/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/view/departament.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/departament.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/view/not_found.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/not_found.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/view/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/view/sendnotification.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/sendnotification.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/view/setgrade.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/setgrade.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/view/studentpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/studentpage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/view/studentrating.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/studentrating.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <list id="007b95d3-b475-4971-8828-78b7e71170e7" name="Revert &quot;Revert &quot;model , util, dao , resourse&quot;&quot;" comment="Revert &quot;Revert &quot;model , util, dao , resourse&quot;&quot;&#10;&#10;This reverts commit bac33859" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,111 +348,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/ContextUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/RegistrationCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="90" column="29" lean-forward="true" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
-              <folding>
-                <element signature="e#634#635#0" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="224" column="32" selection-start-line="224" selection-start-column="32" selection-end-line="224" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SubjectDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/SpecialtyServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/SubjectServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/validation/InputValid.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/validation/ValidationUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -175,6 +358,7 @@
         <option value="jsf" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -190,11 +374,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/DaoFactory.java" />
-        <option value="$PROJECT_DIR$/webapp/META-INF/context.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/model/dao/connectionpool/ConnPool.java" />
-        <option value="$PROJECT_DIR$/webapp/WEB-INF/view/setgrade.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controller/validation/RegistrationUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/validation/InputValid.java" />
         <option value="$PROJECT_DIR$/src/main/java/MAIN.java" />
@@ -202,11 +381,9 @@
         <option value="$PROJECT_DIR$/webapp/WEB-INF/view/studentrating.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/attributes.properties" />
         <option value="$PROJECT_DIR$/src/main/java/utils/ContextUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/command/admins/AdminCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/admins/SendNotificationCommandButton.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/admins/SetGradeCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/listener/ContextListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/command/filter/AuthenticationFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/filter/EncodingFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/filter/LocaleFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/command/filter/RoleFilter.java" />
@@ -237,10 +414,17 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/QueriesResourseManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/PageResourseManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/AttributesResourseManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SubjectDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/DaoFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/command/admins/AdminCommand.java" />
+        <option value="$PROJECT_DIR$/src/test/java/controller/ServletTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/command/filter/AuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/pages.properties" />
       </list>
     </option>
   </component>
@@ -265,15 +449,20 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="yaroslav.halindzovskiy" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="yaroslav.halindzovskiy" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1000" />
+    <option name="x" value="502" />
+    <option name="y" value="65" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -284,6 +473,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="finalProject" type="58d84e3e:PackageViewProjectNode" />
+              <item name="finalProject" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,92 +515,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-              <item name="admins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-              <item name="pagesCommand" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-              <item name="students" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="validation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -419,8 +533,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="connectionpool" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
@@ -429,8 +542,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
@@ -440,24 +552,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
@@ -465,40 +559,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="finalProject" type="58d84e3e:PackageViewProjectNode" />
-              <item name="finalProject" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -513,20 +578,32 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554931961224" />
-    <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ExhibitionCalender1" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FinalProjectUniversity-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="model.exception" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\finalProject\src\main" />
+      <recent name="D:\project\finalProject\src\main\webapp" />
+      <recent name="D:\project\finalProject\web\WEB-INF\view" />
+      <recent name="D:\project\finalProject\web" />
+      <recent name="D:\project\finalProject\web\WEB-INF" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\finalProject\webapp" />
@@ -537,11 +614,8 @@
       <recent name="controller.validation" />
       <recent name="controller.command.filter" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\project\finalProject\src\main\webapp" />
-      <recent name="D:\project\finalProject\web\WEB-INF\view" />
-      <recent name="D:\project\finalProject\web" />
-      <recent name="D:\project\finalProject\web\WEB-INF" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="model.exception" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -556,7 +630,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.37">
+  <component name="RunManager" selected="Maven.yaroslav.halindzovskiy [tomcat7:run]">
     <configuration name="MAIN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MAIN" />
       <module name="finalProject" />
@@ -571,7 +645,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServletTest.whenCallDoGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.ServletTest" />
+      <option name="METHOD_NAME" value="whenCallDoGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="login.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/view/WEB-INF/view/login.jsp">
+      <method v="2" />
+    </configuration>
+    <configuration name="yaroslav.halindzovskiy [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 8.5.37" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.37" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
@@ -650,15 +765,17 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.MAIN" />
       <item itemvalue="JavaScript Debug.login.jsp" />
+      <item itemvalue="JUnit.ServletTest.whenCallDoGet" />
+      <item itemvalue="Maven.yaroslav.halindzovskiy [tomcat7:run]" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.37" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ServletTest.whenCallDoGet" />
         <item itemvalue="Application.MAIN" />
         <item itemvalue="JavaScript Debug.login.jsp" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MAIN" />
-        <item itemvalue="JavaScript Debug.login.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -705,7 +822,9 @@
       <workItem from="1555526396398" duration="5939000" />
       <workItem from="1555532913148" duration="9622000" />
       <workItem from="1555569002114" duration="31550000" />
-      <workItem from="1555688385966" duration="14683000" />
+      <workItem from="1555688385966" duration="23542000" />
+      <workItem from="1555782710948" duration="3798000" />
+      <workItem from="1555789167006" duration="5932000" />
     </task>
     <task id="LOCAL-00001" summary="Create Mapper">
       <created>1554126810125</created>
@@ -822,8 +941,40 @@
     <option name="localTasksCounter" value="17" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ServletTest_whenCallDoGet - 2019.04.20 at 10h 53m 30s.xml">
+      <configuration name="ServletTest.whenCallDoGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServletTest_whenCallDoGet - 2019.04.20 at 10h 53m 34s.xml">
+      <configuration name="ServletTest.whenCallDoGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServletTest_whenCallDoGet - 2019.04.20 at 11h 16m 12s.xml">
+      <configuration name="ServletTest.whenCallDoGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServletTest_whenCallDoGet - 2019.04.20 at 11h 16m 32s.xml">
+      <configuration name="ServletTest.whenCallDoGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServletTest_whenCallDoGet - 2019.04.20 at 11h 16m 54s.xml">
+      <configuration name="ServletTest.whenCallDoGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServletTest_whenCallDoGet - 2019.04.20 at 11h 17m 03s.xml">
+      <configuration name="ServletTest.whenCallDoGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServletTest_whenCallDoGet - 2019.04.20 at 11h 18m 43s.xml">
+      <configuration name="ServletTest.whenCallDoGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServletTest_whenCallDoGet - 2019.04.20 at 11h 19m 13s.xml">
+      <configuration name="ServletTest.whenCallDoGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServletTest_whenCallDoGet - 2019.04.20 at 11h 19m 44s.xml">
+      <configuration name="ServletTest.whenCallDoGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServletTest_whenCallDoGet - 2019.04.20 at 11h 21m 29s.xml">
+      <configuration name="ServletTest.whenCallDoGet" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="366302000" />
+    <option name="totallyTimeSpent" value="384891000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -836,9 +987,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1818792" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22348994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -848,19 +998,19 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49679077" weight="0.0509915" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7268456" weight="0.66855526" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.71879196" weight="0.60339946" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7268456" weight="0.87110484" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.71879196" weight="0.5240793" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.52549577" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49597314" weight="0.04249292" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49597314" visible="true" weight="0.09490085" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.27315435" side_tool="true" weight="0.36685553" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.36402267" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49932885" weight="0.34844193" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.23796034" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.04249292" />
       <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.71208054" weight="0.058073655" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
@@ -868,7 +1018,7 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32038835" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.15503356" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -1010,112 +1160,6 @@
     <SUITE FILE_PATH="coverage/finalProject$Tomcat_8_5_37.ic" NAME="Tomcat 8.5.37 Coverage Results" MODIFIED="1555523064419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/view/studentpage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/admins/AdminCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/filter/AuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/filter/LocaleFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/filter/EncodingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="32" selection-start-line="8" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/filter/RoleFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/listener/ContextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/listener/SessionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/admins/SendNotificationCommandButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="46" selection-start-line="14" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/RegistrationCommandPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="24" selection-start-line="10" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/SendNotificatioinCommandPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/StudentRatingCommandPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/pagesCommand/DepartamentCommandPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1126,21 +1170,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/view/studentrating.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/studentrating.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="51" column="41" lean-forward="true" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/view/login.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="34" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/view/setgrade.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/setgrade.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
@@ -1148,17 +1192,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/text.properties">
+      <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/view/departament.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1231,42 +1268,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/DaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/connectionpool/ConnectionPool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/JDBCDaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log_file.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2397" />
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6687b053-12ee-43d0-86a8-7f45fa83a450/console.sql">
@@ -1344,24 +1350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="90" column="29" lean-forward="true" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
-          <folding>
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/StudentDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -1409,11 +1397,177 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/RegistrationCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        <state relative-caret-position="356">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/SpecialtyDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="90" column="29" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
+          <folding>
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log_file.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57724" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/DaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/JDBCDaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/daoimpl/RatingDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/admins/AdminCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/filter/AuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/filter/EncodingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/controller/ServletTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="79" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/departament.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/6687b053-12ee-43d0-86a8-7f45fa83a450.SCHEMA:final_project">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>6687b053-12ee-43d0-86a8-7f45fa83a450.SCHEMA:final_project</OriginalElement>
+          <nodes>
+            <node x="" y="">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.rating</node>
+            <node x="" y="">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.specialty</node>
+            <node x="" y="">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject_has_specialty</node>
+            <node x="" y="">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.user</node>
+            <node x="" y="">6687b053-12ee-43d0-86a8-7f45fa83a450.TABLE:final_project.subject</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.9174603174603173" x="666.1332179930797" y="277.45" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="255">
+            <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/pages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/admins/SendNotificationCommandButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="65" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
     </entry>
