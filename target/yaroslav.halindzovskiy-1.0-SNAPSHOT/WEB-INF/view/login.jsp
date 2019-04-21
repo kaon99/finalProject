@@ -18,13 +18,15 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
+<div class="container" >
 
-<div>
-    <h2><fmt:message key="text.enter.login.and.password"/></h2>
-    <form action="${pageContext.request.contextPath}/university/login" method="post">
+    <h1 class="flow-text"><fmt:message key="text.enter.login.and.password"/></h1>
+
+    <form  action="${pageContext.request.contextPath}/university/login" method="post">
         <fmt:message key="text.login"/> <input type="text" name="login" required="required"/>
         <fmt:message key="text.password"/> <input type="text" name="password" required="required"/>
-        <input type="submit" value=
+
+        <input type="submit"  class="btn" value=
         <fmt:message key="text.enter"/>>
 
         <c:if test="${requestScope.notFound}">
@@ -32,14 +34,16 @@
                 <fmt:message key="text.invalidData"/>
             </div>
         </c:if>
+    </form>
+        <form action="${pageContext.request.contextPath}/university/registration" method="post">
+            <input class="btn" type="submit" value= <fmt:message key="text.registration"/>>
+        </form>
 
-    </form>
+
 </div>
-<div>
-    <form action="${pageContext.request.contextPath}/university/registration" method="post">
-        <input type="submit" value= <fmt:message key="text.registration"/>>
-    </form>
-</div>
+
+
+
 
 <jsp:include page="/WEB-INF/parts/footer.jsp"/>
 </body>

@@ -7,7 +7,6 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import java.io.IOException;
 
@@ -19,9 +18,6 @@ public class ServletTest {
     HttpServletRequest request = mock(HttpServletRequest.class);
     @Mock
     HttpServletResponse response = mock(HttpServletResponse.class);
-    @Mock
-    HttpSession httpSession = mock (HttpSession.class);
-
     @Mock
     RequestDispatcher requestDispatcher = mock(RequestDispatcher.class);
 

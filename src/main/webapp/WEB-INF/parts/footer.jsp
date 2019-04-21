@@ -8,11 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+
 </head>
 <body>
-<footer class="page-footer">
-    <div class="container">
+<footer class="page-footer" >
+    <div class="container" >
         <div class="row">
             <div class="col l6 s12">
 

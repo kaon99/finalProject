@@ -14,27 +14,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title><fmt:message key="text.set.marks"/></title>
-</head>
+    <title><fmt:message key="text.title"/></title></head>
 <body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
-<div>
-    <form method="post"
-          action="${pageContext.request.contextPath}/university/main">
-        <input type="hidden">
-        <button type="submit"><fmt:message key="text.main"/></button>
-    </form>
-    <form  method="post"  action="${pageContext.request.contextPath} /university/admin/setgrade/button">
+<div class="container">
 
-        <p>
-            <label>
-                <input class="w3-input" type="text" required placeholder="<fmt:message key="text.setmarks.email"/>"
-                       name="email"/>
-            </label>
-        </p>
-        <p>
-            <label>
-                <select class="w3-input"  name="subject">
+    <form  method="post"   action="${pageContext.request.contextPath} /university/admin/setgrade/button">
+
+
+                <input  type="text" required placeholder="<fmt:message key="text.setmarks.email"/>">
+        <div class="input-field col s12" >
+                <select class="browser-default" name="subject">
                     <option disabled><fmt:message key="text.setmarks.subject"/></option>
                     <c:forEach items="${databaseList}" var="subject">
                         <option value="${subject.getId()}">
@@ -43,15 +33,13 @@
                     </c:forEach>
 
                 </select>
-            </label>
-        </p>
-        <p>
+        </div>
             <label>
                 <input class="w3-input" type="number" required placeholder="<fmt:message key="text.setmarks.assessment"/>"
                        name="grade"/>
             </label>
         </p>
-        <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.set.marks"/>">
+        <input class="btn" type="submit" value="<fmt:message key="text.set.marks"/>">
         <c:if test="${requestScope.userExist}">
             <div class="w3-container">
                 <fmt:message key="text.user.not.exist"/>
