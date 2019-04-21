@@ -19,19 +19,21 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
-<h1 class="flow-text"><fmt:message key="text.admin.page"/></h1>
-<div class="center-pill">
+<div class="container">
+    <h1 class="flow-text"><fmt:message key="text.admin.page"/></h1>
+    <div class="center-pill">
 
-<form role="form" method="post"
-      action="${pageContext.request.contextPath}/university/admin/setgrade">
-    <button  class="btn" type="submit"><fmt:message key="text.set.marks"/></button>
-</form>
+    <form role="form" method="post"
+          action="${pageContext.request.contextPath}/university/admin/setgrade">
+        <button  class="btn" type="submit"><fmt:message key="text.set.marks"/></button>
+    </form>
 
 
-<form role="form" method="post"
-      action="${pageContext.request.contextPath}/university/admin/sendnotification">
-    <button class="btn" type="submit"><fmt:message key="text.notification"/></button>
-</form>
+    <form role="form" method="post"
+          action="${pageContext.request.contextPath}/university/admin/sendnotification">
+        <button class="btn" type="submit"><fmt:message key="text.notification"/></button>
+    </form>
+    </div>
 </div>
 </body>
 <jsp:include page="/WEB-INF/parts/footer.jsp"/>

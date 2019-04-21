@@ -18,6 +18,7 @@
     <title><fmt:message key="text.title"/></title></head>
 <body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
+<div class="container">
 <h1 class="flow-text" ><fmt:message key="text.departament"/></h1>
 
 
@@ -38,6 +39,7 @@
     </div>
     <input class="btn" type="submit" value="<fmt:message key="text.set.specialty"/>">
 </form>
+</div>
 </div>
 
 <c:if test="${setSpecialty}">
