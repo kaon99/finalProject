@@ -17,13 +17,12 @@
     <title><fmt:message key="text.title"/></title></head>
 <body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
-<h1><fmt:message key="text.student.rating" /></h1>
+<h1 class="flow-text" ><fmt:message key="text.student.rating" /></h1>
 
-
+<div>
 <form method="post" action="${pageContext.request.contextPath}/university/studentpage/studentrating/show">
-    <p>
-        <label>
-            <select class="w3-input" name="specialty">
+    <div class="input-field col s12">
+            <select class="browser-default" name="specialty">
                 <option selected disabled hidden style='display: none' value=''></option>
                 <option disabled hidden><fmt:message key="text.set.specialty"/></option>
 
@@ -34,17 +33,30 @@
                 </c:forEach>
 
             </select>
-        </label>
-    </p>
-    <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.set.specialty"/>">
+    </div>
+    <input class="btn"type="submit" value="<fmt:message key="text.set.specialty"/>">
 </form>
 
 
 <table class="highlight">
 
-    <tbody>
+    <thead>
+    <tr>  <c:choose>
+    <c:when test="${language == 'ua'}">
+        <th><fmt:message key="text.name.ua"/> </th>
+        <th><fmt:message key="text.surname.ua"/></th>
+        <th><fmt:message key="text.setmarks.assessment"/> </th>
+    </c:when>
+        <c:otherwise>
+            <th><fmt:message key="text.name.en"/> </th>
+            <th><fmt:message key="text.surname.en"/></th>
+            <th><fmt:message key="text.setmarks.assessment"/> </th>
+        </c:otherwise>
+    </c:choose>
+    </tr>
+    </thead>
 <c:forEach items="${studentsReceivedList}" var="student">
-
+<tbody>
     <tr>
         <c:choose>
         <c:when test="${language == 'ua'}">
@@ -58,7 +70,9 @@
         </c:choose>
         <td> ${student.getSumOfaccessment()} </td>
     </tr>
+</tbody>
 
+    </tbody>
 </c:forEach>
     </table>
 <jsp:include page="/WEB-INF/parts/footer.jsp"/>

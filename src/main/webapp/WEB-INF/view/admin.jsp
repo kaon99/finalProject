@@ -15,22 +15,24 @@
 
 <html>
 <head>
-    <title><fmt:message key="test.admin" </title>
+    <title><fmt:message key="text.title"/></title>
 </head>
 <body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
+<h1 class="flow-text"><fmt:message key="text.admin.page"/></h1>
+<div class="center-pill">
 
 <form role="form" method="post"
       action="${pageContext.request.contextPath}/university/admin/setgrade">
-    <input type="hidden" name="conference_id" value="${conference.id}">
-    <button type="submit" ><fmt:message key="text.set.marks"/> </button>
+    <button  class="btn" type="submit"><fmt:message key="text.set.marks"/></button>
 </form>
 
-<form role="form"  method="post"
+
+<form role="form" method="post"
       action="${pageContext.request.contextPath}/university/admin/sendnotification">
-    <input type="hidden" name="conference_id" value="${conference.id}">
-    <button type="submit" ><fmt:message key="text.notification"/> </button>
+    <button class="btn" type="submit"><fmt:message key="text.notification"/></button>
 </form>
-<jsp:include page="/WEB-INF/parts/footer.jsp"/>
+</div>
 </body>
+<jsp:include page="/WEB-INF/parts/footer.jsp"/>
 </html>

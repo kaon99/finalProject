@@ -18,15 +18,14 @@
     <title><fmt:message key="text.title"/></title></head>
 <body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
-<h1><fmt:message key="text.departament"/></h1>
+<h1 class="flow-text" ><fmt:message key="text.departament"/></h1>
 
 
-
+<div class="input-field col s12">
 
 <form method="post" action="${pageContext.request.contextPath}/university/studentpage/departament/set"  >
-    <p>
-        <label>
-            <select class="w3-input"  name="specialty">
+    <div class="input-field col s12" >
+            <select class="browser-default"  name="specialty">
                 <option disabled><fmt:message key="text.set.specialty"/></option>
                 <c:forEach items="${speciatlyList}" var="specialty">
                     <option value="${specialty.getId()}">
@@ -35,12 +34,12 @@
                 </c:forEach>
 
             </select>
-        </label>
-        <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.set.specialty"/>">
 
-
-
+    </div>
+    <input class="btn" type="submit" value="<fmt:message key="text.set.specialty"/>">
 </form>
+</div>
+
 <c:if test="${setSpecialty}">
     <div class="w3-container">
         <fmt:message key="text.set.your.spectialty"/>

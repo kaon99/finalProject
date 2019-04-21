@@ -14,57 +14,59 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <title><fmt:message key="text.title"/></title></head>
 <body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
 
+<div class="container">
+<form  action="${pageContext.request.contextPath}/university/registration/create" align="center"  method="post">
 
-<form class="w3-container" action="${pageContext.request.contextPath}/university/registration/create" align="center"  method="post">
     <p>
         <label>
-            <input class="w3-input" type="text" pattern="^[А-ЩЬЮЯҐІЇЄ][а-щьюяґіїє']{1,20}$" required placeholder= "<fmt:message key="text.name.ua"/>" name="nameUa"/>
+            <input  type="text" pattern="^[А-ЩЬЮЯҐІЇЄ][а-щьюяґіїє']{1,20}$" required placeholder= "<fmt:message key="text.name.ua"/>" name="nameUa"/>
         </label>
     </p>
     <p>
         <label>
-            <input class="w3-input" type="text" pattern="^[А-ЩЬЮЯҐІЇЄ][а-щьюяґіїє']{1,20}$" required placeholder="<fmt:message key="text.surname.ua"/>" name="surnameUa"/>
+            <input type="text" pattern="^[А-ЩЬЮЯҐІЇЄ][а-щьюяґіїє']{1,20}$" required placeholder="<fmt:message key="text.surname.ua"/>" name="surnameUa"/>
         </label>
     </p>
     <p>
         <label>
-            <input class="w3-input" type="text" pattern="^[A-Z][a-z]{1,20}$" required placeholder="<fmt:message key="text.name.en"/>" name="nameEn"/>
+            <input type="text" pattern="^[A-Z][a-z]{1,20}$" required placeholder="<fmt:message key="text.name.en"/>" name="nameEn"/>
         </label>
     </p>
     <p>
         <label>
-            <input class="w3-input" type="text"pattern="^[A-Z][a-z]{1,20}$" required placeholder="<fmt:message key="text.surname.en"/>" name="surnameEn"/>
+            <input type="text"pattern="^[A-Z][a-z]{1,20}$" required placeholder="<fmt:message key="text.surname.en"/>" name="surnameEn"/>
         </label>
     </p>
     <p>
         <label>
-            <input class="w3-input" type="email" required placeholder="<fmt:message key="text.email"/>" name="email"/>
+            <input  type="email" required placeholder="<fmt:message key="text.email"/>" name="email"/>
         </label>
     </p>
     <p>
         <label>
-            <input class="w3-input" type="password" required placeholder="<fmt:message key="text.password"/>" name="password"/>
+            <input  type="password" required placeholder="<fmt:message key="text.password"/>" name="password"/>
         </label>
     </p>
     <div>
-        <input class="w3-button w3-green" type="submit" value="<fmt:message key="text.registration"/>">
+        <input   type="submit" class="btn"   value="<fmt:message key="text.registration"/>">
         <c:if test="${requestScope.registrationError}">
-        <div class="w3-container">
+        <div >
             <fmt:message key="text.rerisration.error"/>
         </div>
         </c:if>
         <c:if test="${requestScope.userExist}">
-        <div class="w3-container">
+        <div >
             <fmt:message key="text.user.exist"/>
         </div>
         </c:if>
 
 </form>
+</div>
 </div>
 <jsp:include page="/WEB-INF/parts/footer.jsp"/>
 </body>

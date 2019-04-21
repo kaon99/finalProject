@@ -20,11 +20,11 @@
 
 </head>
 <body>
-<H1> Error 404</H1>
+<H1 class="flow-text"> Error 404</H1>
 <form method="post"
       action="${pageContext.request.contextPath}/university/main">
     <input type="hidden">
-    <button type="submit"><fmt:message key="text.main"/></button>
+    <button class="btn" type="submit"><fmt:message key="text.main"/></button>
 </form>
 <jsp:include page="/WEB-INF/parts/footer.jsp"/>
 </body>

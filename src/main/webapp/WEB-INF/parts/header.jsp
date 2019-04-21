@@ -14,12 +14,28 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title><fmt:message key="text.title"/></title></head>
-<body>
-<li><a href="${pageContext.request.contextPath}/university/main"><fmt:message key="text.main"/></a></li>
-<li><a href="${pageContext.request.contextPath}/university/logout"><fmt:message key="text.logout"/></a></li>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-<li><a href="${pageContext.request.contextPath}/university/language/en">English</a></li>
-<li><a href="${pageContext.request.contextPath}/university/language/ua">Українська</a></li>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <title><fmt:message key="text.title"/></title>
+</head>
+<body>
+
+
+<nav>
+    <div class="nav-wrapper">
+        <a class="brand-logo"><fmt:message key="text.title"/></a >
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="${pageContext.request.contextPath}/university/main"><fmt:message key="text.main"/></a></li>
+            <li><a href="${pageContext.request.contextPath}/university/logout"><fmt:message key="text.logout"/></a></li>
+            <li><a href="${pageContext.request.contextPath}/university/language/en">English</a></li>
+            <li><a href="${pageContext.request.contextPath}/university/language/ua">Українська</a></li>
+        </ul>
+    </div>
+</nav>
 </body>
 </html>

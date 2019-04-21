@@ -11,6 +11,17 @@
     <title>Title</title>
 </head>
 <body>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+
+                <p class="grey-text text-lighten-4">Final Project Created by Yaroslav Halindzovsiy</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

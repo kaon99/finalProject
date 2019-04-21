@@ -17,16 +17,16 @@
 
     <title><fmt:message key="text.title"/></title><body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
-<h1><fmt:message key="text.send.notification"/> </h1>
-
+<h1 class="flow-text" ><fmt:message key="text.send.notification"/> </h1>
+<div class="container" >
 <form method="post"
       action="${pageContext.request.contextPath}/university/admin/sendnotification/send">
-    <p>
-        <label>
-            <input class="w3-input" type="text" required placeholder="<fmt:message key="text.email"/>" name="email"/>
-        </label>
-    </p>
-    <button type="submit"><fmt:message key="text.send"/></button>
+
+            <input   type="text" required placeholder="<fmt:message key="text.email"/>" name="email"/>
+
+
+    <button class="btn" type="submit"><fmt:message key="text.send"/></button>
 </form>
+</div>
 </body>
 </html>

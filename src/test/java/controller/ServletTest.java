@@ -1,12 +1,13 @@
 package controller;
 
-import controller.command.admins.AdminCommand;
 import org.junit.Test;
+import org.mockito.Mock;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import java.io.IOException;
 
@@ -14,15 +15,25 @@ import static org.mockito.Mockito.*;
 
 
 public class ServletTest {
-    final String path = "WEB-INF/view/login.jsp";
+    @Mock
+    HttpServletRequest request = mock(HttpServletRequest.class);
+    @Mock
+    HttpServletResponse response = mock(HttpServletResponse.class);
+    @Mock
+    HttpSession httpSession = mock (HttpSession.class);
+
+    @Mock
+    RequestDispatcher requestDispatcher = mock(RequestDispatcher.class);
+
+final private String page = "university/login";
 @Test
-    public void  whenCallDoGet () throws ServletException, IOException {
-        final AdminCommand servlet = new AdminCommand();
-        final HttpServletRequest request = mock(HttpServletRequest.class);
-        final HttpServletResponse response = mock(HttpServletResponse.class);
-        final RequestDispatcher requestDispatcher = mock(RequestDispatcher.class);
-
-
+    public void WhenCllDoGet () throws ServletException, IOException {
+        final Servlet servlet = new Servlet();
+        servlet.doGet(request,response);
+        when(request.getRequestDispatcher(page)).thenReturn(requestDispatcher);
+        //request.getRequestDispatcher(path).forward(request,response);
+        verify(request,times(1)).getRequestDispatcher(page);
     }
+
 
 }
