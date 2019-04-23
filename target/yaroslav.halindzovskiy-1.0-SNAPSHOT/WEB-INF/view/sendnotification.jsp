@@ -17,8 +17,9 @@
 
     <title><fmt:message key="text.title"/></title><body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
-<h1 class="flow-text" ><fmt:message key="text.send.notification"/> </h1>
 <div class="container" >
+<h1 class="flow-text" ><fmt:message key="text.send.notification"/> </h1>
+
 <form method="post"
       action="${pageContext.request.contextPath}/university/admin/sendnotification/send">
 

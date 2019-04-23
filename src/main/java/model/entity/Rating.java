@@ -70,4 +70,14 @@ public class Rating {
         result = 31 * result + (studentId != null ? studentId.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Rating{" +
+                "id=" + id +
+                ", assessment=" + assessment +
+                ", subjectId=" + subjectId +
+                ", studentId=" + studentId +
+                '}';
+    }
 }

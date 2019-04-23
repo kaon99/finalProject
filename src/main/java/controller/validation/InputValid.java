@@ -29,8 +29,8 @@ public class InputValid {
         java.util.regex.Matcher m = p.matcher(email);
         return m.matches();
     }
-    public static boolean isGradeValid (Optional<Integer> grade){
-if(grade.get() > 0 && grade.get() <=100){
+    public static boolean isGradeValid (Integer grade){
+if(grade > 0 && grade <=100){
     return true;
 }
 return false;

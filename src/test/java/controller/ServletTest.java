@@ -1,34 +1,66 @@
 package controller;
 
+import controller.command.Command;
+import controller.command.CommandFactory;
+import controller.command.pagesCommand.SendNotificatioinCommandPage;
+import model.entity.Student;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
-
+import org.mockito.MockitoAnnotations;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
+import org.mockito.MockitoAnnotations.Mock.*;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import java.io.IOException;
 
 import static org.mockito.Mockito.*;
 
-
+@RunWith(PowerMockRunner.class)
+@PrepareForTest(CommandFactory.class)
 public class ServletTest {
+    @InjectMocks
+    private Servlet servlet;
     @Mock
-    HttpServletRequest request = mock(HttpServletRequest.class);
+   private HttpServletRequest request;
     @Mock
-    HttpServletResponse response = mock(HttpServletResponse.class);
+   private HttpServletResponse response ;
     @Mock
-    RequestDispatcher requestDispatcher = mock(RequestDispatcher.class);
+    private RequestDispatcher requestDispatcher;
+    @Mock
+   private Command command;
 
-final private String page = "university/login";
-@Test
-    public void WhenCllDoGet () throws ServletException, IOException {
-        final Servlet servlet = new Servlet();
-        servlet.doGet(request,response);
+
+    @Before
+    public void setUp (){
+        MockitoAnnotations.initMocks(this);
+        //PowerMockito.mockStatic(CommandFactory.class);
+        when(CommandFactory.getCommand("/university/login/")).thenReturn(command);
+        when(command.execute(request,response)).thenReturn("/university/login");
         when(request.getRequestDispatcher(page)).thenReturn(requestDispatcher);
-        //request.getRequestDispatcher(path).forward(request,response);
-        verify(request,times(1)).getRequestDispatcher(page);
+
+
+    }
+
+    final private String page = "WEB-INF/view/sendnotification.jsp";
+
+    @Test
+    public void WhenCallDoGet() throws ServletException, IOException {
+
+
+servlet.doGet(request,response);
+
+
+      verify(requestDispatcher,times(1)).forward(request,response);
+
+
+
     }
 
 

@@ -1,11 +1,12 @@
 package controller;
 
 import controller.command.filter.AuthenticationFilter;
-import controller.command.filter.LocaleFilter;
+import controller.command.filter.RoleFilter;
+import model.entity.Student;
+import model.entity.types.Role;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
-import utils.AttributesResourseManager;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -13,49 +14,55 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.Locale;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 
 public class FilterTest {
 
-        @Mock
-        HttpServletRequest httpServletRequest = mock(HttpServletRequest.class);
-        @Mock
-        HttpServletResponse httpServletResponse = mock(HttpServletResponse.class);
-        @Mock
-    HttpSession httpSession = mock (HttpSession.class);
-        @Mock
-        FilterChain filterChain = mock(FilterChain.class);
+    @Mock
+    HttpServletRequest request;
+    @Mock
+    HttpServletResponse response;
+    @Mock
+    FilterChain filterChain;
+    @Mock
+    HttpSession session;
 
 
+    @Before
+    public void setUp() {
+        Student student = new Student();
+        student.setEmail("test");
+        student.setRole(Role.ADMIN.getRole());
+        
+        when(request.getSession()).thenReturn(session);
+        when(session.getAttribute("user")).thenReturn(student);
+        when(request.getRequestURI()).thenReturn("/university/admin");
 
+    }
 
     @Test
     public void testAuthenficationFilter() throws IOException, ServletException {
 
         // mock the getRequestURI() response
-        when(httpServletRequest.getRequestURI()).thenReturn("/otherurl.jsp");
+        when(request.getRequestURI()).thenReturn("/otherurl.jsp");
 
         AuthenticationFilter authenticationFilter = new AuthenticationFilter();
-        authenticationFilter.doFilter(httpServletRequest, httpServletResponse,
+        authenticationFilter.doFilter(request, response,
                 filterChain);
 
         // verify if a sendRedirect() was performed with the expected value
-        verify(httpServletResponse).sendRedirect("/university/login");
+        verify(response).sendRedirect("/university/login");
     }
-
 
     @Test
-    public void testLocaleFilter () throws IOException, ServletException {
-    when(httpServletRequest.getRequestURI()).thenReturn("/university/login/language/ua");
-        //when(httpServletRequest.getContextPath()).thenReturn("/university/login");
+    public void testRoleFilter() throws IOException, ServletException {
+        RoleFilter roleFilter = new RoleFilter();
+        roleFilter.doFilter(request,response,filterChain);
 
-        LocaleFilter localeFilter = new LocaleFilter();
-        localeFilter.doFilter(httpServletRequest,httpServletResponse,filterChain);
-        verify(httpServletResponse,times(1)).sendRedirect(httpServletRequest.getContextPath() + httpServletRequest.getHeader("referer"));
-
-        }
     }
 
+
+}

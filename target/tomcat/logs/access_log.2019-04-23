@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:11:42 +0300] "GET / HTTP/1.1" 200 2265 http-bio-8080-exec-1 549
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:11:43 +0300] "GET /favicon.ico HTTP/1.1" 404 1974 http-bio-8080-exec-3 30
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:11:53 +0300] "POST /university/login HTTP/1.1" 302 - http-bio-8080-exec-4 2885
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:11:53 +0300] "GET /university/admin HTTP/1.1" 200 2164 http-bio-8080-exec-6 98
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:11:55 +0300] "POST /university/admin/setgrade HTTP/1.1" 200 2976 http-bio-8080-exec-7 126
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:12:14 +0300] "POST /university/admin/setgrade/button HTTP/1.1" 200 3086 http-bio-8080-exec-8 19
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:12:26 +0300] "POST /university/admin/setgrade/button HTTP/1.1" 200 3086 http-bio-8080-exec-10 6
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:12:36 +0300] "POST /university/admin/setgrade/button HTTP/1.1" 200 3086 http-bio-8080-exec-10 8
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:12:46 +0300] "POST /university/admin/setgrade/button HTTP/1.1" 200 3086 http-bio-8080-exec-10 22
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:13:07 +0300] "POST /university/admin/setgrade/button HTTP/1.1" 200 3086 http-bio-8080-exec-10 6
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:13:10 +0300] "POST /university/admin/setgrade/button HTTP/1.1" 200 3086 http-bio-8080-exec-10 7
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:13:17 +0300] "POST /university/admin/setgrade/button HTTP/1.1" 200 3086 http-bio-8080-exec-10 11
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:13:21 +0300] "GET /university/main HTTP/1.1" 302 - http-bio-8080-exec-10 1
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:13:21 +0300] "GET /university/admin HTTP/1.1" 200 2164 http-bio-8080-exec-10 4
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:13:23 +0300] "POST /university/admin/setgrade HTTP/1.1" 200 2976 http-bio-8080-exec-10 4
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:13:32 +0300] "POST /university/admin/setgrade/button HTTP/1.1" 200 3086 http-bio-8080-exec-10 8
+0:0:0:0:0:0:0:1 - - [23/Apr/2019:21:13:42 +0300] "POST /university/admin/setgrade/button HTTP/1.1" 200 3086 http-bio-8080-exec-10 7

@@ -19,10 +19,10 @@
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
 <div class="container">
 
-    <form  method="post"   action="${pageContext.request.contextPath} /university/admin/setgrade/button">
+    <form  method="post"   action="${pageContext.request.contextPath}/university/admin/setgrade/button">
 
 
-                <input  type="text" required placeholder="<fmt:message key="text.setmarks.email"/>">
+                <input  type="text" name="email" required placeholder="<fmt:message key="text.setmarks.email"/>">
         <div class="input-field col s12" >
                 <select class="browser-default" name="subject">
                     <option disabled><fmt:message key="text.setmarks.subject"/></option>
@@ -43,6 +43,8 @@
         <c:if test="${requestScope.userExist}">
             <div class="w3-container">
                 <fmt:message key="text.user.not.exist"/>
+                <fmt:message key="text.or"/>
+                <fmt:message key="text.grade.valid"/>
             </div>
         </c:if>
     </form>

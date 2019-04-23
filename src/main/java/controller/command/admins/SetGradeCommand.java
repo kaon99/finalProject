@@ -17,6 +17,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Objects;
 import java.util.Optional;
 
+import static controller.validation.InputValid.isGradeValid;
+
 public class SetGradeCommand implements Command {
     RatingService ratingService = new RatingServiceImpl();
     SubjectService subjectService = new SubjectServiceImpl();
@@ -31,7 +33,8 @@ public class SetGradeCommand implements Command {
 
             request.setAttribute("databaseList", subjectService.findAll());
             Optional<Integer> grade = Optional.ofNullable(Integer.parseInt(request.getParameter((AttributesResourseManager.getProperty("parameter.grade")))));
-            if (Objects.isNull(email) && Objects.isNull(subject) || !validationUtil.userExist(email)) {
+
+            if (Objects.isNull(email) && Objects.isNull(subject) || !validationUtil.userExist(email) || !isGradeValid(grade.get())) {
                 throw new WrongDataException();
             } else {
                 ratingService.setmark(email, subject.get(), grade.get());

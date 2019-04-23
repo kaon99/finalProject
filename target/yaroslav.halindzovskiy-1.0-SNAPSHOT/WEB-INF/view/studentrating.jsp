@@ -15,8 +15,15 @@
 <html>
 <head>
     <title><fmt:message key="text.title"/></title></head>
+<style>
+    .row .col{
+        padding: 0;
+    }
+
+</style>
 <body>
 <jsp:include page="/WEB-INF/parts/header.jsp"/>
+<div class="container" >
 <h1 class="flow-text" ><fmt:message key="text.student.rating" /></h1>
 
 <div>
@@ -75,6 +82,7 @@
     </tbody>
 </c:forEach>
     </table>
+</div>
 <jsp:include page="/WEB-INF/parts/footer.jsp"/>
 </body>
 </html>

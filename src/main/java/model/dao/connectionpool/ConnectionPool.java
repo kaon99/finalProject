@@ -17,7 +17,7 @@ public class ConnectionPool {
             synchronized (ConnectionPool.class) {
                 if (dataSource == null) {
                     try {
-                        Class.forName("com.mysql.jdbc.Driver");
+                        Class.forName("com.mysql.cj.jdbc.Driver");
                     } catch (ClassNotFoundException e) {
                         logger.error(e);
                     }

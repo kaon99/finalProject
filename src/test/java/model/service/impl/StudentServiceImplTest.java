@@ -80,7 +80,6 @@ public class StudentServiceImplTest {
         studentService.setMarks(student);
         verify(studentDao,times(1)).setSumMarks(student);
 
-
     }
 
     @Test

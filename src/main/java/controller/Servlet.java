@@ -44,7 +44,7 @@ public class Servlet extends HttpServlet {
     }
 
     private String cleanPath(String path) {
-        return path = path.replaceAll(".*/university/", "");
+        return  path.replaceAll(".*/university/", "");
     }
 
 }

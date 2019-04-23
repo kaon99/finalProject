@@ -11,7 +11,7 @@ import java.util.Optional;
 
 public class MAIN {
     public static void main(String[] args) throws WrongDataException, UserExistException {
-Optional<Integer> integer = Optional.ofNullable( Integer.parseInt("d"));
+Integer integer  = -10;
         System.out.println(InputValid.isGradeValid(integer));
     }
 
