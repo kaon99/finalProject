@@ -1,4 +1,4 @@
-package utils;
+package model.dao.queriesManager;
 
 import java.util.ResourceBundle;
 

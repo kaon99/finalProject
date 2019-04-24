@@ -1,6 +1,6 @@
 package controller.command.filter;
 import org.apache.log4j.Logger;
-import utils.PageResourseManager;
+import controller.command.util.PageResourseManager;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

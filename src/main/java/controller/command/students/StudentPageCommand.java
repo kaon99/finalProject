@@ -2,12 +2,10 @@ package controller.command.students;
 
 import controller.command.Command;
 import model.entity.Student;
-import model.entity.types.Role;
 import org.apache.log4j.Logger;
-import utils.AttributesResourseManager;
-import utils.PageResourseManager;
+import controller.command.util.AttributesResourseManager;
+import controller.command.util.PageResourseManager;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 

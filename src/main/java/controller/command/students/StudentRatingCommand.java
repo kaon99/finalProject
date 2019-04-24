@@ -3,21 +3,15 @@ package controller.command.students;
 import controller.command.Command;
 import controller.command.pagesCommand.StudentRatingCommandPage;
 import model.entity.Student;
-import model.exception.WrongDataException;
 import model.service.SpecialtyService;
 import model.service.StudentService;
 import model.service.impl.SpecialtyServiceImpl;
 import model.service.impl.StudentServiceImpl;
 import org.apache.log4j.Logger;
-import utils.AttributesResourseManager;
-import utils.PageResourseManager;
+import controller.command.util.AttributesResourseManager;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import java.util.InputMismatchException;
-import java.util.Optional;
 
 public class StudentRatingCommand implements Command {
     private Logger logger = Logger.getLogger(StudentRatingCommand.class);

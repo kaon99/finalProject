@@ -9,8 +9,8 @@ import model.service.SubjectService;
 import model.service.impl.RatingServiceImpl;
 import model.service.impl.SubjectServiceImpl;
 import org.apache.log4j.Logger;
-import utils.AttributesResourseManager;
-import utils.PageResourseManager;
+import controller.command.util.AttributesResourseManager;
+import controller.command.util.PageResourseManager;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

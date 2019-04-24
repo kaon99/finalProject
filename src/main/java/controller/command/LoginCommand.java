@@ -6,10 +6,9 @@ import model.entity.Student;
 import model.service.StudentService;
 import model.service.impl.StudentServiceImpl;
 import org.apache.log4j.Logger;
-import utils.AttributesResourseManager;
-import utils.ContextUtil;
-import utils.ContextUtil.*;
-import utils.PageResourseManager;
+import controller.command.util.AttributesResourseManager;
+import controller.command.util.ContextUtil;
+import controller.command.util.PageResourseManager;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

@@ -1,11 +1,10 @@
 package model.dao.daoimpl;
 
 import model.dao.SpecialtyDao;
-import model.dao.connectionpool.ConnectionPool;
 import model.dao.mapper.SpecialtyMapper;
 import model.entity.Specialty;
 import org.apache.log4j.Logger;
-import utils.QueriesResourseManager;
+import model.dao.queriesManager.QueriesResourseManager;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

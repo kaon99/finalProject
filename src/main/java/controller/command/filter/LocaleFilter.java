@@ -2,7 +2,7 @@ package controller.command.filter;
 
 
 import org.apache.log4j.Logger;
-import utils.AttributesResourseManager;
+import controller.command.util.AttributesResourseManager;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

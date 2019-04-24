@@ -7,56 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2085131-b3dc-40ab-8205-ff22918eb031" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_api_mockito_1_7_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_api_mockito_common_1_7_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_api_support_1_7_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_core_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_module_junit4_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_module_junit4_common_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_reflect_2_0_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/resourceBundles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/resourceBundles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/MainCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/command/admins/SetGradeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/command/admins/SetGradeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/validation/InputValid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/validation/InputValid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/connectionpool/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/connectionpool/ConnectionPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/entity/Rating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/entity/Rating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/text.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/text.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/text_ua.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/text_ua.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/setgrade.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/setgrade.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/controller/FilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/controller/FilterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/controller/ServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/controller/ServletTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/service/impl/StudentServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/service/impl/StudentServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/command/MainCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/command/MainCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/validation/InputValid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/validation/InputValid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/connectionpool/ConnectionPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/dao/connectionpool/ConnectionPool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/entity/Rating.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/entity/Rating.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/service/impl/RatingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/service/impl/RatingServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/controller/FilterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/controller/FilterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/controller/ServletTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/controller/ServletTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-04-22" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-04-22" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/SESSIONS.ser" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/SESSIONS.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/view/not_005ffound_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/view/not_005ffound_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/view/not_005ffound_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/view/not_005ffound_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/parts/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/parts/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/parts/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/parts/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/departament.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/departament.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/not_found.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/not_found.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/sendnotification.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/sendnotification.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/studentpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/studentpage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/studentrating.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yaroslav.halindzovskiy-1.0-SNAPSHOT/WEB-INF/view/studentrating.jsp" afterDir="false" />
     </list>
     <list id="007b95d3-b475-4971-8828-78b7e71170e7" name="Revert &quot;Revert &quot;model , util, dao , resourse&quot;&quot;" comment="Revert &quot;Revert &quot;model , util, dao , resourse&quot;&quot;&#10;&#10;This reverts commit bac33859" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -109,85 +60,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://6687b053-12ee-43d0-86a8-7f45fa83a450/schema/final_project/table/user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/admins/SetGradeCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="32" column="128" selection-start-line="32" selection-start-column="128" selection-end-line="32" selection-end-column="128" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/service/impl/RatingServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/validation/InputValid.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="204">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Servlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#1302#1303#0" expanded="true" />
-                <element signature="e#1363#1364#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/setgrade.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://text">
-          <provider selected="true" editor-type-id="ResourceBundle" />
         </entry>
       </file>
     </leaf>
@@ -718,13 +597,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.MAIN" />
       <item itemvalue="JUnit.FilterTest.testAuthenficationFilter" />
       <item itemvalue="JUnit.ServletTest.WhenCallDoGet" />
       <item itemvalue="JUnit.ServletTest" />
       <item itemvalue="JUnit.FilterTest.testRoleFilter" />
       <item itemvalue="Maven.yaroslav.halindzovskiy [tomcat7:run]" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.37" />
-      <item itemvalue="Application.MAIN" />
     </list>
     <recent_temporary>
       <list>
@@ -785,7 +664,8 @@
       <workItem from="1555838653876" duration="31362000" />
       <workItem from="1555914874739" duration="25666000" />
       <workItem from="1555956582374" duration="17076000" />
-      <workItem from="1556043347033" duration="5199000" />
+      <workItem from="1556043347033" duration="5592000" />
+      <workItem from="1556054024668" duration="392000" />
     </task>
     <task id="LOCAL-00001" summary="Create Mapper">
       <created>1554126810125</created>
@@ -942,7 +822,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="466542000" />
+    <option name="totallyTimeSpent" value="467327000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -954,7 +834,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.20067114" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -967,12 +848,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49679077" weight="0.0509915" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7268456" weight="0.30028328" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.71879196" visible="true" weight="0.33286119" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.71879196" weight="0.41359773" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.52549577" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49597314" weight="0.25354108" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49597314" weight="0.3796034" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.27315435" side_tool="true" weight="0.36685553" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.2733711" />
@@ -1120,7 +1001,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/controller/command/admins/SetGradeCommand.java</url>
-          <line>28</line>
+          <line>27</line>
           <properties class="controller.command.admins.SetGradeCommand" method="execute">
             <option name="EMULATED" value="true" />
           </properties>
@@ -1452,28 +1333,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/setgrade.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://6687b053-12ee-43d0-86a8-7f45fa83a450/schema/final_project/table/user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#1302#1303#0" expanded="true" />
-            <element signature="e#1363#1364#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1484,10 +1347,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN.java">
+    <entry file="das://6687b053-12ee-43d0-86a8-7f45fa83a450/schema/final_project/table/rating">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="68">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -1498,24 +1368,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://6687b053-12ee-43d0-86a8-7f45fa83a450/schema/final_project/table/rating">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/admins/SetGradeCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="32" column="128" selection-start-line="32" selection-start-column="128" selection-end-line="32" selection-end-column="128" />
+        <state relative-caret-position="203">
+          <caret line="47" column="72" lean-forward="true" selection-start-line="47" selection-start-column="72" selection-end-line="47" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/command/students/StudentRatingCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/setgrade.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="442">
+          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#1302#1303#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>

@@ -1,13 +1,12 @@
 package controller.command.listener;
 
 import model.entity.Student;
-import utils.AttributesResourseManager;
+import controller.command.util.AttributesResourseManager;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
-import java.util.logging.Logger;
 
 public class ContextListener implements ServletContextListener {
     @Override

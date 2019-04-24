@@ -1,4 +1,4 @@
-package utils;
+package controller.command.util;
 
 import model.entity.Student;
 

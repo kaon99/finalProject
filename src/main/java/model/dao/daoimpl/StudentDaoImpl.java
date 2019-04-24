@@ -5,7 +5,7 @@ import model.dao.StudentDao;
 import model.dao.mapper.StudentMapper;
 import model.entity.Student;
 import org.apache.log4j.Logger;
-import utils.QueriesResourseManager;
+import model.dao.queriesManager.QueriesResourseManager;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

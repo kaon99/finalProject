@@ -1,14 +1,13 @@
 package controller.command.listener;
 
 import model.entity.Student;
-import utils.AttributesResourseManager;
+import controller.command.util.AttributesResourseManager;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 public class SessionListener implements HttpSessionListener {

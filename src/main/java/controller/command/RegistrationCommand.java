@@ -10,7 +10,7 @@ import model.exception.WrongDataException;
 import model.service.StudentService;
 import model.service.impl.StudentServiceImpl;
 import org.apache.log4j.Logger;
-import utils.AttributesResourseManager;
+import controller.command.util.AttributesResourseManager;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

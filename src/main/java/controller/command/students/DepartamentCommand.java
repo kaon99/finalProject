@@ -7,8 +7,8 @@ import model.service.StudentService;
 import model.service.impl.SpecialtyServiceImpl;
 import model.service.impl.StudentServiceImpl;
 import org.apache.log4j.Logger;
-import utils.AttributesResourseManager;
-import utils.PageResourseManager;
+import controller.command.util.AttributesResourseManager;
+import controller.command.util.PageResourseManager;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

@@ -4,7 +4,7 @@ import controller.command.util.CommandUtil;
 import model.entity.Student;
 import model.entity.types.Role;
 import org.apache.log4j.Logger;
-import utils.AttributesResourseManager;
+import controller.command.util.AttributesResourseManager;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

@@ -6,11 +6,10 @@
 package model.dao.daoimpl;
 
 import model.dao.RatingDao;
-import model.dao.connectionpool.ConnectionPool;
 import model.dao.mapper.RatingMapper;
 import model.entity.Rating;
 import org.apache.log4j.Logger;
-import utils.QueriesResourseManager;
+import model.dao.queriesManager.QueriesResourseManager;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
